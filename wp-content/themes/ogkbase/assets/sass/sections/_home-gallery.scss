@@ -1,0 +1,85 @@
+.home-gallery-section{
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    margin-bottom: -250px;
+    position: relative;
+    z-index: 9;
+    .home-gallery-innerwrap{
+        &:first-child{
+            width: 17%;
+            margin-right: -40px;
+        }
+        &:nth-child(2){
+            width: 30%;
+        }
+        &:last-child{
+            width: 17%;
+            margin-left: -40px;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-med){
+    .home-gallery-section{
+        margin-bottom: -240px;
+        .home-gallery-innerwrap{
+            &:first-child{
+                width: 21%;
+            }
+            &:nth-child(2){
+                width: 41%;
+            }
+            &:last-child{
+                width: 21%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-xs){
+    .home-gallery-section{
+        margin-bottom: -180px;
+        .home-gallery-innerwrap{
+            &:first-child{
+                width: 25%;
+            }
+            &:nth-child(2){
+                width: 45%;
+            }
+            &:last-child{
+                width: 25%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .home-gallery-section {
+        margin-bottom: -150px;
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .home-gallery-section{
+        flex-direction: column;
+        margin-bottom: unset;
+        padding: 9px 0px;
+        .home-gallery-innerwrap{
+            &:first-child{
+                width: 50%;
+                margin-right: unset;
+            }
+            &:nth-child(2){
+                width: 65%;
+            }
+            &:last-child{
+                width: 50%;
+                margin-left: unset;
+            }
+        }
+    }
+}
+// RESPONSIVE SEC END:

@@ -1,0 +1,793 @@
+.alumni-night-section {
+    display: flex;
+    align-items: flex-start;
+    padding: 90px 140px;
+    justify-content: center;
+
+    .alumni-meeting-left-outerwrap {
+        width: 30%;
+
+        .alumni-meeting-innerwrap {
+            padding: 30px 20px;
+            border: 2px solid #000;
+            border-radius: 20px;
+            margin-bottom: 20px;
+
+            .alumni-meeting-heading-wraper {
+                display: flex;
+                align-items: center;
+
+                .alumni-meeting-img {
+                    img {
+                        width: 34px;
+                        height: 34px;
+                        object-fit: contain;
+                    }
+                }
+
+                .alumni-meeting-heading {
+                    margin-left: 20px;
+
+                    h5 {
+                        font-size: 18px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                    }
+                }
+
+                margin-bottom: 20px;
+            }
+
+            span {
+                font-size: 25px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 29px;
+                display: block;
+            }
+
+            a.pink-btn {
+                @include pink-btn(20px);
+
+                &::after {
+                    @include pink-right-arrow;
+                }
+            }
+        }
+    }
+
+    .alumni-meeting-right-content {
+        width: 60%;
+        margin-left: 114px;
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: $primary;
+            font-weight: $regular;
+            font-family: $fontMain;
+            margin-bottom: 30px;
+        }
+
+        .alumni-meeting-right-refreshment {
+            background-color: #F0EEE6;
+            border-radius: 20px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+
+            .alumni-meeting-right-refreshment-img {
+                img {
+                    width: 70px;
+                    height: 73px;
+                    object-fit: contain;
+                }
+            }
+
+            .alumni-meeting-right-refreshment-content {
+                margin-left: 29px;
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $bold;
+                    font-family: $fontMain;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        .alumni-meeting-right-content-btn {
+            .btn-blue {
+                @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .alumni-night-section {
+        display: flex;
+        align-items: flex-start;
+        padding: 90px 100px;
+        justify-content: center;
+
+        .alumni-meeting-left-outerwrap {
+            width: 30%;
+
+            .alumni-meeting-innerwrap {
+
+                .alumni-meeting-heading-wraper {
+                    display: flex;
+                    align-items: center;
+
+                    .alumni-meeting-img {
+                        img {
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    font-size: 19px;
+                    margin-bottom: 21px;
+                }
+
+                a.pink-btn {
+                    @include pink-btn(18px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                    }
+                }
+            }
+        }
+
+        .alumni-meeting-right-content {
+            width: 60%;
+            margin-left: 114px;
+
+            h2 {
+                font-size: 32px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $bold;
+                font-family: $fontMain;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.6;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 30px;
+            }
+
+            .alumni-meeting-right-refreshment {
+                background-color: #F0EEE6;
+                border-radius: 20px;
+                padding: 30px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+
+                .alumni-meeting-right-refreshment-img {
+                    img {
+                        width: 70px;
+                        height: 73px;
+                        object-fit: contain;
+                    }
+                }
+
+                .alumni-meeting-right-refreshment-content {
+                    margin-left: 29px;
+
+                    p {
+                        font-size: 18px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+            .alumni-meeting-right-content-btn {
+                .btn-blue {
+                    @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .alumni-night-section {
+        padding: 90px 70px;
+
+        .alumni-meeting-left-outerwrap {
+            width: 30%;
+
+            .alumni-meeting-innerwrap {
+
+                .alumni-meeting-heading-wraper {
+                    display: flex;
+                    align-items: center;
+
+                    .alumni-meeting-img {
+                        img {
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    font-size: 17px;
+                    margin-bottom: 21px;
+                }
+
+                a.pink-btn {
+                    @include pink-btn(18px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                    }
+                }
+            }
+        }
+
+        .alumni-meeting-right-content {
+            width: 60%;
+            margin-left: 60px;
+
+            h2 {
+                font-size: 32px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $bold;
+                font-family: $fontMain;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 30px;
+            }
+
+            .alumni-meeting-right-refreshment {
+                background-color: #F0EEE6;
+                border-radius: 20px;
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+
+                .alumni-meeting-right-refreshment-img {
+                    img {
+                        width: 70px;
+                        height: 73px;
+                        object-fit: contain;
+                    }
+                }
+
+                .alumni-meeting-right-refreshment-content {
+                    margin-left: 21px;
+
+                    p {
+                        font-size: 16px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+            .alumni-meeting-right-content-btn {
+                .btn-blue {
+                    @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .alumni-night-section {
+        padding: 90px 40px;
+
+        .alumni-meeting-left-outerwrap {
+            width: 30%;
+
+            .alumni-meeting-innerwrap {
+                padding: 20px;
+
+                .alumni-meeting-heading-wraper {
+                    display: flex;
+                    align-items: center;
+
+                    .alumni-meeting-img {
+                        img {
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .alumni-meeting-heading {
+                        margin-left: 9px;
+
+                        h5 {
+                            font-size: 15px;
+                        }
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    font-size: 15px;
+                    margin-bottom: 9px;
+                }
+
+                a.pink-btn {
+                    @include pink-btn(15px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                        top: 4px;
+                        right: -22px;
+                    }
+                }
+            }
+        }
+
+        .alumni-meeting-right-content {
+            width: 60%;
+            margin-left: 40px;
+
+            h2 {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.6;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 30px;
+            }
+
+            .alumni-meeting-right-refreshment {
+                background-color: #F0EEE6;
+                border-radius: 14px;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+
+                .alumni-meeting-right-refreshment-img {
+                    img {
+                        width: 70px;
+                        height: 43px;
+                        object-fit: contain;
+                    }
+                }
+
+                .alumni-meeting-right-refreshment-content {
+                    margin-left: 14px;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+            .alumni-meeting-right-content-btn {
+                .btn-blue {
+                    @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .alumni-night-section {
+        padding: 60px 40px;
+        flex-direction: column;
+
+        .alumni-meeting-left-outerwrap {
+            width: 100%;
+
+            .alumni-meeting-innerwrap {
+                padding: 20px;
+
+                .alumni-meeting-heading-wraper {
+                    display: flex;
+                    align-items: center;
+
+                    .alumni-meeting-img {
+                        img {
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .alumni-meeting-heading {
+                        margin-left: 9px;
+
+                        h5 {
+                            font-size: 15px;
+                        }
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    font-size: 15px;
+                    margin-bottom: 9px;
+                }
+
+                a.pink-btn {
+                    @include pink-btn(15px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                        top: 4px;
+                        right: -22px;
+                    }
+                }
+            }
+        }
+
+        .alumni-meeting-right-content {
+            width: 100%;
+            margin-left: 0px;
+
+            h2 {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.6;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 30px;
+            }
+
+            .alumni-meeting-right-refreshment {
+                background-color: #F0EEE6;
+                border-radius: 14px;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+
+                .alumni-meeting-right-refreshment-img {
+                    img {
+                        width: 70px;
+                        height: 43px;
+                        object-fit: contain;
+                    }
+                }
+
+                .alumni-meeting-right-refreshment-content {
+                    margin-left: 14px;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+            // .alumni-meeting-right-content-btn {
+            //     .btn-blue {
+            //         @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+            //         &:focus,
+            //         &:hover {
+            //             @include theme-btn-hover;
+            //         }
+            //     }
+            // }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .alumni-night-section {
+        padding: 60px 40px;
+        flex-direction: column;
+
+        .alumni-meeting-left-outerwrap {
+            width: 100%;
+
+            .alumni-meeting-innerwrap {
+                padding: 20px;
+
+                .alumni-meeting-heading-wraper {
+                    display: flex;
+                    align-items: center;
+
+                    .alumni-meeting-img {
+                        img {
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .alumni-meeting-heading {
+                        margin-left: 9px;
+
+                        h5 {
+                            font-size: 15px;
+                        }
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    font-size: 15px;
+                    margin-bottom: 9px;
+                }
+
+                a.pink-btn {
+                    @include pink-btn(15px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                        top: 4px;
+                        right: -22px;
+                    }
+                }
+            }
+        }
+
+        .alumni-meeting-right-content {
+            width: 100%;
+            margin-left: 0px;
+
+            h2 {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.6;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 30px;
+            }
+
+            .alumni-meeting-right-refreshment {
+                background-color: #F0EEE6;
+                border-radius: 14px;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+
+                .alumni-meeting-right-refreshment-img {
+                    img {
+                        width: 70px;
+                        height: 43px;
+                        object-fit: contain;
+                    }
+                }
+
+                .alumni-meeting-right-refreshment-content {
+                    margin-left: 14px;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+            .alumni-meeting-right-content-btn {
+                .btn-blue {
+                    @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .alumni-night-section {
+        padding: 60px 15px;
+        flex-direction: column;
+
+        .alumni-meeting-left-outerwrap {
+            width: 100%;
+
+            .alumni-meeting-innerwrap {
+                padding: 20px;
+
+                .alumni-meeting-heading-wraper {
+                    display: flex;
+                    align-items: center;
+
+                    .alumni-meeting-img {
+                        img {
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .alumni-meeting-heading {
+                        margin-left: 9px;
+
+                        h5 {
+                            font-size: 15px;
+                        }
+                    }
+
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    font-size: 15px;
+                    margin-bottom: 9px;
+                }
+
+                a.pink-btn {
+                    @include pink-btn(15px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                        top: 4px;
+                        right: -22px;
+                    }
+                }
+            }
+        }
+
+        .alumni-meeting-right-content {
+            width: 100%;
+            margin-left: 0px;
+
+            h2 {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 1.6;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 30px;
+            }
+
+            .alumni-meeting-right-refreshment {
+                background-color: #F0EEE6;
+                border-radius: 14px;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+
+                .alumni-meeting-right-refreshment-img {
+                    img {
+                        width: 120px;
+                        height: 43px;
+                        object-fit: contain;
+                    }
+                }
+
+                .alumni-meeting-right-refreshment-content {
+                    margin-left: 14px;
+
+                    p {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+            .alumni-meeting-right-content-btn {
+                .btn-blue {
+                    @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC END:

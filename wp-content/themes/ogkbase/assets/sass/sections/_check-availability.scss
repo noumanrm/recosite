@@ -1,0 +1,351 @@
+.check-availability-section {
+    background-color: #F0EEE6;
+    padding: 100px 434px;
+
+    .check-availability-outerwrap {
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+            margin-bottom: 40px;
+        }
+
+        .check-availability-form {
+            form {
+
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                textarea {
+                    border: 2px solid $primary;
+                    border-radius: 15px;
+                    padding: 19px;
+                    background-color: $white;
+                    margin-bottom: 24px;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(18px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                    resize: none;
+                }
+
+                .gform_fields {
+                    grid-row-gap: 0;
+                }
+
+                .gform_footer {
+                    .gform_button {
+                        @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 200px;
+                        padding: 18px 33px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .check-availability-section {
+        padding: 100px 334px;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .check-availability-section {
+        padding: 100px 234px;
+
+        .check-availability-outerwrap {
+            h2 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            .check-availability-form {
+                form {
+
+                    @include flexbox;
+                    @include flex-direction(column);
+
+                    input[type='text'],
+                    input[type='email'],
+                    input[type='number'],
+                    textarea {
+                        border: 2px solid $primary;
+                        border-radius: 15px;
+                        padding: 19px;
+                        background-color: $white;
+                        margin-bottom: 24px;
+
+                        &:focus {
+                            outline: 0;
+                        }
+
+                        @include placeholder(16px,#000);
+                    }
+
+                    textarea {
+                        min-height: 180px;
+                    }
+
+                    .gform_footer {
+                        .gform_button {
+                            @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                            @include hover-transition;
+                            cursor: pointer;
+                            width: 100%;
+                            max-width: 200px;
+
+                            &:focus,
+                            &:hover {
+                                @include theme-btn-hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .check-availability-section {
+        padding: 100px 134px;
+
+        .check-availability-outerwrap {
+            h2 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            .check-availability-form {
+                form {
+
+                    @include flexbox;
+                    @include flex-direction(column);
+
+                    input[type='text'],
+                    input[type='email'],
+                    input[type='number'],
+                    textarea {
+                        border: 2px solid $primary;
+                        border-radius: 15px;
+                        padding: 19px;
+                        background-color: $white;
+                        margin-bottom: 24px;
+
+                        &:focus {
+                            outline: 0;
+                        }
+
+                        @include placeholder(16px, #000);
+                    }
+
+                    textarea {
+                        min-height: 180px;
+                    }
+
+                    .gform_footer {
+                        .gform_button {
+                            @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                            @include hover-transition;
+                            cursor: pointer;
+                            width: 100%;
+
+                            &:focus,
+                            &:hover {
+                                @include theme-btn-hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .check-availability-section {
+        padding: 70px 60px;
+
+        .check-availability-outerwrap {
+            h2 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            .check-availability-form {
+                form {
+
+                    @include flexbox;
+                    @include flex-direction(column);
+
+                    input[type='text'],
+                    input[type='email'],
+                    input[type='number'],
+                    textarea {
+                        border: 2px solid $primary;
+                        border-radius: 15px;
+                        padding: 19px;
+                        background-color: $white;
+                        margin-bottom: 24px;
+
+                        &:focus {
+                            outline: 0;
+                        }
+
+                        @include placeholder(14px, #000);
+                    }
+
+                    textarea {
+                        min-height: 180px;
+                    }
+
+                    .gform_footer {
+                        .gform_button {
+                            @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                            @include hover-transition;
+                            cursor: pointer;
+                            width: 100%;
+                            max-width: 150px;
+
+                            &:focus,
+                            &:hover {
+                                @include theme-btn-hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .check-availability-section {
+        padding: 70px 30px;
+
+        .check-availability-outerwrap {
+            h2 {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            .check-availability-form {
+                form {
+
+                    @include flexbox;
+                    @include flex-direction(column);
+
+                    input[type='text'],
+                    input[type='email'],
+                    input[type='number'],
+                    textarea {
+                        border-radius: 12px;
+                        padding: 14px 19px;
+
+                        &:focus {
+                            outline: 0;
+                        }
+
+                        @include placeholder(14px, #000);
+                    }
+
+                    textarea {
+                        min-height: 180px;
+                    }
+
+                    .gform_footer {
+                        .gform_button {
+                            @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                            @include hover-transition;
+                            cursor: pointer;
+                            width: 100%;
+                            max-width: 120px;
+
+                            &:focus,
+                            &:hover {
+                                @include theme-btn-hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .check-availability-section {
+        padding: 40px 15px;
+
+        .check-availability-outerwrap {
+            h2 {
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+
+            .check-availability-form {
+                form {
+
+                    @include flexbox;
+                    @include flex-direction(column);
+
+                    input[type='text'],
+                    input[type='email'],
+                    input[type='number'],
+                    textarea {
+                        border-radius: 12px;
+                        padding: 14px 19px;
+
+                        &:focus {
+                            outline: 0;
+                        }
+
+                        @include placeholder(12px, #000);
+                    }
+
+                    textarea {
+                        min-height: 180px;
+                    }
+
+                    .gform_button {
+                        @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 100px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC END:

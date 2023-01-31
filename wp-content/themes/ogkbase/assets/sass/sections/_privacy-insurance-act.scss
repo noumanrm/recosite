@@ -1,0 +1,174 @@
+.privacy-insurance-act-section {
+    margin: 0 140px;
+
+    .privacy-insurance-act-innerwrap {
+        padding: 100px 196px;
+        border-bottom: 2px solid $primary;
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+            margin-bottom: 10px;
+        }
+
+        span {
+            font-size: 18px;
+            line-height: 1.2;
+            color: #ED207A;
+            font-weight: $bold;
+            font-family: $fontMain;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.4;
+            color: $primary;
+            font-weight: $regular;
+            font-family: $fontMain;
+            margin-bottom: 10px;
+
+            a {
+                color: #ED207A;
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .privacy-insurance-act-section {
+        margin: 0 140px;
+
+        .privacy-insurance-act-innerwrap {
+            padding: 100px 96px;
+
+            h2 {
+                font-size: 32px;
+            }
+
+            span {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .privacy-insurance-act-section {
+        margin: 0 100px;
+
+        .privacy-insurance-act-innerwrap {
+            padding: 70px 96px;
+
+            h2 {
+                font-size: 28px;
+            }
+
+            span {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .privacy-insurance-act-section {
+        margin: 0 70px;
+
+        .privacy-insurance-act-innerwrap {
+            padding: 50px 35px;
+
+            h2 {
+                font-size: 25px;
+            }
+
+            span {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .privacy-insurance-act-section {
+        margin: 0 70px;
+
+        .privacy-insurance-act-innerwrap {
+            padding: 40px 30px;
+
+            h2 {
+                font-size: 21px;
+            }
+
+            span {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .privacy-insurance-act-section {
+        margin: 0 30px;
+
+        .privacy-insurance-act-innerwrap {
+            padding: 40px 30px;
+
+            h2 {
+                font-size: 21px;
+            }
+
+            span {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .privacy-insurance-act-section {
+        margin: 0 15px;
+
+        .privacy-insurance-act-innerwrap {
+            padding: 20px 15px;
+
+            h2 {
+                font-size: 19px;
+            }
+
+            span {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC END:

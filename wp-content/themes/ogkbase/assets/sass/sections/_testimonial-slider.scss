@@ -1,0 +1,200 @@
+.testimonial-slider-section {
+   background-color: #00CCFF;
+    padding: 100px 0px;
+
+    .container {
+        overflow: visible;
+        padding: 0px;
+
+        .testimonial-slider-innerwrap {
+            position: relative;
+            background-color: $white;
+            padding: 50px 98px 60px;
+            border: 2px solid $primary;
+            border-radius: 14px;
+            max-width: 964px;
+            margin: 0 auto;
+
+            h3 {
+                font-size: 25px;
+                line-height: 1.2;
+                color: $light;
+                font-weight: $bold;
+                font-family: $fontMain;
+                margin-bottom: 19px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.7;
+                color: $light;
+                font-weight: 300;
+                font-family: $input-serif;
+                margin-bottom: 30px;
+            }
+
+            span {
+                font-size: 18px;
+                line-height: 1.2;
+                color: $light;
+                font-weight: $bold;
+                font-family: $fontMain;
+                background-color: #CCF5FF;
+            }
+
+            .testimonial-img1 {
+                position: absolute;
+                left: -100px;
+                top: 19px;
+            }
+
+            .testimonial-img2 {
+                position: absolute;
+                right: -90px;
+                bottom: 44px;
+            }
+            .testimonial-slider-btn{
+                position: absolute;
+                right: 102px;
+                bottom: -26px;
+            }
+            .btn-blue{
+                @include theme-btn(18px,#FACE37,18px 43px,6px 7px 0px 0px rgba(0,0,0,1));
+                &:focus,
+                &:hover{
+                   @include theme-btn-hover;
+                }
+            }
+            
+        }
+        .owl-carousel .owl-stage-outer{
+            padding: 40px 8px;
+        }
+        .owl-nav {
+            position: absolute;
+            left: 17%;
+            bottom: 25px;
+            @include  flexbox;
+            @include align-items(center);
+            .owl-prev {
+                @include left-arrow(0px);
+                position: static;
+                margin-right: 10px;
+            }
+
+            .owl-next {
+                @include right-arrow(0px);
+                position: static;
+            }
+        }
+        .owl-dots{
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            .owl-dot{
+                width: 20px;
+                height: 20px;
+                background: $white;
+                border-radius: 50%;
+                border: 2px solid $primary;
+                margin: 0 5px;
+                &.active {
+                    background-color: #9933FF;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-xs){
+    .testimonial-slider-section{
+        .container{
+            .owl-stage-outer{
+                padding: 80px 8px;
+                .testimonial-slider-innerwrap{
+                    padding: 50px 68px 60px;
+                    max-width: 800px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg){
+    .testimonial-slider-section{
+        .container{
+            .owl-carousel{
+                .owl-stage-outer{
+                    padding: 80px 8px;
+                    .testimonial-slider-innerwrap{
+                        padding: 50px 68px 60px;
+                        max-width: 90%;
+                        .testimonial-img1{         
+                            left: 20px;
+                            top: -80px;
+                        }
+                        .testimonial-img2{
+                            right: 30px;
+                            bottom: unset;
+                            top: -10px;
+                        }
+                        .testimonial-slider-btn{
+                            right: 42px;
+                        }
+                    }
+                }
+            }
+            .owl-nav{
+                left: 14%;
+                bottom: 65px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md){
+    .testimonial-slider-section{
+        .container{
+            .owl-carousel{
+                .owl-stage-outer{
+                    .testimonial-slider-innerwrap{
+                        padding: 50px 40px 60px;
+                        .testimonial-img1{         
+                            left: 20px;
+                            top: -80px;
+                        }
+                        .testimonial-img2{
+                            right: 0px;
+                            bottom: unset;
+                            top: -78px;
+                        }
+                        .testimonial-slider-btn{
+                            right: 42px;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .owl-nav{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-phone){
+    .testimonial-slider-section{
+        .container{
+            .owl-carousel{
+                .owl-stage-outer{
+                    padding: 80px 0px;
+                    .testimonial-slider-innerwrap{
+                        padding: 50px 20px 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+// RESPONSIVE SEC END:

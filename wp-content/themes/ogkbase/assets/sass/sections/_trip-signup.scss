@@ -1,0 +1,387 @@
+.trip-signup-section {
+    background-color: #F0EEE6;
+    padding: 100px 140px;
+
+    .signup-sec-outerwrap {
+        border: 2px solid $primary;
+        border-radius: 20px;
+        overflow: hidden;
+        @include flexbox;
+        @include align-items(center);
+        background-color: $white;
+        .signup-sec-img {
+            width: 60%;
+            border-right: 2px solid $primary;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .signup-sec-content {
+            width: 40%;
+            padding: 90px 78px;
+
+            h2 {
+                font-size: 32px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $bold;
+                font-family: $fontMain;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 30px;
+            }
+
+            .signup-sec-btn {
+                .btn-blue {
+                    @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-med){
+    .trip-signup-section {
+        padding: 100px 140px;
+    
+        .signup-sec-outerwrap {
+    
+            .signup-sec-content {
+                width: 40%;
+                padding: 60px 78px;
+    
+                h2 {
+                    font-size: 29px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $bold;
+                    font-family: $fontMain;
+                    text-align: left;
+                    margin-bottom: 20px;
+                }
+    
+                p {
+                    font-size: 18px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $regular;
+                    font-family: $fontMain;
+                    margin-bottom: 30px;
+                }
+    
+                .signup-sec-btn {
+                    .btn-blue {
+                        @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+    
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-sm){
+    .trip-signup-section {
+        // padding: 0 140px 100px;
+    
+        .signup-sec-outerwrap {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            @include flexbox;
+            @include align-items(center);
+    
+            .signup-sec-img {
+                width: 60%;
+                border-right: 2px solid $primary;
+    
+                img {
+                    width: 100%;
+                }
+            }
+    
+            .signup-sec-content {
+                width: 40%;
+                padding: 30px 48px;
+    
+                h2 {
+                    font-size: 29px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $bold;
+                    font-family: $fontMain;
+                    text-align: left;
+                    margin-bottom: 20px;
+                }
+    
+                p {
+                    font-size: 18px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $regular;
+                    font-family: $fontMain;
+                    margin-bottom: 30px;
+                }
+    
+                .signup-sec-btn {
+                    .btn-blue {
+                        @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+    
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-desktop-xs){
+    .trip-signup-section {
+        padding: 50px 100px;
+    
+        .signup-sec-outerwrap {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            @include flexbox;
+            @include align-items(center);
+    
+            .signup-sec-img {
+                width: 60%;
+                border-right: 2px solid $primary;
+    
+                img {
+                    width: 100%;
+                }
+            }
+    
+            .signup-sec-content {
+                width: 40%;
+                padding: 20px 48px;
+    
+                h2 {
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+    
+                .signup-sec-btn {
+                    .btn-blue {
+                        @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+    
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-tablet-lg){
+    .trip-signup-section {
+        // padding: 0 50px 100px;
+    
+        .signup-sec-outerwrap {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            @include flexbox;
+            @include align-items(center);
+            @include flex-wrap(wrap);
+            .signup-sec-img {
+                width: 100%;
+                border-right: unset;
+    
+                img {
+                    width: 100%;
+                }
+            }
+    
+            .signup-sec-content {
+                width: 100%;
+                padding: 15px 48px;
+    
+                h2 {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+    
+                .signup-sec-btn {
+                    .btn-blue {
+                        @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+    
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-tablet-md){
+    .trip-signup-section {
+        padding: 50px 30px;
+    
+        .signup-sec-outerwrap {
+            @include flex-wrap(wrap);
+            .signup-sec-img {
+                width: 100%;
+    
+                img {
+                    width: 100%;
+                }
+            }
+    
+            .signup-sec-content {
+                width: 100%;
+                padding: 20px 48px;
+    
+                h2 {
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+    
+                .signup-sec-btn {
+                    .btn-blue {
+                        @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+    
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-tablet-sm){
+    .trip-signup-section {
+        padding: 50px 15px;
+    
+        .signup-sec-outerwrap {
+            @include flex-wrap(wrap);
+            .signup-sec-img {
+                width: 100%;
+                // border-right: 2px solid $primary;
+    
+                img {
+                    width: 100%;
+                }
+            }
+    
+            .signup-sec-content {
+                width: 100%;
+                padding: 20px 30px;
+    
+                h2 {
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+    
+                .signup-sec-btn {
+                    .btn-blue {
+                        // @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+    
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-phone){
+    .trip-signup-section {
+        // padding: 0 15px 100px;
+    
+        .signup-sec-outerwrap {
+            @include flex-wrap(wrap);
+            .signup-sec-img {
+                width: 100%;
+                // border-right: 2px solid $primary;
+    
+                img {
+                    width: 100%;
+                }
+            }
+    
+            .signup-sec-content {
+                width: 100%;
+                padding: 20px 10px;
+    
+                h2 {
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+    
+                .signup-sec-btn {
+                    .btn-blue {
+                        @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }   
+}
+// RESPONSIVE SEC END:

@@ -1,0 +1,191 @@
+.what-to-bring-section{
+    background-color: $white;
+    padding: 100px 336px;
+    .what-to-bring-outerwrap{
+        h2{
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 25px;
+            line-height: 1.4;
+            color: $primary;
+            font-weight: $regular;
+            font-family: $fontMain;
+            margin-bottom: 39px;
+        }
+        ul{
+            @include  flexbox;
+            @include flex-wrap(wrap);
+            padding-left: 60px;
+            li{
+                font-size: 18px;
+                line-height: 1.4;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 39px;
+                list-style-type: none;
+                width: 50%;
+                padding-right: 70px;
+                position: relative;
+                &::before{
+                    content: "";
+                    @include left-arrow (-60px);
+                    width: 35px;
+                    height: 35px;
+                    top: 0px;
+                    background-image: url('/wp-content/themes/ogkbase/images/tick.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: #ED207A;
+                }
+            }
+        }
+    }
+}
+
+// RESPNSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-med){
+    .what-to-bring-section{
+        padding: 100px 266px;
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-sm){
+    .what-to-bring-section{
+        background-color: $white;
+        padding: 80px 160px;
+        .what-to-bring-outerwrap{
+            h2{
+                font-size: 29px;
+            }
+            p{
+                font-size: 18px;
+            }
+            ul{
+                li{
+                    font-size: 16px;
+                    width: 50%;
+                    padding-right: 70px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-xs){
+    .what-to-bring-section{
+        padding: 80px 130px;
+        .what-to-bring-outerwrap{
+            h2{
+                font-size: 29px;
+            }
+            p{
+                font-size: 18px;
+            }
+            ul{
+                li{
+                    font-size: 16px;
+                    width: 50%;
+                    padding-right: 70px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg){
+    .what-to-bring-section{
+        padding: 80px 130px;
+        .what-to-bring-outerwrap{
+            h2{
+                font-size: 29px;
+            }
+            p{
+                font-size: 18px;
+            }
+            ul{
+                @include flex-direction(column);
+                li{
+                    font-size: 16px;
+                    width: 100%;
+                    padding-right: 70px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md){
+    .what-to-bring-section{
+        padding: 50px 80px;
+        .what-to-bring-outerwrap{
+            h2{
+                font-size: 29px;
+            }
+            p{
+                font-size: 18px;
+            }
+            ul{
+                @include flex-direction(column);
+                li{
+                    font-size: 16px;
+                    width: 100%;
+                    padding-right: 70px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-sm){
+    .what-to-bring-section{
+        padding: 30px 50px;
+        .what-to-bring-outerwrap{
+            h2{
+                font-size: 26px;
+            }
+            p{
+                font-size: 16px;
+            }
+            ul{
+                @include flex-direction(column);
+                li{
+                    font-size: 16px;
+                    width: 100%;
+                    padding-right: 0px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-phone){
+    .what-to-bring-section{
+        padding: 30px 15px;
+        .what-to-bring-outerwrap{
+            h2{
+                font-size: 19px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 14px;
+            }
+            ul{
+                @include flex-direction(column);
+                li{
+                    font-size: 14px;
+                    width: 100%;
+                    margin-bottom: 30px;
+                    &::before{
+                        top: -12px;
+                    }
+                }
+            }
+        }
+    }
+}
+// RESPNSIVE SEC END:

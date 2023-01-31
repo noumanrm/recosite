@@ -1,0 +1,69 @@
+.marquee-tag-section{
+    position: relative;
+    .marquee-img{
+        position: absolute;
+        top: -111px;
+        left: 165px;
+        z-index: 99;
+    }
+    marquee{
+        padding: 20px 0;
+        font-size: 22px;
+        line-height: 1.2;
+        background-color: #FACE37;
+        color: $primary;
+        font-weight: $light;
+        font-family: $input-serif;
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm){
+    .marquee-tag-section{
+        .marquee-img{
+            position: absolute;
+            top: -111px;
+            left: 165px;
+            z-index: 99;
+        }
+        marquee{
+            font-size: 18px;
+            padding: 15px 0;
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-xs){
+    .marquee-tag-section{
+        .marquee-img{
+            left: 65px;
+        }
+        marquee{
+            font-size: 18px;
+            padding: 15px 0;
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-sm){
+    .marquee-tag-section{
+        .marquee-img{
+            left: 25px;
+            width: 28%;
+            top: -80px;
+        }
+        marquee{
+            font-size: 14px;
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-phone){
+    .marquee-tag-section{
+        .marquee-img{
+            left: 25px;
+            width: 100%;
+            top: unset;
+            bottom: -3px;
+            max-width: 120px;
+        }
+    }
+}
+// RESPONSIVE SEC END:

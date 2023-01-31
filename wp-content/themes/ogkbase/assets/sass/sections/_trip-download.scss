@@ -1,0 +1,385 @@
+.trip-download-section{
+    .trip-download-outerwrap{
+        padding: 100px 140px;
+        h2{
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .trip-download-innerwrap{
+            @include  flexbox;
+            @include align-items(flex-start);
+            @include justify-content(center);
+            .trip-download-content-outerwrap{
+                width: 33.3%;
+                border: 2px solid $primary;
+                border-radius: 20px;
+                background-color: #F0EEE6;
+                overflow: hidden;
+                margin-right: 16px;
+                
+                .trip-download-img{
+                    width: 100%;
+                    max-width: 286px;
+                    margin: 0 auto;
+                    padding: 48px 0px;
+                    img{
+                        width: 100%;
+                        height: 250px;
+                        object-fit: contain;
+                    }
+                }
+                .trip-download-content{
+                    background-color: $white;
+                    padding: 29px 40px;
+                    h3{
+                        font-size: 25px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-size: 18px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $regular;
+                        font-family: $fontMain;
+                        min-height: 65px;
+                        margin-bottom: 25px;
+                    }
+                    .trip-download-btn{
+                        .pink-btn{
+                            @include pink-btn(20px);
+                            &::after{
+                                content: "";
+                                @include right-arrow (-40px);
+                                width: 35px;
+                                height: 35px;
+                                top: -5px;
+                                background-image: url('/wp-content/themes/ogkbase/images/play-arrow.svg');
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: 31%;
+                                background-color: #ED207A;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    .trip-download-btn{
+                        .pink-btn{
+                            @include pink-btn(20px);
+                            &::after{
+                                background-image: url('/wp-content/themes/ogkbase/images/down-arrow.svg');
+                            }
+                        }
+                    }
+                }
+                &:last-child{
+                    margin-right: 0px;
+                    .trip-download-btn{
+                        .pink-btn{
+                            @include pink-btn(20px);
+                            &::after{
+                                background-image: url('/wp-content/themes/ogkbase/images/down-arrow.svg');
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm){
+    .trip-download-section{
+        .trip-download-outerwrap{
+            padding: 80px 100px;
+            h2{
+                font-size: 31px;
+            }
+            .trip-download-innerwrap{
+                .trip-download-content-outerwrap{
+                    .trip-download-img{
+                        width: 100%;
+                        max-width: 286px;
+                        margin: 0 auto;
+                        padding: 48px 0px;
+                        img{
+                            width: 100%;
+                            height: 250px;
+                            object-fit: contain;
+                        }
+                    }
+                    .trip-download-content{
+                        background-color: $white;
+                        padding: 29px 40px;
+                        h3{
+                            font-size: 21px;
+                        }
+                        p{
+                            font-size: 16px;
+                            min-height: 58px;
+                        }
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-desktop-xs){
+    .trip-download-section{
+        .trip-download-outerwrap{
+            padding: 80px 70px;
+            h2{
+                font-size: 31px;
+            }
+            .trip-download-innerwrap{
+                .trip-download-content-outerwrap{
+                    .trip-download-img{
+                        width: 100%;
+                        max-width: 206px;
+                        margin: 0 auto;
+                        padding: 48px 0px;
+                        img{
+                            height: 196px;
+                        }
+                    }
+                    .trip-download-content{
+                        background-color: $white;
+                        padding: 24px;
+                        h3{
+                            font-size: 21px;
+                        }
+                        p{
+                            font-size: 14px;
+                            min-height: 50px;
+                        }
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-tablet-lg){
+    .trip-download-section{
+        .trip-download-outerwrap{
+            padding: 80px 70px;
+            h2{
+                font-size: 31px;
+            }
+            .trip-download-innerwrap{
+                flex-wrap: wrap;
+                .trip-download-content-outerwrap{
+                    width: 46%;
+                    margin-bottom: 14px;
+                    .trip-download-img{
+                        width: 100%;
+                        max-width: 206px;
+                        margin: 0 auto;
+                        padding: 48px 0px;
+                        img{
+                            height: 196px;
+                        }
+                    }
+                    .trip-download-content{
+                        background-color: $white;
+                        padding: 24px;
+                        h3{
+                            font-size: 21px;
+                        }
+                        p{
+                            font-size: 14px;
+                            min-height: auto;
+                        }
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-tablet-md){
+    .trip-download-section{
+        .trip-download-outerwrap{
+            padding: 60px 30px;
+            h2{
+                font-size: 31px;
+            }
+            .trip-download-innerwrap{
+                flex-wrap: wrap;
+                .trip-download-content-outerwrap{
+                    width: 100%;
+                    margin-right: 0px;
+                    margin-bottom: 14px;
+                    .trip-download-img{
+                        width: 100%;
+                        max-width: 206px;
+                        margin: 0 auto;
+                        padding: 28px 0px;
+                        img{
+                            height: 196px;
+                        }
+                    }
+                    .trip-download-content{
+                        background-color: $white;
+                        padding: 24px;
+                        h3{
+                            font-size: 21px;
+                        }
+                        p{
+                            font-size: 14px;
+                            min-height: auto;
+                        }
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-phone){
+    .trip-download-section{
+        .trip-download-outerwrap{
+            padding: 40px 15px;
+            h2{
+                font-size: 31px;
+            }
+            .trip-download-innerwrap{
+                flex-wrap: wrap;
+                .trip-download-content-outerwrap{
+                    width: 100%;
+                    margin-right: 0px;
+                    margin-bottom: 14px;
+                    .trip-download-img{
+                        width: 100%;
+                        max-width: 206px;
+                        margin: 0 auto;
+                        padding: 28px 0px;
+                        img{
+                            height: 196px;
+                        }
+                    }
+                    .trip-download-content{
+                        background-color: $white;
+                        padding: 24px;
+                        h3{
+                            font-size: 21px;
+                        }
+                        p{
+                            font-size: 14px;
+                            min-height: auto;
+                        }
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                    &:nth-child(2){
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                        .trip-download-btn{
+                            .pink-btn{
+                                @include pink-btn(18px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+// RESPONSIVE SEC END:

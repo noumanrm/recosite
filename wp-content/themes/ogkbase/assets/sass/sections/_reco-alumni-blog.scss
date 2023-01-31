@@ -1,0 +1,117 @@
+.reco-alumni-blog-section{
+    .our-property-filters-innerwrap{
+        .tab-menu{
+            ul{
+                padding: 21px 0 0;
+                @include flex-wrap(wrap);
+                li{
+                    a{
+                        margin-bottom: 14px;
+                    }
+                   &:first-child{
+                    margin-right: 0px;
+                   } 
+                }
+            }
+        }
+    }
+    .reco-alumni-outerwrap{
+        .featured-alumni-section{
+            padding: 0px;
+            .alumni-bestblog-innerwrap{
+                @include justify-content(flex-start);
+                .alumni-bestblog-img{
+                    border: 2px solid $primary ;
+                }
+            }
+        }
+        .our-property-alumni-blog-section{
+            margin: 0px;
+            padding: 100px 0 0;
+            .our-property-alumni-blog-bottom{
+                a{
+                    &:nth-child(3n){
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .reco-alumni-blog-section{
+        .our-property-filters-innerwrap{
+            .tab-menu{
+                ul{
+                    padding: 21px 0 0;
+                }
+            }
+        }
+        .reco-alumni-outerwrap{
+            .featured-alumni-section{
+                padding: 0px;
+                .alumni-bestblog-innerwrap{
+                    @include justify-content(flex-start);
+                    .alumni-bestblog-img{
+                        border: 2px solid $primary ;
+                    }
+                }
+            }
+            .our-property-alumni-blog-section{
+                margin: 0px;
+                padding: 100px 0 0;
+                .our-property-alumni-blog-bottom{
+                    a{
+                        &:nth-child(2){
+                            margin-right: 0px;
+                        }
+                        &:nth-child(3n){
+                            margin-right: 16px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .reco-alumni-blog-section{
+        .our-property-filters-innerwrap{
+            .tab-menu{
+                ul{
+                    padding: 21px 0 0;
+                }
+            }
+        }
+        .reco-alumni-outerwrap{
+            .featured-alumni-section{
+                padding: 0px;
+                .alumni-bestblog-innerwrap{
+                    @include justify-content(flex-start);
+                    .alumni-bestblog-img{
+                        border: 2px solid $primary ;
+                    }
+                }
+            }
+            .our-property-alumni-blog-section{
+                margin: 0px;
+                padding: 100px 0 0;
+                .our-property-alumni-blog-bottom{
+                    a{
+                        &:nth-child(2){
+                            margin-right: 0px;
+                        }
+                        &:nth-child(3n){
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+// RESPONSIVE SEC END:

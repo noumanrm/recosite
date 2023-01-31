@@ -1,0 +1,229 @@
+.camping-trip-faqs-section {
+    position: relative;
+
+    .admission-faqs-section {
+        background-color: $white;
+        padding: 0px 238px 118px;
+
+        h2 {
+            font-size: 57px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 25px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $regular;
+            font-family: $fontMain;
+            text-align: center;
+            margin-bottom: 39px;
+        }
+
+        .camping-trip-btn {
+            text-align: center;
+
+            .btn-blue {
+                @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+        .admissions-faqs-outerwrap{
+            .accordion-item{
+                .accordion-item-body-content{
+                    p{
+                        font-size: 16px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .camping-trip-faqs-video {
+        video {
+            width: 100%;
+        }
+    }
+
+    .cloud-images {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+        margin: 0 auto;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+// RESPONISVE SEC START:
+
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .camping-trip-faqs-section {
+        .admission-faqs-section {
+            h2 {
+                font-size: 47px;
+            }
+    
+            p {
+                font-size: 21px;
+            }
+    
+            .camping-trip-btn {
+                .btn-blue {
+                    @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .camping-trip-faqs-section {
+        .admission-faqs-section {
+            padding: 50px 118px 118px;
+            h2 {
+                font-size: 43px;
+            }
+    
+            p {
+                font-size: 19px;
+            }
+    
+            .camping-trip-btn {
+                .btn-blue {
+                    @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .camping-trip-faqs-section {
+        .admission-faqs-section {
+            padding: 50px 90px 100px;
+            h2 {
+                font-size: 38px;
+            }
+    
+            p {
+                font-size: 17px;
+            }
+    
+            .camping-trip-btn {
+                .btn-blue {
+                    @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+        .cloud-images{
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .camping-trip-faqs-section {
+        .admission-faqs-section {
+            h2 {
+                font-size: 33px;
+            }
+    
+            p {
+                font-size: 14px;
+            }
+    
+            .camping-trip-btn {
+                .btn-blue {
+    
+                    @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+        .cloud-images{
+         top: 60px;
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .camping-trip-faqs-section {
+        .admission-faqs-section {
+            padding: 50px 30px 80px;
+            h2 {
+                font-size: 29px;
+            }
+    
+            p {
+                font-size: 14px;
+            }
+    
+            .camping-trip-btn {
+                .btn-blue {
+    
+                    // @include theme-btn(18px,#FACE37,18px 43px,6px 7px 0px 0px rgba(0,0,0,1));
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .camping-trip-faqs-section {
+        .admission-faqs-section {
+            padding: 50px 15px 80px;
+            .camping-trip-btn {
+                .btn-blue {
+                    @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+        .cloud-images{
+            width: 90%;
+            top: 30px;
+        }
+    }
+}
+
+// RESPONISVE SEC END:

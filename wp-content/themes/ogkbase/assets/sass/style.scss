@@ -1,0 +1,110 @@
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url("https://use.typekit.net/rai2yvd.css");
+// Sass Settings,  Variables and Mixins
+@import
+"partials/mixins",
+"partials/variables",
+"partials/resets";
+
+
+/*********************
+STYLESHEETS
+*********************/
+
+// import all Plugin CSS
+@import "plugins/owl-carousel";
+
+
+// import all components
+@import
+"components/buttons",
+"components/single-addictiontreatment",
+"components/single-therapeutic",
+"components/single-grouptherapy",
+"components/single-ourproperties",
+"components/single-ourteam",
+"components/single",
+"components/single-alumnievents";
+
+// import all stylesheets
+@import
+"stylesheets/typography",
+"stylesheets/main",
+"stylesheets/header",
+"stylesheets/footer";
+
+// import all section
+@import
+"sections/recovery-helpline",
+"sections/best-practices",
+"sections/featured-alumni",
+"sections/group-therapy",
+"sections/testimonial-slider",
+"sections/welcome-sec",
+"sections/find-meeting",
+"sections/therapeutic-excursions",
+"sections/reco-store",
+"sections/contact-us",
+"sections/posts-showcase",
+"sections/meet-our-team",
+"sections/reco-institute",
+"sections/inner-pages-hero",
+"sections/alumni-buddy-program",
+"sections/alumni-night",
+"sections/accreditations-content",
+"sections/aboutus-testimonials",
+"sections/team-bio",
+"sections/alumni-buddy",
+"sections/admissions-process",
+"sections/what-to-bring",
+"sections/sober-living-housing-guidelines",
+"sections/check-availability",
+"sections/admission-faqs",
+"sections/helpful-pages",
+"sections/camping-trip",
+"sections/camping-trip-detail",
+"sections/trip-signup",
+"sections/trip-download",
+"sections/trip-album",
+"sections/view-album",
+"sections/camping-trip-faqs",
+"sections/orphan-images",
+"sections/orphan-services",
+"sections/verify-insurance-form",
+"sections/patient-right",
+"sections/privacy-insurance-act",
+"sections/contact-admissions-specialist",
+"sections/contact-form",
+"sections/stay-connected",
+"sections/addiction-treatment",
+"sections/therapeutic-excursions2",
+"sections/our-property-alumni-blog",
+"sections/our-property-filters",
+"sections/facility-features",
+"sections/group-therapy2",
+"sections/camping-trip-signup",
+"sections/alumni-blog-media-banner",
+"sections/reco-media-content",
+"sections/reco-alumni-blog",
+"sections/subscribe-newsletter",
+"sections/upcoming-alumni-events",
+"sections/camping-trip-photo-album-slider",
+"sections/marquee-tag",
+"sections/home-gallery",
+"sections/lightbox",
+"sections/find-a-meeting-section";
+
+
+
+// import all templates
+@import "templates/template-home";
+
+// import all sections
+@import
+"sections/basic-hero";
+
+
+// Import Media Queries File LAST
+@import "stylesheets/media-queries";
+

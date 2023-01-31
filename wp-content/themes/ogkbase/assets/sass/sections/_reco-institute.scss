@@ -1,0 +1,588 @@
+#about-us {
+    background-color: #F0EEE6;
+    padding: 0px 238px 100px;
+
+    .reco-institute-innerwrap {
+        .reco-institute-imagewrap {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            margin-bottom: 130px;
+
+            .reco-institute-img {
+                margin-top: -243px;
+                width: 47%;
+                &:first-child {
+                    // width: 40%;
+                    // margin-right: 16px;
+                }
+
+                &:last-child {
+                    // width: 60%;
+                    margin-left: -50px;
+                    margin-bottom: -50px;
+                }
+
+                img {
+                    width: 100%;
+                    // height: 300px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .reco-institute-contentwrap {
+        @include flexbox;
+        @include align-items(flex-start);
+        @include justify-content(center);
+        width: 80%;
+        margin: 0 auto;
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: $primary;
+            font-weight: $regular;
+            font-family: $fontMain;
+
+            &:first-child {
+                margin-right: 30px;
+            }
+        }
+
+        margin-bottom: 94px;
+    }
+
+    .reco-intensive {
+        width: 80%;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            margin-bottom: 30px;
+            font-family: $fontMain;
+        }
+
+        ul {
+            @include flexbox;
+            @include align-items(flex-start);
+            @include flex-wrap(wrap);
+
+            li {
+                width: 50%;
+                font-size: 18px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $regular;
+                margin-bottom: 20px;
+                font-family: $fontMain;
+                list-style-type: none;
+                padding-right: 60px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    border: 2px solid $primary;
+                    background-color: #FACE37;
+                    left: -30px;
+                    top: 3px;
+                    // transform: translateY(-50%);
+                }
+            }
+
+            padding-left: 30px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .our-staff-btn {
+        width: 80%;
+        margin: 0 auto;
+
+        .btn-blue {
+            @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+            &:focus,
+            &:hover {
+                @include theme-btn-hover;
+            }
+        }
+    }
+}
+
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-xl){
+    #about-us {
+        .reco-institute-innerwrap {
+            .reco-institute-imagewrap {
+                .reco-institute-img {
+                    margin-top: -203px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-med){
+    #about-us {
+        padding: 0px 148px 100px;
+
+        .reco-institute-innerwrap {
+            .reco-institute-imagewrap {
+                margin-bottom: 80px;
+
+                .reco-institute-img {
+                    margin-top: -193px;
+
+                    // img {
+                    //     height: 300px;
+                    // }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    #about-us {
+        padding: 0px 148px 100px;
+
+        .reco-institute-innerwrap {
+            .reco-institute-imagewrap {
+                margin-bottom: 80px;
+
+                .reco-institute-img {
+                    margin-top: -163px;
+                    width: 50%;
+
+                    // img {
+                    //     height: 300px;
+                    // }
+                }
+            }
+        }
+
+        .reco-institute-contentwrap {
+            width: 90%;
+
+            p {
+                font-size: 18px;
+
+                &:first-child {
+                    margin-right: 30px;
+                }
+            }
+
+            margin-bottom: 74px;
+        }
+
+        .reco-intensive {
+            width: 90%;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                li {
+                    font-size: 18px;
+                }
+
+                margin-bottom: 50px;
+            }
+        }
+
+        .our-staff-btn {
+            width: 90%;
+            margin: 0 auto;
+
+            .btn-blue {
+                @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    #about-us {
+        padding: 0px 65px 100px;
+
+        .reco-institute-innerwrap {
+            .reco-institute-imagewrap {
+                margin-bottom: 80px;
+
+                .reco-institute-img {
+                    margin-top: -193px;
+
+                    img {
+                        // height: 300px;
+                    }
+                }
+            }
+        }
+
+        .reco-institute-contentwrap {
+            p {
+                font-size: 16px;
+
+                &:first-child {
+                    margin-right: 30px;
+                }
+            }
+
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 74px;
+        }
+
+        .reco-intensive {
+            width: 90%;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 27px;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                li {
+                    font-size: 18px;
+                }
+
+                margin-bottom: 30px;
+            }
+        }
+
+        .our-staff-btn {
+            width: 90%;
+            margin: 0 auto;
+
+            .btn-blue {
+                @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    #about-us {
+        padding: 0px 65px 100px;
+
+        .reco-institute-innerwrap {
+            .reco-institute-imagewrap {
+                // margin-bottom: 50px;
+
+                .reco-institute-img {
+                    margin-top: -113px;
+
+                    img {
+                        // height: 300px;
+                    }
+                }
+            }
+        }
+
+        .reco-institute-contentwrap {
+            p {
+                font-size: 16px;
+
+                &:first-child {
+                    margin-right: 30px;
+                }
+            }
+
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        .reco-intensive {
+            width: 90%;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 27px;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                li {
+                    font-size: 15px;
+                }
+
+                margin-bottom: 30px;
+            }
+        }
+
+        .our-staff-btn {
+            width: 90%;
+            margin: 0 auto;
+
+            .btn-blue {
+                @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    #about-us {
+        padding: 60px 65px;
+
+        .reco-institute-innerwrap {
+            .reco-institute-imagewrap {
+                margin-bottom: 50px;
+                @include flex-direction(column);
+                .reco-institute-img {
+                    margin-top: unset;
+                    width: 60%;
+                    &:last-child{
+                        margin-bottom: unset;
+                        margin-left: unset;
+                    }
+                    img {
+                        // height: 300px;
+                    }
+                }
+            }
+        }
+
+        .reco-institute-contentwrap {
+            p {
+                font-size: 16px;
+
+                &:first-child {
+                    margin-right: 30px;
+                }
+            }
+
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        .reco-intensive {
+            width: 100%;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 27px;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                li {
+                    font-size: 15px;
+                }
+
+                margin-bottom: 30px;
+            }
+        }
+
+        .our-staff-btn {
+            width: 100%;
+            margin: 0 auto;
+
+            .btn-blue {
+                @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    #about-us {
+        padding: 60px 35px;
+
+        .reco-institute-innerwrap {
+            .reco-institute-imagewrap {
+                @include flex-direction(column);
+                margin-bottom: 50px;
+
+                .reco-institute-img {
+                    margin-top: unset;
+                    width: 100%;
+
+                    &:first-child {
+                        width: 100%;
+                        margin: 0 0 15px 0;
+                    }
+
+                    &:last-child {
+                        width: 100%;
+                    }
+
+                    img {
+                        // height: 300px;
+                    }
+                }
+            }
+        }
+
+        .reco-institute-contentwrap {
+            @include flex-direction(column);
+
+            p {
+                font-size: 14px;
+
+                &:first-child {
+                    margin: 0 0 25px 0;
+                }
+            }
+
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        .reco-intensive {
+            width: 100%;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 19px;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                li {
+                    font-size: 15px;
+                    width: 100%;
+                }
+
+                margin-bottom: 30px;
+            }
+        }
+
+        .our-staff-btn {
+            width: 100%;
+            margin: 0 auto;
+
+            .btn-blue {
+                @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    #about-us {
+        padding: 40px 15px;
+
+        .reco-institute-innerwrap {
+            .reco-institute-imagewrap {
+                @include flex-direction(column);
+                margin-bottom: 50px;
+
+                .reco-institute-img {
+                    margin-top: unset;
+                    width: 100%;
+
+                    &:first-child {
+                        width: 100%;
+                        margin: 0 0 15px 0;
+                    }
+
+                    &:last-child {
+                        width: 100%;
+                    }
+
+                    img {
+                        // height: 300px;
+                    }
+                }
+            }
+        }
+
+        .reco-institute-contentwrap {
+            @include flex-direction(column);
+
+            p {
+                font-size: 14px;
+
+                &:first-child {
+                    margin: 0 0 25px 0;
+                }
+            }
+
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        .reco-intensive {
+            width: 100%;
+            margin: 0 auto;
+
+            h2 {
+                font-size: 19px;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                li {
+                    font-size: 15px;
+                    width: 100%;
+                }
+
+                margin-bottom: 30px;
+            }
+        }
+
+        .our-staff-btn {
+            width: 100%;
+            margin: 0 auto;
+
+            .btn-blue {
+                @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+}
+
+// RESPONSIVE SEC END:

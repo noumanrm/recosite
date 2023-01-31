@@ -1,0 +1,526 @@
+
+.subscribe-newsletter-section {
+    @include flexbox;
+    @include align-items(flex-end);
+    @include justify-content(center);
+    padding: 30px 210px 0 126px;
+
+    .newsletter-img {
+        width: 50%;
+        margin-bottom: -3px;
+        margin-right: 106px;
+    }
+
+    .newsletter-content {
+        width: 50%;
+        max-width: 380px;
+        margin-bottom: 103px;
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+        form {
+
+            @include flexbox;
+            @include flex-direction(column);
+        
+            input[type='text'],
+            input[type='email'],
+            input[type='number'],
+            textarea {
+                border: 2px solid $primary;
+                border-radius: 15px;
+                padding: 19px;
+                background-color: $white;
+                margin-bottom: 24px;
+                // width: 80%;      
+                &:focus {
+                    outline: 0;
+                }
+        
+                @include placeholder(18px, #000);
+            }
+            textarea {
+                min-height: 180px;
+                resize: none;
+                margin-bottom: 0px;
+            }
+        
+            .gform_fields {
+                grid-row-gap: 0;
+            }
+        
+            .gform_footer {
+                padding: 0px;
+                .gform_button {
+                    @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    width: 100%;
+                    max-width: 200px;
+                    border-radius: 29px;
+                    padding: 18px 33px;
+                    margin-bottom: 0px;
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONISVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .subscribe-newsletter-section {
+        padding: 30px 15px 0;
+
+        .newsletter-img {
+            width: 45%;
+            margin-bottom: -3px;
+            margin-right: 106px;
+        }
+
+        .newsletter-content {
+            max-width: 325px;
+            margin-bottom: 73px;
+
+            h2 {
+                font-size: 27px;
+                text-align: left;
+                margin-bottom: 24px;
+            }
+
+            form {
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                textarea {
+                    border-radius: 11px;
+                    padding: 15px 19px;
+                    margin-bottom: 24px;
+                    // width: 80%;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(14px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                    resize: none;
+                    margin-bottom: 0px;
+                }
+
+                .gform_fields {
+                    grid-row-gap: 0;
+                }
+
+                .gform_footer {
+                    padding: 0px;
+
+                    .gform_button {
+                        @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 200px;
+                        border-radius: 29px;
+                        padding: 18px 33px;
+                        margin-bottom: 0px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .subscribe-newsletter-section {
+        padding: 30px 15px 0;
+
+        .newsletter-img {
+            width: 45%;
+            margin-bottom: -3px;
+            margin-right: 106px;
+        }
+
+        .newsletter-content {
+            max-width: 325px;
+            margin-bottom: 33px;
+
+            h2 {
+                font-size: 23px;
+                text-align: left;
+                margin-bottom: 17px;
+            }
+
+            form {
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                textarea {
+                    border-radius: 11px;
+                    padding: 15px 19px;
+                    margin-bottom: 17px;
+                    // width: 80%;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(14px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                    resize: none;
+                    margin-bottom: 0px;
+                }
+
+                .gform_fields {
+                    grid-row-gap: 0;
+                }
+
+                .gform_footer {
+                    padding: 0px;
+
+                    .gform_button {
+                        @include theme-btn(16px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 200px;
+                        border-radius: 29px;
+                        padding: 18px 33px;
+                        margin-bottom: 0px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .subscribe-newsletter-section {
+        padding: 30px 15px 0;
+
+        .newsletter-img {
+            width: 45%;
+            margin-bottom: -3px;
+            margin-right: 43px;
+        }
+
+        .newsletter-content {
+            max-width: 275px;
+            margin-bottom: 33px;
+
+            h2 {
+                font-size: 23px;
+                text-align: left;
+                margin-bottom: 17px;
+            }
+
+            form {
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                textarea {
+                    border-radius: 11px;
+                    padding: 15px 19px;
+                    margin-bottom: 17px;
+                    // width: 80%;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(14px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                    resize: none;
+                    margin-bottom: 0px;
+                }
+
+                .gform_fields {
+                    grid-row-gap: 0;
+                }
+
+                .gform_footer {
+                    padding: 0px;
+
+                    .gform_button {
+                        @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 150px;
+                        border-radius: 29px;
+                        padding: 14px 33px;
+                        margin-bottom: 0px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .subscribe-newsletter-section {
+        padding: 30px 15px 0;
+
+        .newsletter-img {
+            width: 45%;
+            margin-bottom: -3px;
+            margin-right: 43px;
+        }
+
+        .newsletter-content {
+            max-width: 275px;
+            margin-bottom: 33px;
+
+            h2 {
+                font-size: 23px;
+                text-align: left;
+                margin-bottom: 17px;
+            }
+
+            form {
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                textarea {
+                    border-radius: 11px;
+                    padding: 7px 19px;
+                    margin-bottom: 17px;
+                    // width: 80%;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(14px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                    resize: none;
+                    margin-bottom: 0px;
+                }
+
+                .gform_fields {
+                    grid-row-gap: 0;
+                }
+
+                .gform_footer {
+                    padding: 0px;
+
+                    .gform_button {
+                        @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 150px;
+                        border-radius: 29px;
+                        padding: 14px 33px;
+                        margin-bottom: 0px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .subscribe-newsletter-section {
+        padding: 30px 15px 0;
+        @include flex-direction(column-reverse);
+
+        .newsletter-img {
+            width: 100%;
+            margin-bottom: -3px;
+            margin-right: 0px;
+        }
+
+        .newsletter-content {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 33px;
+
+            h2 {
+                font-size: 23px;
+                text-align: left;
+                margin-bottom: 17px;
+            }
+
+            form {
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                textarea {
+                    border-radius: 11px;
+                    padding: 7px 19px;
+                    margin-bottom: 17px;
+                    // width: 80%;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(14px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                    resize: none;
+                    margin-bottom: 0px;
+                }
+
+                .gform_fields {
+                    grid-row-gap: 0;
+                }
+
+                .gform_footer {
+                    padding: 0px;
+
+                    .gform_button {
+                        @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 150px;
+                        border-radius: 29px;
+                        padding: 14px 33px;
+                        margin-bottom: 0px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .subscribe-newsletter-section {
+        padding: 30px 15px 0;
+
+        .newsletter-img {
+            width: 100%;
+            margin-bottom: -3px;
+            margin-right: 0px;
+        }
+
+        .newsletter-content {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 33px;
+
+            h2 {
+                font-size: 23px;
+                text-align: left;
+                margin-bottom: 17px;
+            }
+
+            form {
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                textarea {
+                    border-radius: 11px;
+                    padding: 7px 19px;
+                    margin-bottom: 17px;
+                    // width: 80%;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(14px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                    resize: none;
+                    margin-bottom: 0px;
+                }
+
+                .gform_fields {
+                    grid-row-gap: 0;
+                }
+
+                .gform_footer {
+                    padding: 0px;
+
+                    .gform_button {
+                        @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        max-width: 100px;
+                        border-radius: 29px;
+                        margin-bottom: 0px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONISVE SEC END:
+

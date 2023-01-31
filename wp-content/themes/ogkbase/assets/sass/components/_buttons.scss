@@ -1,0 +1,40 @@
+// Universal Button Styles
+
+
+// Button Container
+.btn-wrap {
+  @include flexbox();
+  margin-top: 20px;
+}
+
+// Default Button
+.btn {
+  padding: 15px 30px;
+  font-family: $fontMain;
+  font-weight: $bold;
+  text-align: center;
+  border: 2px solid transparent;
+  background: $primary;
+  color: $white;
+  @include hover-transition();
+  &:hover {
+    background: $accent;
+  }
+}
+
+.btn-blue{
+  @include theme-btn(18px,#00CCFF,18px 43px,6px 7px 0px 0px rgba(0,0,0,1));
+  &:focus,
+  &:hover{
+     @include theme-btn-hover;
+  }
+}
+
+// PINK BUTTON START:
+.pink-btn{
+  @include pink-btn(20px);
+  &::after{
+    @include pink-right-arrow;
+  }
+}
+// PINK BUTTON END:

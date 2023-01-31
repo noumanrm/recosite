@@ -1,0 +1,216 @@
+.accreditations-content-section {
+    margin: -200px 140px 0;
+
+    .accreditations-content-outerwrap {
+        .accreditations-content-innerwrap {
+            @include flexbox;
+            @include align-items(flex-start);
+            padding: 100px 0px;
+            border-top: 2px solid $primary;
+
+            .accreditations-content-img {
+                width: 152px;
+                height: 120px;
+                margin-right: 44px;
+
+                img {}
+            }
+
+            .accreditations-content-content {
+                width: 80%;
+
+                h2 {
+                    font-size: 32px;
+                    line-height: 1.2;
+                    font-weight: $bold;
+                    color: $primary;
+                    font-family: $fontMain;
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    font-size: 18px;
+                    line-height: 1.2;
+                    font-weight: $bold;
+                    color: #ED207A;
+                    text-transform: uppercase;
+                    font-family: $fontMain;
+                    display: inline-block;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.4;
+                    font-weight: $regular;
+                    color: $primary;
+                    font-family: $fontMain;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-med) {
+    .accreditations-content-section {
+        margin: -130px 140px 0;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .accreditations-content-section {
+        // margin: 0px 80px;
+
+        .accreditations-content-outerwrap {
+            .accreditations-content-innerwrap {
+                padding: 70px 0px;
+
+                .accreditations-content-img {
+                    width: 152px;
+                    height: 120px;
+                    margin-right: 44px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .accreditations-content-section {
+        margin: -130px 80px 0;
+
+        .accreditations-content-outerwrap {
+            .accreditations-content-innerwrap {
+                padding: 60px 0px;
+
+                .accreditations-content-img {
+                    width: 132px;
+                    height: 100px;
+                    margin-right: 24px;
+                }
+
+                .accreditations-content-content {
+                    width: 80%;
+
+                    h2 {
+                        font-size: 29px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .accreditations-content-section {
+        // margin: 0px 50px;
+
+        .accreditations-content-outerwrap {
+            .accreditations-content-innerwrap {
+                padding: 40px 0px;
+                @include flex-direction(column);
+
+                .accreditations-content-img {
+                    width: 132px;
+                    height: 100px;
+                    margin-right: 24px;
+                }
+
+                .accreditations-content-content {
+                    width: 100%;
+
+                    h2 {
+                        font-size: 27px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .accreditations-content-section {
+        margin: -130px 30px 0;
+
+        .accreditations-content-outerwrap {
+            .accreditations-content-innerwrap {
+                padding: 20px 0px 30px;
+
+                .accreditations-content-img {
+                    width: 132px;
+                    height: 100px;
+                    margin-right: 24px;
+                }
+
+                .accreditations-content-content {
+                    width: 100%;
+
+                    h2 {
+                        font-size: 23px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .accreditations-content-section {
+        margin: 0px 15px;
+
+        .accreditations-content-outerwrap {
+            .accreditations-content-innerwrap {
+                padding: 20px 0px 30px;
+
+                .accreditations-content-img {
+                    width: 132px;
+                    height: 100px;
+                    margin-right: 24px;
+                }
+
+                .accreditations-content-content {
+                    width: 100%;
+
+                    h2 {
+                        font-size: 21px;
+                    }
+
+                    span {
+                        font-size: 15px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC END:

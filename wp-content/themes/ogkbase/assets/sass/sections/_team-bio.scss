@@ -1,0 +1,549 @@
+.team-bio-section {
+    padding: 204px 336px 100px;
+
+    .team-bio-outerwrap {
+        h1 {
+            font-size: 57px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $extraBold;
+            margin-bottom: 52px;
+            text-transform: uppercase;
+            font-family: $fontMain;
+        }
+
+        .team-bio-innerwrap {
+            @include flexbox;
+            @include align-items(center);
+            margin-bottom: 50px;
+            border-top: 2px solid $primary;
+            border-bottom: 2px solid $primary;
+            padding: 50px 0px;
+            .team-bio-img {
+                width: 217px;
+                height: 217px;
+                border: 2px solid $primary;
+                border-radius: 50%;
+                z-index: 1;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .team-bio-content {
+                padding: 29px 29px 29px 149px;
+                border: 2px solid transparent;
+                border-radius: 20px;
+                width: 86%;
+                // max-width: 660px;
+                margin-left: -110px;
+
+                h2 {
+                    font-size: 32px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $bold;
+                    margin-bottom: 10px;
+                    font-family: $fontMain;
+                }
+
+                span {
+                    font-size: 25px;
+                    line-height: 1.2;
+                    color: #ED207A;
+                    font-weight: $regular;
+                    display: inline-block;
+                    font-family: $fontMain;
+                }
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.4;
+            color: $primary;
+            font-weight: $regular;
+            font-family: $fontMain;
+            margin-bottom: 14px;
+        }
+
+        .back-btn {
+            display: block;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            width: 14%;
+            margin-left: auto;
+
+            a.pink-btn.back {
+                position: relative;
+                z-index: 9;
+                @include pink-btn(20px);
+
+                &::after {
+                    @include pink-right-arrow;
+                    left: -20px;
+                    transform: rotate(180deg);
+                    top: 4px;
+                }
+
+                &::before {
+                    @include yellow-bg(#face37);
+                }
+            }
+
+            margin-bottom: 25px;
+
+            &:hover {
+                a.pink-btn.back {
+                    &::before {
+                        @include yellow-hover-effect;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONISVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm){
+    .team-bio-section {
+        padding: 204px 200px 100px;
+    
+        .team-bio-outerwrap {
+            h1 {
+                font-size: 57px;
+            }
+    
+            .team-bio-innerwrap {
+    
+                .team-bio-img {
+                    width: 217px;
+                    height: 217px;
+                    img {
+                        width: 100%;
+                    }
+                }
+    
+                .team-bio-content {
+                    padding: 29px 29px 29px 149px;
+                    width: 86%;
+                    margin-left: -110px;
+    
+                    h2 {
+                        font-size: 32px;
+                    }
+    
+                    span {
+                        font-size: 25px;
+                    }
+                }
+            }
+    
+            p {
+                font-size: 18px;
+            }
+    
+            .back-btn {
+                display: inline-block;
+                margin-top: 50px;
+    
+                a.pink-btn.back {
+                    position: relative;
+                    z-index: 9;
+                    @include pink-btn(20px);
+    
+                    &::after {
+                        @include pink-right-arrow;
+                        left: -20px;
+                        transform: rotate(180deg);
+                        top: 4px;
+                    }
+    
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+    
+                margin-bottom: 25px;
+    
+                &:hover {
+                    a.pink-btn.back {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-xs){
+    .team-bio-section {
+        padding: 204px 100px 100px;
+    
+        .team-bio-outerwrap {
+            h1 {
+                font-size: 47px;
+            }
+    
+            .team-bio-innerwrap {
+    
+                .team-bio-img {
+                    width: 200px;
+                    height: 200px;
+                    img {
+                        width: 100%;
+                    }
+                }
+    
+                .team-bio-content {
+                    padding: 29px 29px 29px 149px;
+                    width: 86%;
+                    margin-left: -110px;
+    
+                    h2 {
+                        font-size: 32px;
+                    }
+    
+                    span {
+                        font-size: 25px;
+                    }
+                }
+            }
+    
+            p {
+                font-size: 18px;
+            }
+    
+            .back-btn {
+                display: inline-block;
+                margin-top: 30px;
+    
+                a.pink-btn.back {
+                    position: relative;
+                    z-index: 9;
+                    @include pink-btn(20px);
+    
+                    &::after {
+                        @include pink-right-arrow;
+                        left: -20px;
+                        transform: rotate(180deg);
+                        top: 4px;
+                    }
+    
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+    
+                margin-bottom: 25px;
+    
+                &:hover {
+                    a.pink-btn.back {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg){
+    .team-bio-section {
+        padding: 120px 80px 100px;
+    
+        .team-bio-outerwrap {
+            h1 {
+                font-size: 37px;
+                margin-bottom: 34px;
+            }
+    
+            .team-bio-innerwrap {
+    
+                .team-bio-img {
+                    width: 180px;
+                    height: 180px;
+                    img {
+                        width: 100%;
+                    }
+                }
+    
+                .team-bio-content {
+                    padding: 29px 29px 29px 149px;
+                    width: 86%;
+                    margin-left: -110px;
+    
+                    h2 {
+                        font-size: 27px;
+                    }
+    
+                    span {
+                        font-size: 23px;
+                    }
+                }
+            }
+    
+            p {
+                font-size: 18px;
+            }
+    
+            .back-btn {
+                display: inline-block;
+                margin-top: 30px;
+    
+                a.pink-btn.back {
+                    position: relative;
+                    z-index: 9;
+                    @include pink-btn(20px);
+    
+                    &::after {
+                        @include pink-right-arrow;
+                        left: -20px;
+                        transform: rotate(180deg);
+                        top: 4px;
+                    }
+    
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+    
+                margin-bottom: 25px;
+    
+                &:hover {
+                    a.pink-btn.back {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md){
+    .team-bio-section {
+        padding: 120px 40px 100px;
+    
+        .team-bio-outerwrap {
+            h1 {
+                font-size: 37px;
+                margin-bottom: 34px;
+            }
+    
+            .team-bio-innerwrap {
+    
+                .team-bio-img {
+                    width: 180px;
+                    height: 180px;
+                    img {
+                        width: 100%;
+                    }
+                }
+    
+                .team-bio-content {
+                    padding: 29px 29px 29px 149px;
+                    width: 86%;
+                    margin-left: -110px;
+    
+                    h2 {
+                        font-size: 24px;
+                    }
+    
+                    span {
+                        font-size: 19px;
+                    }
+                }
+            }
+    
+            p {
+                font-size: 15px;
+            }
+    
+            .back-btn {
+                display: inline-block;
+                margin-top: 30px;
+    
+                a.pink-btn.back {
+                    position: relative;
+                    z-index: 9;
+                    @include pink-btn(20px);
+    
+                    &::after {
+                        @include pink-right-arrow;
+                        left: -20px;
+                        transform: rotate(180deg);
+                        top: 4px;
+                    }
+    
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+    
+                margin-bottom: 25px;
+    
+                &:hover {
+                    a.pink-btn.back {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-sm){
+    .team-bio-section {
+        padding: 120px 15px 100px;
+        text-align: center;
+        .team-bio-outerwrap {
+            h1 {
+                font-size: 33px;
+                margin-bottom: 34px;
+            }
+    
+            .team-bio-innerwrap {
+                flex-direction: column;
+                
+                .team-bio-img {
+                    width: 180px;
+                    height: 180px;
+                    img {
+                        width: 100%;
+                    }
+                }
+    
+                .team-bio-content {
+                    padding: 89px 29px 29px 29px;
+                    width: 100%;
+                    margin-left: unset;
+                    margin-top: -80px;
+    
+                    h2 {
+                        font-size: 21px;
+                    }
+    
+                    span {
+                        font-size: 18px;
+                    }
+                }
+            }
+    
+            p {
+                font-size: 15px;
+            }
+    
+            .back-btn {
+                display: inline-block;
+                margin-top: 30px;
+    
+                a.pink-btn.back {
+                    position: relative;
+                    z-index: 9;
+                    @include pink-btn(20px);
+    
+                    &::after {
+                        @include pink-right-arrow;
+                        left: -20px;
+                        transform: rotate(180deg);
+                        top: 4px;
+                    }
+    
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+    
+                margin-bottom: 25px;
+    
+                &:hover {
+                    a.pink-btn.back {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// @media only screen and (max-width: $breakpoint-tablet-sm){
+//     .team-bio-section {
+//         // padding: 60px 15px;
+//         text-align: center;
+//         .team-bio-outerwrap {
+//             h1 {
+//                 font-size: 33px;
+//                 margin-bottom: 34px;
+//             }
+    
+//             .team-bio-innerwrap {
+//                 flex-direction: column;
+                
+//                 .team-bio-img {
+//                     width: 160px;
+//                     height: 160px;
+//                     img {
+//                         width: 100%;
+//                     }
+//                 }
+    
+//                 .team-bio-content {
+//                     padding: 89px 29px 29px 29px;
+//                     width: 100%;
+//                     margin-left: unset;
+//                     margin-top: -80px;
+    
+//                     h2 {
+//                         font-size: 21px;
+//                     }
+    
+//                     span {
+//                         font-size: 18px;
+//                     }
+//                 }
+//             }
+    
+//             p {
+//                 font-size: 15px;
+//             }
+    
+//             .back-btn {
+//                 display: inline-block;
+//                 margin-top: 30px;
+    
+//                 a.pink-btn.back {
+//                     position: relative;
+//                     z-index: 9;
+//                     @include pink-btn(17px);
+    
+//                     &::after {
+//                         @include pink-right-arrow;
+//                         left: -20px;
+//                         transform: rotate(180deg);
+//                         top: 2px;
+//                     }
+    
+//                     &::before {
+//                         @include yellow-bg(#face37);
+//                     }
+//                 }
+    
+//                 margin-bottom: 25px;
+    
+//                 &:hover {
+//                     a.pink-btn.back {
+//                         &::before {
+//                             @include yellow-hover-effect;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// RESPONISVE SEC END:

@@ -1,0 +1,223 @@
+.featured-alumni-section{
+        padding: 100px 140px;
+        h2{
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: $bold;
+            color: $primary;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .alumni-bestblog-innerwrap{
+            @include  flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            .alumni-bestblog-img{
+                margin-right: 115px;
+                img{
+                    width: 100%;
+                }
+                width: 50%;
+            }
+            .alumni-bestblog-content{
+                width: 50%;
+                max-width: 424px;
+                a{
+                    font-size: 16px;
+                    line-height: 1.2;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    background-color: #FACE37;
+                    border: 2px solid $primary;
+                    border-radius: 5px;
+                    padding: 10px 15px;
+                    display: inline-block;
+                    font-family: $fontMain;
+                }
+                span{
+                    font-size: 16px;
+                    line-height: 1.2;
+                    font-weight: $light;
+                    color: $primary;
+                    padding: 10px 15px;
+                    display: inline-block;
+                    font-family: $input-serif;
+                }
+                h2{
+                    font-size: 32px;
+                    line-height: 1.2;
+                    font-weight: $bold;
+                    color: $primary;
+                    text-decoration: underline;
+                    text-align: left;
+                    font-family: $fontMain;
+                    margin: 20px 0px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 1.4;
+                    font-weight: 400;
+                    color: $primary;
+                }
+            }
+        }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm){
+    .featured-alumni-section{
+        padding: 100px 140px;
+        h2{
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: $bold;
+            color: $primary;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .alumni-bestblog-innerwrap{
+            @include  flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            .alumni-bestblog-img{
+                margin-right: 85px;
+                img{
+                    width: 100%;
+                }
+                width: 50%;
+            }
+            .alumni-bestblog-content{
+                width: 40%;
+                max-width: 334px;
+                a{
+                    font-size: 16px;
+                    line-height: 1.2;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    background-color: #FACE37;
+                    border: 2px solid $primary;
+                    border-radius: 5px;
+                    padding: 10px 15px;
+                    display: inline-block;
+                    font-family: $fontMain;
+                }
+                span{
+                    font-size: 16px;
+                    line-height: 1.2;
+                    font-weight: $light;
+                    color: $primary;
+                    padding: 10px 15px;
+                    display: inline-block;
+                    font-family: $input-serif;
+                }
+                h2{
+                    font-size: 26px;
+                    line-height: 1.2;
+                    font-weight: $bold;
+                    color: $primary;
+                    text-decoration: underline;
+                    text-align: left;
+                    font-family: $fontMain;
+                    margin: 20px 0px;
+                }
+                p{
+                    font-size: 15px;
+                    line-height: 1.4;
+                    font-weight: 400;
+                    color: $primary;
+                }
+            }
+        }
+}   
+}
+@media only screen and (max-width: $breakpoint-desktop-xs){
+    .featured-alumni-section{
+        .alumni-bestblog-innerwrap{
+            .alumni-bestblog-img{
+                margin-right: 45px;
+            }
+            .alumni-bestblog-content{
+                span{
+                    font-size: 15px;
+                }
+                h2{
+                    font-size: 23px;
+                    margin: 10px 0px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg){
+    .featured-alumni-section{
+        padding: 100px 10px;
+        .alumni-bestblog-innerwrap{
+            .alumni-bestblog-img{
+                margin-right: 35px;
+            }
+            .alumni-bestblog-content{
+                span{
+                    font-size: 14px;
+                }
+                h2{
+                    font-size: 23px;
+                    margin: 15px 0px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md){
+    .featured-alumni-section{
+        .alumni-bestblog-innerwrap{
+            @include flex-direction(column);
+            .alumni-bestblog-img{
+                margin-right: unset;
+                margin-bottom: 24px;
+                img{
+                    width: 100%;
+                }
+            }
+            .alumni-bestblog-img,
+            .alumni-bestblog-content{
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-sm){
+    .featured-alumni-section{
+        h2{
+            font-size: 25px;
+        }
+        .alumni-bestblog-innerwrap{
+            .alumni-bestblog-content{
+                a,
+                span{
+                    display: block;
+                    text-align: center;
+                }
+                h2{
+                    font-size: 21px;
+                }
+
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-phone){
+    .featured-alumni-section{
+        h2{
+            font-size: 21px;
+            margin-bottom: 14px;
+        }
+    }
+}
+// RESPONSIVE SEC END:

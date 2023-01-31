@@ -1,0 +1,573 @@
+.our-property-alumni-blog-section {
+    margin: 0px 140px;
+    padding: 100px 0px;
+    
+
+    .our-property-alumni-blog-top {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+        margin-bottom: 71px;
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+        }
+
+        .our-property-alumni-blog-btn {
+            .btn-blue {
+                @include theme-btn(18px, #00CCFF, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+    .our-property-alumni-blog-bottom {
+        @include flexbox;
+        @include align-items(flex-start);
+        @include flex-wrap(wrap);
+        // @include justify-content(center);
+        a {
+            width: 32%;
+            margin-right: 16px;
+            margin-bottom: 33px;
+
+            .our-property-alumni-blog-bottom-innerwrap {
+                span {
+                    font-size: 16px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $medium;
+                    font-family: $fontMain;
+                    background-color: #FACE37;
+                    border: 2px solid $primary;
+                    border-radius: 10px 10px 0 0;
+                    padding: 10px 15px;
+                    display: inline-block;
+                    margin-bottom: -2px;
+                }
+
+                .our-property-alumni-blog-bottom-img {
+                    border: 2px solid $primary;
+                    margin-bottom: 30px;
+
+                    img {
+                        width: 100%;
+                        height: 238px;
+                        object-fit: cover;
+                    }
+                }
+
+                h3 {
+                    font-size: 25px;
+                    line-height: 1.6;
+                    color: $primary;
+                    font-weight: $regular;
+                    font-family: $fontMain;
+                    margin-bottom: 29px;
+                }
+
+                span.date {
+                    font-size: 16px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $light;
+                    font-family: $input-serif;
+                    background-color: unset;
+                    border: unset;
+                    padding: 0px;
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .our-property-alumni-blog-section {
+        margin: 0px 100px;
+        padding: 100px 0px;
+
+        .our-property-alumni-blog-top {
+            margin-bottom: 71px;
+
+            h2 {
+                font-size: 32px;
+            }
+
+            .our-property-alumni-blog-btn {
+                .btn-blue {
+                    @include theme-btn(18px, #00CCFF, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-property-alumni-blog-bottom {
+            @include flexbox;
+            @include align-items(flex-start);
+
+            a {
+                .our-property-alumni-blog-bottom-innerwrap {
+                    span {
+                        font-size: 16px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $medium;
+                        font-family: $fontMain;
+                        background-color: #FACE37;
+                        border: 2px solid $primary;
+                        border-radius: 10px 10px 0 0;
+                        padding: 10px 15px;
+                        display: inline-block;
+                        margin-bottom: -2px;
+                    }
+
+                    .our-property-alumni-blog-bottom-img {
+                        border: 2px solid $primary;
+                        margin-bottom: 30px;
+
+                        img {
+                            width: 100%;
+                            height: 238px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 21px;
+                        line-height: 1.6;
+                        margin-bottom: 19px;
+                    }
+
+                    span.date {
+                        font-size: 16px;
+                        border: unset;
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .our-property-alumni-blog-section {
+        margin: 0px 100px;
+        padding: 70px 0px;
+
+        .our-property-alumni-blog-top {
+            margin-bottom: 71px;
+
+            h2 {
+                font-size: 27px;
+            }
+
+            .our-property-alumni-blog-btn {
+                .btn-blue {
+                    @include theme-btn(18px, #00CCFF, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-property-alumni-blog-bottom {
+            @include flexbox;
+            @include align-items(flex-start);
+
+            a {
+                .our-property-alumni-blog-bottom-innerwrap {
+
+                    span {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $medium;
+                        font-family: $fontMain;
+                        background-color: #FACE37;
+                        border: 2px solid $primary;
+                        border-radius: 10px 10px 0 0;
+                        padding: 10px 15px;
+                        display: inline-block;
+                        margin-bottom: -2px;
+                    }
+
+                    .our-property-alumni-blog-bottom-img {
+                        border: 2px solid $primary;
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 100%;
+                            height: 238px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                        line-height: 1.6;
+                        margin-bottom: 14px;
+                    }
+
+                    span.date {
+                        font-size: 16px;
+                        border: unset;
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .our-property-alumni-blog-section {
+        margin: 0px 50px;
+        padding: 50px 0px;
+
+        .our-property-alumni-blog-top {
+            margin-bottom: 71px;
+
+            h2 {
+                font-size: 23px;
+            }
+
+            .our-property-alumni-blog-btn {
+                .btn-blue {
+                    @include theme-btn(16px, #00CCFF, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-property-alumni-blog-bottom {
+            @include flexbox;
+            @include align-items(flex-start);
+            @include flex-wrap(wrap);
+
+            a {
+                margin-right: 16px;
+                margin-bottom: 35px;
+                width: 47%;
+
+                .our-property-alumni-blog-bottom-innerwrap {
+
+                    span {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $medium;
+                        font-family: $fontMain;
+                        background-color: #FACE37;
+                        border: 2px solid $primary;
+                        border-radius: 10px 10px 0 0;
+                        padding: 10px 15px;
+                        display: inline-block;
+                        margin-bottom: -2px;
+                    }
+
+                    .our-property-alumni-blog-bottom-img {
+                        border: 2px solid $primary;
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 100%;
+                            height: 238px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 16px;
+                        line-height: 1.6;
+                        margin-bottom: 14px;
+                    }
+
+                    span.date {
+                        font-size: 14px;
+                        border: unset;
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .our-property-alumni-blog-section {
+        margin: 0px 50px;
+        padding: 50px 0px;
+
+        .our-property-alumni-blog-top {
+            margin-bottom: 71px;
+
+            h2 {
+                font-size: 19px;
+            }
+
+            .our-property-alumni-blog-btn {
+                .btn-blue {
+
+                    // @include theme-btn(18px,#00CCFF,18px 43px,6px 7px 0px 0px rgba(0,0,0,1));
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-property-alumni-blog-bottom {
+            @include flexbox;
+            @include align-items(flex-start);
+            @include flex-wrap(wrap);
+
+            a {
+                margin-right: 16px;
+                margin-bottom: 35px;
+                width: 47%;
+
+                .our-property-alumni-blog-bottom-innerwrap {
+
+                    span {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $medium;
+                        font-family: $fontMain;
+                        background-color: #FACE37;
+                        border: 2px solid $primary;
+                        border-radius: 10px 10px 0 0;
+                        padding: 10px 15px;
+                        display: inline-block;
+                        margin-bottom: -2px;
+                    }
+
+                    .our-property-alumni-blog-bottom-img {
+                        border: 2px solid $primary;
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 100%;
+                            height: 238px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 16px;
+                        line-height: 1.6;
+                        margin-bottom: 14px;
+                    }
+
+                    span.date {
+                        font-size: 14px;
+                        border: unset;
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .our-property-alumni-blog-section {
+        margin: 0px 30px;
+        padding: 50px 0px;
+
+        .our-property-alumni-blog-top {
+            margin-bottom: 71px;
+            flex-direction: column;
+
+            h2 {
+                font-size: 23px;
+                margin-bottom: 14px;
+                text-align: center;
+            }
+
+            .our-property-alumni-blog-btn {
+                .btn-blue {
+                    @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-property-alumni-blog-bottom {
+            @include flexbox;
+            @include align-items(flex-start);
+            @include flex-wrap(wrap);
+
+            a {
+                margin-right: 0px;
+                margin-bottom: 35px;
+                width: 100%;
+
+                .our-property-alumni-blog-bottom-innerwrap {
+
+                    span {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $medium;
+                        font-family: $fontMain;
+                        background-color: #FACE37;
+                        border: 2px solid $primary;
+                        border-radius: 10px 10px 0 0;
+                        padding: 10px 15px;
+                        display: inline-block;
+                        margin-bottom: -2px;
+                    }
+
+                    .our-property-alumni-blog-bottom-img {
+                        border: 2px solid $primary;
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 100%;
+                            height: 238px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 16px;
+                        line-height: 1.6;
+                        margin-bottom: 14px;
+                    }
+
+                    span.date {
+                        font-size: 14px;
+                        border: unset;
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .our-property-alumni-blog-section {
+        margin: 0px 15px;
+        padding: 50px 0px;
+
+        .our-property-alumni-blog-top {
+            margin-bottom: 71px;
+
+            h2 {}
+
+            .our-property-alumni-blog-btn {
+                .btn-blue {
+
+                    // @include theme-btn(18px,#00CCFF,18px 43px,6px 7px 0px 0px rgba(0,0,0,1));
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-property-alumni-blog-bottom {
+            @include flexbox;
+            @include align-items(flex-start);
+            @include flex-wrap(wrap);
+
+            a {
+                margin-right: 0px;
+                margin-bottom: 35px;
+                width: 100%;
+
+                .our-property-alumni-blog-bottom-innerwrap {
+
+                    span {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $medium;
+                        font-family: $fontMain;
+                        background-color: #FACE37;
+                        border: 2px solid $primary;
+                        border-radius: 10px 10px 0 0;
+                        padding: 10px 15px;
+                        display: inline-block;
+                        margin-bottom: -2px;
+                    }
+
+                    .our-property-alumni-blog-bottom-img {
+                        border: 2px solid $primary;
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 100%;
+                            height: 238px;
+                            object-fit: cover;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 16px;
+                        line-height: 1.6;
+                        margin-bottom: 14px;
+                    }
+
+                    span.date {
+                        font-size: 14px;
+                        border: unset;
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC END:

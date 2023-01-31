@@ -1,0 +1,519 @@
+.alumni-buddy-program-section {
+    background-color: #F0EEE6;
+    padding: 100px 140px;
+
+    .our-alumni-innerwrap {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+
+        .our-alumni-content {
+            width: 50%;
+            margin-right: 114px;
+
+            .our-alumni-heading-wraper {
+                @include flexbox;
+                @include align-items(flex-end);
+
+                img {
+                    width: 72px;
+                    height: 51px;
+                    object-fit: cover;
+                }
+
+                h2 {
+                    font-size: 32px;
+                    line-height: 1.2;
+                    font-weight: $bold;
+                    color: $primary;
+                    font-family: $fontMain;
+                    margin-left: 20px;
+                }
+
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.4;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 30px;
+            }
+
+            .our-alumni-btn {
+                @include flexbox;
+                @include align-items(center);
+
+                .btn-blue {
+                    @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+
+                    &:first-child {
+                        margin-right: 20px;
+                    }
+                }
+
+            }
+        }
+
+        .our-alumni-img {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            overflow: hidden;
+            max-width: 474px;
+
+            img {
+                width: 100%;
+
+                height: 557px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .alumni-buddy-program-section {
+        padding: 100px 90px;
+
+        .our-alumni-innerwrap {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+
+            .our-alumni-content {
+                width: 50%;
+                margin-right: 74px;
+
+                .our-alumni-heading-wraper {
+                    @include flexbox;
+                    @include align-items(flex-end);
+
+                    img {
+                        width: 72px;
+                        height: 51px;
+                        object-fit: cover;
+                    }
+
+                    h2 {
+                        font-size: 32px;
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+
+                .our-alumni-btn {
+                    display: flex;
+                    align-items: center;
+
+                    .btn-blue {
+                        @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+
+                        &:first-child {
+                            margin-right: 20px;
+                        }
+                    }
+
+                }
+            }
+
+            .our-alumni-img {
+                border: 2px solid $primary;
+                border-radius: 20px;
+                overflow: hidden;
+                max-width: 474px;
+
+                img {
+                    width: 100%;
+
+                    height: 557px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .alumni-buddy-program-section {
+        padding: 80px 50px;
+
+        .our-alumni-innerwrap {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+
+            .our-alumni-content {
+                width: 50%;
+                margin-right: 74px;
+
+                .our-alumni-heading-wraper {
+                    @include flexbox;
+                    @include align-items(flex-end);
+
+                    img {
+                        width: 72px;
+                        height: 51px;
+                        object-fit: cover;
+                    }
+
+                    h2 {
+                        font-size: 29px;
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+
+                .our-alumni-btn {
+                    display: flex;
+                    align-items: center;
+
+                    .btn-blue {
+                        @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+
+                        &:first-child {
+                            margin-right: 20px;
+                        }
+                    }
+
+                }
+            }
+
+            .our-alumni-img {
+                border: 2px solid $primary;
+                border-radius: 20px;
+                overflow: hidden;
+                max-width: 474px;
+
+                img {
+                    width: 100%;
+
+                    height: 557px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .alumni-buddy-program-section {
+        padding: 80px 30px;
+
+        .our-alumni-innerwrap {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+
+            .our-alumni-content {
+                width: 60%;
+                margin-right: 44px;
+
+                .our-alumni-heading-wraper {
+                    @include flexbox;
+                    @include align-items(flex-end);
+
+                    img {
+                        width: 72px;
+                        height: 51px;
+                        object-fit: cover;
+                    }
+
+                    h2 {
+                        font-size: 23px;
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 14px;
+                }
+
+                .our-alumni-btn {
+                    display: flex;
+                    align-items: center;
+
+                    .btn-blue {
+                        @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+
+                        &:first-child {
+                            margin-right: 20px;
+                        }
+                    }
+
+                }
+            }
+
+            .our-alumni-img {
+                border: 2px solid $primary;
+                border-radius: 20px;
+                overflow: hidden;
+                max-width: 474px;
+
+                img {
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .alumni-buddy-program-section {
+        padding: 60px 30px;
+
+        .our-alumni-innerwrap {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            @include flex-direction(column);
+
+            .our-alumni-content {
+                width: 100%;
+                margin-right: 0px;
+                margin-bottom: 24px;
+
+                .our-alumni-heading-wraper {
+                    @include flexbox;
+                    @include align-items(flex-end);
+
+                    img {
+                        width: 72px;
+                        height: 51px;
+                        object-fit: cover;
+                    }
+
+                    h2 {
+                        font-size: 23px;
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 14px;
+                }
+
+                .our-alumni-btn {
+                    @include flexbox;
+                    @include align-items(center);
+                    // .btn-blue {
+                    //     @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    //     &:focus,
+                    //     &:hover {
+                    //         @include theme-btn-hover;
+                    //     }
+
+                    //     &:first-child {
+                    //         margin-right: 20px;
+                    //     }
+                    // }
+
+                }
+            }
+
+            .our-alumni-img {
+                border: 2px solid $primary;
+                border-radius: 20px;
+                overflow: hidden;
+                max-width: 100%;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .alumni-buddy-program-section {
+        padding: 60px 30px;
+
+        .our-alumni-innerwrap {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            @include flex-direction(column);
+
+            .our-alumni-content {
+                width: 100%;
+                margin-right: 0px;
+                margin-bottom: 24px;
+
+                .our-alumni-heading-wraper {
+                    @include flexbox;
+                    @include align-items(flex-end);
+
+                    img {
+                        width: 72px;
+                        height: 51px;
+                        object-fit: cover;
+                    }
+
+                    h2 {
+                        font-size: 23px;
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 14px;
+                }
+
+                .our-alumni-btn {
+                    @include flexbox;
+                    @include align-items(center);
+
+                    .btn-blue {
+                        @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+
+                        &:first-child {
+                            margin-right: 20px;
+                        }
+                    }
+
+                }
+            }
+
+            .our-alumni-img {
+                border: 2px solid $primary;
+                border-radius: 20px;
+                overflow: hidden;
+                max-width: 100%;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .alumni-buddy-program-section {
+        padding: 60px 30px;
+
+        .our-alumni-innerwrap {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            @include flex-direction(column);
+
+            .our-alumni-content {
+                width: 100%;
+                margin-right: 0px;
+                margin-bottom: 24px;
+
+                .our-alumni-heading-wraper {
+                    @include flexbox;
+                    @include align-items(flex-end);
+
+                    img {
+                        width: 72px;
+                        height: 51px;
+                        object-fit: cover;
+                    }
+
+                    h2 {
+                        font-size: 19px;
+                    }
+
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 14px;
+                }
+
+                .our-alumni-btn {
+                    @include flexbox;
+                    @include align-items(center);
+                    @include flex-wrap(wrap);
+
+                    .btn-blue {
+                        // @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+
+                        &:first-child {
+                            margin-right: 20px;
+                        }
+
+                        margin-bottom: 14px;
+                    }
+
+                }
+            }
+
+            .our-alumni-img {
+                border: 2px solid $primary;
+                border-radius: 20px;
+                overflow: hidden;
+                max-width: 100%;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 400px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC END:

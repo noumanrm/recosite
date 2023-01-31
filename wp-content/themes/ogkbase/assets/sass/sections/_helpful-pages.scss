@@ -1,0 +1,288 @@
+.helpful-pages-section {
+    padding: 100px 196px;
+    margin: 0 140px;
+    border-bottom: 2px solid $primary;
+    h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $bold;
+        font-family: $fontMain;
+        text-align: center;
+        margin-bottom: 31px;
+    }
+
+    .helpful-pages-outerwrap {
+        @include flexbox;
+        @include align-items(center);
+        @include flex-wrap(wrap);
+
+        .helpful-pages-innerwrap {
+            @include flexbox;
+            @include align-items(center);
+            border: 2px solid $primary;
+            border-radius: 20px;
+            width: 48%;
+            min-height: 90px;
+            margin-bottom: 21px;
+
+            .helpful-pages-img {
+                // width: 15%;
+                padding: 30px;
+                border-right: 2px solid $primary;
+
+                img {
+                    width: 40px;
+                    height: 33px;
+                    object-fit: contain;
+                }
+            }
+
+            .helpful-pages-content {
+                // width: 70%;
+                padding: 35px 29px;
+
+                .pink-btn {
+                    @include pink-btn(20px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                    }
+                    &::before{
+                        @include yellow-bg(#FACE37);
+                        
+                    }
+                    &:hover:before{
+                        @include yellow-hover-effect;
+                    }
+                }
+            }
+
+            &:nth-child(odd) {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm){
+    .helpful-pages-section {
+        padding: 100px 56px;
+        margin: 0 100px;
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-xs){
+    .helpful-pages-section {
+        padding: 100px 46px;
+        .helpful-pages-outerwrap {
+            @include flexbox;
+            @include align-items(center);
+            @include flex-wrap(wrap);
+    
+            .helpful-pages-innerwrap {
+                @include flexbox;
+                @include align-items(center);
+                border: 2px solid $primary;
+                border-radius: 20px;
+                width: 48%;
+                min-height: 70px;
+                margin-bottom: 21px;
+    
+                .helpful-pages-img {
+                    // width: 15%;
+                    padding: 19px 30px;
+                    border-right: 2px solid $primary;
+    
+                    img {
+                        width: 40px;
+                        height: 33px;
+                        object-fit: contain;
+                    }
+                }
+    
+                .helpful-pages-content {
+                    // width: 70%;
+                    padding: 19px 29px;
+    
+                    .pink-btn {
+                        @include pink-btn(17px);
+    
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+                    }
+                }
+    
+                &:nth-child(odd) {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg){
+    .helpful-pages-section {
+        padding: 80px 20px;
+        margin: 0 40px;
+        h2{
+            font-size: 23px;
+        }
+        .helpful-pages-outerwrap {
+            @include flexbox;
+            @include align-items(center);
+            @include flex-wrap(wrap);
+    
+            .helpful-pages-innerwrap {
+                @include flexbox;
+                @include align-items(center);
+                border: 2px solid $primary;
+                border-radius: 20px;
+                width: 48%;
+                min-height: 70px;
+                margin-bottom: 21px;
+    
+                .helpful-pages-img {
+                    // width: 15%;
+                    padding: 19px 25px;
+                    border-right: 2px solid $primary;
+    
+                    img {
+                        width: 40px;
+                        height: 33px;
+                        object-fit: contain;
+                    }
+                }
+    
+                .helpful-pages-content {
+                    // width: 70%;
+                    padding: 19px 29px;
+    
+                    .pink-btn {
+                        @include pink-btn(17px);
+    
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+                    }
+                }
+    
+                &:nth-child(odd) {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md){
+    .helpful-pages-section {
+        // padding: 80px 50px;
+        h2{
+            font-size: 23px;
+        }
+        .helpful-pages-outerwrap {
+            @include flexbox;
+            @include align-items(center);
+            @include flex-direction(column);
+            @include flex-wrap(wrap);
+    
+            .helpful-pages-innerwrap {
+                @include flexbox;
+                @include align-items(center);
+                border: 2px solid $primary;
+                border-radius: 20px;
+                width: 100%;
+                min-height: 70px;
+                margin-bottom: 21px;
+    
+                .helpful-pages-img {
+                    // width: 15%;
+                    padding: 19px 25px;
+                    border-right: 2px solid $primary;
+    
+                    img {
+                        width: 40px;
+                        height: 33px;
+                        object-fit: contain;
+                    }
+                }
+    
+                .helpful-pages-content {
+                    // width: 70%;
+                    padding: 19px 29px;
+    
+                    .pink-btn {
+                        @include pink-btn(17px);
+    
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+                    }
+                }
+    
+                &:nth-child(odd) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md){
+    .helpful-pages-section {
+        padding: 80px 30px;
+    }
+}
+@media only screen and (max-width: $breakpoint-phone){
+    .helpful-pages-section {
+        padding: 50px 15px;
+        margin: 0 10px;
+        .helpful-pages-outerwrap {
+            @include flexbox;
+            @include align-items(center);
+            @include flex-direction(column);
+            @include flex-wrap(wrap);
+    
+            .helpful-pages-innerwrap {
+                @include flexbox;
+                @include align-items(center);
+                border: 2px solid $primary;
+                border-radius: 20px;
+                width: 100%;
+                min-height: 40px;
+                margin-bottom: 21px;
+    
+                .helpful-pages-img {
+                    // width: 15%;
+                    padding: 19px 18px;
+                    border-right: 2px solid $primary;
+    
+                    img {
+                        width: 40px;
+                        height: 33px;
+                        object-fit: contain;
+                    }
+                }
+    
+                .helpful-pages-content {
+                    // width: 70%;
+                    padding: 19px 18px;
+    
+                    .pink-btn {
+                        @include pink-btn(14px);
+    
+                        &::after {
+                            @include pink-right-arrow;
+                            top: 3px;
+                        }
+                    }
+                }
+    
+                &:nth-child(odd) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+// RESPONSIVE SEC END:

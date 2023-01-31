@@ -1,0 +1,239 @@
+  /* LIGHTBOX START */
+  $color_1: rgba(255,255,255,.5);
+  $color_2: rgba(255,255,255,.8);
+  $white: white;
+
+ 
+  .lightbox-section {
+    border-top: 2px solid $primary;
+    padding-top: 100px;
+    margin: 100px 140px 0;
+    h2{
+        text-align: center;
+        font-size: 32px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $bold;
+        font-family: $fontMain;
+        margin-bottom: 50px;
+    }
+    .prev {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      width: auto;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      z-index: 999;
+      color: $color_1;
+      font-size: 8rem;
+      transition: all .2s;
+      left: -25%;
+      &:hover {
+        color: $color_2;
+      }
+    }
+    .next {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      width: auto;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      z-index: 999;
+      color: $color_1;
+      font-size: 8rem;
+      transition: all .2s;
+      right: -25%;
+      &:hover {
+        color: $color_2;
+      }
+    }
+    .active {
+      .prev {
+        left: 3%;
+      }
+      .next {
+        right: 3%;
+      }
+      div {
+        &:not(.show) {
+          img {
+            filter: blur(3px);
+          }
+        }
+      }
+    }
+    .container {
+      max-width: 100%;
+      display: grid;
+      grid-gap: 16px;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-auto-rows: 250px;
+      grid-auto-flow: dense;
+      padding: 0;
+    }
+    .gallery-inner {
+      text-align: center;
+      padding: 1rem 0;
+      color: $white;
+      font-size: 3rem;
+      text-transform: uppercase;
+      background: rgba(0,0,0,.2);
+      overflow: hidden;
+      padding: 0;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        transition: all .5s;
+      }
+      &:not(.show) {
+        &:hover {
+          img {
+            cursor: pointer;
+            transform: scale(1.3);
+          }
+        }
+      }
+    }
+    .gallery-inner.show {
+      &::before {
+        content: '';
+        display: block;
+        position: fixed;
+        z-index: 555;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,.6);
+      }
+      img {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 30px;
+        align-self: center;
+        object-fit: contain;
+        z-index: 666;
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);
+        filter: drop-shadow(0 3px 15px black);
+        cursor: url(close-button.png), grab;
+        width: 70%;
+        height: 60%;
+      }
+    }
+    .horizontal {
+      grid-column: span 2;
+    }
+    .vertical {
+      grid-row: span 2;
+    }
+    .big {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+  
+  /* LIGHTBOX END */
+
+//   RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm){
+    .lightbox-section{
+        padding-top: 70px;
+        margin: 70px 140px 0;
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-xs){
+    .lightbox-section{
+        padding-top: 70px;
+        margin: 70px 40px 0;
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .lightbox-section{
+        padding-top: 70px;
+        margin: 70px 40px 0;
+        h2{
+            font-size: 27px;
+            margin-bottom: 40px;
+        }
+        .prev,
+        .next{
+            font-size: 4rem;
+        }
+        .gallery-inner.show {
+            img {
+              top: 50%;
+              left: 47%;
+              width: 70%;
+              height: 60%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .lightbox-section{
+        padding-top: 40px;
+        margin: 40px 15px 0;
+        h2{
+            font-size: 27px;
+            margin-bottom: 40px;
+        }
+        .container{
+            display: unset;
+            .gallery-inner{
+                margin-bottom: 14px;
+                &.show {
+                    img {
+                      top: 50%;
+                      left: 44%;
+                      width: 60%;
+                      height: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-phone) {
+    .lightbox-section{
+        h2{
+            font-size: 27px;
+            margin-bottom: 40px;
+        }
+        .prev,
+        .next{
+            font-size: 2rem;
+        }
+        .container{
+            display: unset;
+            .gallery-inner{
+                margin-bottom: 14px;
+                &.show {
+                    img {
+                      top: 50%;
+                      left: 42%;
+                      width: 60%;
+                      height: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+//   RESPONSIVE SEC END:

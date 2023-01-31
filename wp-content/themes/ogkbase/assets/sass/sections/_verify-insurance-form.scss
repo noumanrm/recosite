@@ -1,0 +1,623 @@
+.verify-insurance-form-section {
+    background-color: #F0EEE6;
+    padding: 100px 336px;
+
+    .verify-insurance-form-outerwrap {
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $regular;
+            font-family: $fontMain;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        form {
+            padding: 0 64px;
+            @include flexbox;
+            @include flex-direction(column);
+
+            input[type='text'],
+            input[type='email'],
+            input[type='number'],
+            select,
+            textarea {
+                border: 2px solid $primary;
+                border-radius: 15px;
+                padding: 18px 19px;
+                background-color: $white;
+                margin-bottom: 24px;
+                width: 100%;
+                line-height: 1.2 !important;
+
+                &:focus {
+                    outline: 0;
+                }
+
+                @include placeholder(18px, #000);
+            }
+
+            textarea {
+                min-height: 180px;
+                resize: none;
+                margin-bottom: 0px;
+            }
+
+            .gform_fields {
+                grid-row-gap: 0;
+            }
+
+            .gform_footer {
+                .gform_button {
+                    @include theme-btn(18px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    width: 100%;
+                    max-width: 200px;
+                    border-radius: 29px;
+                    padding: 18px 33px;
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .verify-insurance-content2 {
+
+            p {
+                font-size: 18px;
+                line-height: 1.4;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                text-align: left;
+                margin-bottom: 0px;
+
+                b {
+                    font-weight: $bold;
+                }
+
+                a {
+                    font-weight: $regular;
+                    color: #ED207A;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+// RESPONISVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .verify-insurance-form-section {
+        background-color: #F0EEE6;
+        padding: 100px 200px;
+
+        .verify-insurance-form-outerwrap {
+            h2 {
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
+
+            form {
+                padding: 0 64px;
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                select,
+                textarea {
+                    border: 2px solid $primary;
+                    border-radius: 15px;
+                    padding: 18px 19px;
+                    background-color: $white;
+                    margin-bottom: 24px;
+                    width: 100%;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(16px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                    resize: none;
+                    margin-bottom: 0px;
+                }
+
+                .gform_fields {
+                    grid-row-gap: 0;
+                }
+
+                .gform_footer {
+                    .gform_button {
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+
+            .verify-insurance-content2 {
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.4;
+                    color: $primary;
+                    font-weight: $regular;
+                    font-family: $fontMain;
+                    text-align: left;
+                    margin-bottom: 0px;
+
+                    b {
+                        font-weight: $bold;
+                    }
+
+                    a {
+                        font-weight: $regular;
+                        color: #ED207A;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .verify-insurance-form-section {
+        padding: 80px 150px;
+
+        .verify-insurance-form-outerwrap {
+            h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                margin-bottom: 50px;
+            }
+
+            form {
+                padding: 0 64px;
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                select,
+                textarea {
+                    border: 2px solid $primary;
+                    border-radius: 15px;
+                    padding: 18px 19px;
+                    background-color: $white;
+                    margin-bottom: 24px;
+                    width: 100%;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(16px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                    resize: none;
+                    margin-bottom: 0px;
+                }
+
+                .gform_fields {
+                    grid-row-gap: 0;
+                }
+
+                .gform_footer {
+                    .gform_button {
+                        @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 200px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+
+            .verify-insurance-content2 {
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.4;
+                    color: $primary;
+                    font-weight: $regular;
+                    font-family: $fontMain;
+                    text-align: left;
+                    margin-bottom: 0px;
+
+                    b {
+                        font-weight: $bold;
+                    }
+
+                    a {
+                        font-weight: $regular;
+                        color: #ED207A;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .verify-insurance-form-section {
+        padding: 50px;
+
+        .verify-insurance-form-outerwrap {
+            h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 50px;
+            }
+
+            form {
+                padding: 0 64px;
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                select,
+                textarea {
+                    border: 2px solid $primary;
+                    border-radius: 15px;
+                    padding: 15px 19px;
+                    background-color: $white;
+                    margin-bottom: 24px;
+                    width: 100%;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(16px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                    resize: none;
+                    margin-bottom: 0px;
+                }
+
+                .gform_fields {
+                    grid-row-gap: 0;
+                }
+
+                .gform_footer {
+                    .gform_button {
+                        @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+
+            .verify-insurance-content2 {
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0px;
+
+                    b {
+                        font-weight: $bold;
+                    }
+
+                    a {
+                        font-weight: $regular;
+                        color: #ED207A;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .verify-insurance-form-section {
+        padding: 50px;
+
+        .verify-insurance-form-outerwrap {
+            h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 50px;
+            }
+
+            form {
+                padding: 0 64px;
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                select,
+                textarea {
+                    border: 2px solid $primary;
+                    border-radius: 15px;
+                    padding: 15px 19px;
+                    background-color: $white;
+                    margin-bottom: 24px;
+                    width: 100%;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(14px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                    resize: none;
+                    margin-bottom: 0px;
+                }
+
+                .gform_fields {
+                    grid-row-gap: 0;
+                }
+
+                .gform_footer {
+                    .gform_button {
+                        @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 150px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+
+            .verify-insurance-content2 {
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0px;
+
+                    b {
+                        font-weight: $bold;
+                    }
+
+                    a {
+                        font-weight: $regular;
+                        color: #ED207A;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .verify-insurance-form-section {
+        padding: 50px 30px;
+
+        .verify-insurance-form-outerwrap {
+            h2 {
+                font-size: 21px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 30px;
+            }
+
+            form {
+                padding: 0px;
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                select,
+                textarea {
+                    border: 2px solid $primary;
+                    border-radius: 15px;
+                    padding: 15px 19px;
+                    background-color: $white;
+                    margin-bottom: 24px;
+                    width: 100%;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(14px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                    resize: none;
+                    margin-bottom: 0px;
+                }
+
+                .gform_fields {
+                    grid-row-gap: 0;
+                }
+
+                .gform_footer {
+                    .gform_button {
+                        @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 120px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+
+            .verify-insurance-content2 {
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0px;
+
+                    b {
+                        font-weight: $bold;
+                    }
+
+                    a {
+                        font-weight: $regular;
+                        color: #ED207A;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .verify-insurance-form-section {
+        padding: 30px 15px;
+
+        .verify-insurance-form-outerwrap {
+            h2 {
+                font-size: 21px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 30px;
+            }
+
+            form {
+                padding: 0px;
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                select,
+                textarea {
+                    border: 2px solid $primary;
+                    border-radius: 15px;
+                    padding: 15px 19px;
+                    background-color: $white;
+                    margin-bottom: 24px;
+                    width: 100%;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(14px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                    resize: none;
+                    margin-bottom: 0px;
+                }
+
+                .gform_fields {
+                    grid-row-gap: 0;
+                }
+
+                .gform_footer {
+                    .gform_button {
+                        @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 100px;
+                        border-radius: 29px;
+                        line-height: 1.2 !important;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+
+            .verify-insurance-content2 {
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 0px;
+
+                    b {
+                        font-weight: $bold;
+                    }
+
+                    a {
+                        font-weight: $regular;
+                        color: #ED207A;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONISVE SEC END:

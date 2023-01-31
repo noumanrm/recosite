@@ -1,0 +1,733 @@
+.addiction-treatment-single-outerwrap {
+    padding: 249px 336px 242px;
+
+    h1 {
+        font-size: 57px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $extraBold;
+        font-family: $fontMain;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    p:nth-of-type(1) {
+        font-size: 25px;
+        line-height: 1.6;
+        color: $primary;
+        font-weight: $regular;
+        font-family: $fontMain;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: $primary;
+        font-weight: $regular;
+        font-family: $fontMain;
+        margin-bottom: 10px;
+    }
+}
+
+.addiction-treatment-single-bottom {
+    background-color: #F0EEE6;
+    padding: 0 238px 100px;
+
+    .images-outerwrap {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        margin-bottom: 70px;
+
+        img {
+            margin-top: -120px;
+            height: 300px;
+            object-fit: cover;
+
+            &:nth-child(1) {
+                width: 35%;
+                margin-right: 16px;
+            }
+
+            &:nth-child(2) {
+                width: 65%;
+            }
+        }
+    }
+
+    .addiction-treatment-single-content {
+        .addiction-treatment-content-innerwrap {
+            margin-bottom: 100px;
+
+            h3 {
+                font-size: 32px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $bold;
+                font-family: $fontMain;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.4;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 36px;
+            }
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.addiction-treatment-section-single {
+    background-color: $white;
+    padding: 100px 0px 80px;
+    margin: 0 141px;
+    border-bottom: 2px solid $primary;
+    .addiction-treatment-top{
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+        margin-bottom: 31px;
+        h2{
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+        }
+        .addiction-treatment-top-btn{
+            .btn-blue{
+                @include theme-btn(18px,#00CCFF,18px 43px,6px 7px 0px 0px rgba(0,0,0,1));
+                &:focus,
+                &:hover{
+                   @include theme-btn-hover;
+                }
+            }
+        }
+    }
+    .addiction-treatment-outerwrap {
+        @include flexbox;
+        @include align-items(flex-start);
+        @include justify-content(flex-start);
+        @include flex-wrap(wrap);
+
+        .addiction-treatment-innerwrap {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            padding: 37px 20px 30px;
+            background-color: $white;
+            margin: 0 20px 20px 0px;
+            width: 32%;
+
+            h3 {
+                font-size: 25px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $bold;
+                font-family: $fontMain;
+                margin-bottom: 19px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                min-height: 134px;
+                margin-bottom: 20px;
+            }
+
+            .addiction-treatment-btn {
+                .pink-btn {
+                    @include pink-btn(20px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                    }
+                }
+            }
+
+            &:nth-child(3n) {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .addiction-treatment-single-outerwrap {
+        padding: 249px 286px 220px;
+    
+        h1 {
+            font-size: 47px;
+        }
+    
+        p:nth-of-type(1) {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+    
+        p {
+            font-size: 18px;
+        }
+    }
+    .addiction-treatment-section-single {
+        padding: 100px 0px 80px;
+        margin: 0 121px;
+        .addiction-treatment-top{
+            margin-bottom: 31px;
+            h2{
+                font-size: 32px;
+            }
+            .addiction-treatment-top-btn{
+                .btn-blue{
+                    @include theme-btn(18px,#00CCFF,18px 43px,6px 7px 0px 0px rgba(0,0,0,1));
+                    &:focus,
+                    &:hover{
+                       @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+        .addiction-treatment-outerwrap {
+    
+            .addiction-treatment-innerwrap {
+                padding: 37px 20px 30px;
+                margin: 0 20px 20px 0px;
+                width: 31%;
+    
+                h3 {
+                    font-size: 25px;
+                    margin-bottom: 19px;
+                }
+    
+                p {
+                    font-size: 17px;
+                    min-height: 134px;
+                    margin-bottom: 20px;
+                }
+    
+                .addiction-treatment-btn {
+                    .pink-btn {
+                        @include pink-btn(20px);
+    
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+                    }
+                }
+    
+                &:nth-child(3n) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .addiction-treatment-single-outerwrap {
+        padding: 219px 186px 200px;
+    
+        h1 {
+            font-size: 47px;
+        }
+    
+        p:nth-of-type(1) {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+    
+        p {
+            font-size: 18px;
+        }
+    }
+    .addiction-treatment-single-bottom {
+        padding: 20px 100px;
+    
+        .images-outerwrap {
+            @include flex-direction(column);
+            margin-bottom: 40px;
+    
+            img {
+                margin-top: 0px;
+                height: 300px;
+                object-fit: cover;
+    
+                &:nth-child(1) {
+                    width: 100%;
+                    margin-right: 0px;
+                    margin-bottom: 15px;
+                }
+    
+                &:nth-child(2) {
+                    width: 100%;
+                }
+            }
+        }
+    
+        .addiction-treatment-single-content {
+            .addiction-treatment-content-innerwrap {
+                margin-bottom: 70px;
+    
+                h3 {
+                    font-size: 29px;
+                    margin-bottom: 20px;
+                }
+    
+                p {
+                    font-size: 17px;
+                    line-height: 1.4;
+                    margin-bottom: 23px;
+                }
+    
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    .addiction-treatment-section-single {
+        padding: 100px 0px 80px;
+        margin: 0 90px;
+        .addiction-treatment-top{
+            margin-bottom: 31px;
+            h2{
+                font-size: 32px;
+            }
+            .addiction-treatment-top-btn{
+                .btn-blue{
+                    @include theme-btn(18px,#00CCFF,18px 43px,6px 7px 0px 0px rgba(0,0,0,1));
+                    &:focus,
+                    &:hover{
+                       @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+        .addiction-treatment-outerwrap {
+    
+            .addiction-treatment-innerwrap {
+                padding: 37px 20px 30px;
+                margin: 0 20px 20px 0px;
+                width: 47%;
+    
+                h3 {
+                    font-size: 25px;
+                    margin-bottom: 15px;
+                }
+    
+                p {
+                    font-size: 16px;
+                    min-height: 84px;
+                    margin-bottom: 20px;
+                }
+    
+                .addiction-treatment-btn {
+                    .pink-btn {
+                        @include pink-btn(20px);
+    
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+                    }
+                }
+    
+                &:nth-child(even) {
+                    margin-right: 0px;
+                }
+                &:nth-child(3n) {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .addiction-treatment-single-outerwrap {
+        padding: 129px 86px;
+    
+        h1 {
+            font-size: 47px;
+        }
+    
+        p:nth-of-type(1) {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+    
+        p {
+            font-size: 18px;
+        }
+    }
+    .addiction-treatment-section-single {
+        padding: 100px 0px 80px;
+        margin: 0 70px;
+        .addiction-treatment-top{
+            margin-bottom: 31px;
+            h2{
+                font-size: 23px;
+            }
+            .addiction-treatment-top-btn{
+                .btn-blue{
+                    @include theme-btn(16px, #00CCFF, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    &:focus,
+                    &:hover{
+                       @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+        .addiction-treatment-outerwrap {
+    
+            .addiction-treatment-innerwrap {
+                padding: 15px 20px;
+                margin: 0 15px 15px 0px;
+                width: 46%;
+    
+                h3 {
+                    font-size: 19px;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 14px;
+                    min-height: 101px;
+                    margin-bottom: 20px;
+                }
+    
+                .addiction-treatment-btn {
+                    .pink-btn {
+                        @include pink-btn(17px);
+    
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+                    }
+                }
+    
+                &:nth-child(even) {
+                    margin-right: 0px;
+                }
+                &:nth-child(3n) {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .addiction-treatment-single-outerwrap {
+        padding: 129px 66px 200px;
+    
+        h1 {
+            font-size: 27px;
+        }
+    
+        p:nth-of-type(1) {
+            font-size: 15px;
+            line-height: 1.4;
+        }
+    
+        p {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+    }
+    .addiction-treatment-single-bottom {
+        padding: 20px 100px;
+    
+        .images-outerwrap {
+            @include flex-direction(column);
+            margin-bottom: 40px;
+    
+            img {
+                margin-top: 0px;
+                height: 300px;
+                object-fit: cover;
+    
+                &:nth-child(1) {
+                    width: 100%;
+                    margin-right: 0px;
+                    margin-bottom: 15px;
+                }
+    
+                &:nth-child(2) {
+                    width: 100%;
+                }
+            }
+        }
+    
+        .addiction-treatment-single-content {
+            .addiction-treatment-content-innerwrap {
+                margin-bottom: 50px;
+    
+                h3 {
+                    font-size: 27px;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 15px;
+                    line-height: 1.4;
+                    margin-bottom: 23px;
+                }
+    
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    .addiction-treatment-section-single {
+        padding: 50px 0px;
+        margin: 0 30px;
+        .addiction-treatment-top{
+            margin-bottom: 31px;
+            h2{
+                font-size: 23px;
+            }
+            .addiction-treatment-top-btn{
+                .btn-blue{
+                    @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                    &:focus,
+                    &:hover{
+                       @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+        .addiction-treatment-outerwrap {
+    
+            .addiction-treatment-innerwrap {
+                padding: 15px 20px;
+                margin: 0 0px 15px 0px;
+                width: 100%;
+    
+                h3 {
+                    font-size: 19px;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 14px;
+                    min-height: auto;
+                    margin-bottom: 20px;
+                }
+    
+                .addiction-treatment-btn {
+                    .pink-btn {
+                        @include pink-btn(17px);
+    
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+                    }
+                }
+    
+                &:nth-child(even) {
+                    margin-right: 0px;
+                }
+                &:nth-child(3n) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .addiction-treatment-single-outerwrap {
+        padding: 129px 30px 200px;
+    
+        h1 {
+            font-size: 27px;
+        }
+    
+        p:nth-of-type(1) {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    
+        p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    }
+    .addiction-treatment-single-bottom {
+        padding: 20px 30px;
+    
+        .images-outerwrap {
+            @include flex-direction(column);
+            margin-bottom: 40px;
+    
+            img {
+                margin-top: 0px;
+                height: 300px;
+                object-fit: cover;
+    
+                &:nth-child(1) {
+                    width: 100%;
+                    margin-right: 0px;
+                    margin-bottom: 15px;
+                }
+    
+                &:nth-child(2) {
+                    width: 100%;
+                }
+            }
+        }
+    
+        .addiction-treatment-single-content {
+            .addiction-treatment-content-innerwrap {
+                margin-bottom: 50px;
+    
+                h3 {
+                    font-size: 27px;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 15px;
+                    line-height: 1.4;
+                    margin-bottom: 23px;
+                }
+    
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    .addiction-treatment-section-single {
+        padding: 50px 0px;
+        margin: 0 30px;
+        .addiction-treatment-top{
+            margin-bottom: 31px;
+            @include flex-direction(column);
+            h2{
+                font-size: 23px;
+                margin-bottom: 14px;
+                text-align: center;
+            }
+            .addiction-treatment-top-btn{
+                .btn-blue{
+                    @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                    &:focus,
+                    &:hover{
+                       @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+        .addiction-treatment-outerwrap {
+    
+            .addiction-treatment-innerwrap {
+                padding: 15px 20px;
+                margin: 0 0px 15px 0px;
+                width: 100%;
+    
+                h3 {
+                    font-size: 19px;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 14px;
+                    min-height: auto;
+                    margin-bottom: 20px;
+                }
+    
+                .addiction-treatment-btn {
+                    .pink-btn {
+                        @include pink-btn(17px);
+    
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+                    }
+                }
+    
+                &:nth-child(even) {
+                    margin-right: 0px;
+                }
+                &:nth-child(3n) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width: $breakpoint-phone) {
+    .addiction-treatment-single-outerwrap {
+        padding: 129px 15px 100px;
+    
+        h1 {
+            font-size: 23px;
+        }
+    
+        p:nth-of-type(1) {
+            font-size: 16px;
+            line-height: 1.3;
+        }
+    
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    }
+    .addiction-treatment-single-bottom {
+        padding: 20px 30px;
+    
+        .images-outerwrap {
+            @include flex-direction(column);
+            margin-bottom: 40px;
+    
+            img {
+                margin-top: 0px;
+                height: 300px;
+                object-fit: cover;
+    
+                &:nth-child(1) {
+                    width: 100%;
+                    margin-right: 0px;
+                    margin-bottom: 15px;
+                }
+    
+                &:nth-child(2) {
+                    width: 100%;
+                }
+            }
+        }
+    
+        .addiction-treatment-single-content {
+            .addiction-treatment-content-innerwrap {
+                margin-bottom: 50px;
+    
+                h3 {
+                    font-size: 23px;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 14px;
+                    line-height: 1.2;
+                    margin-bottom: 23px;
+                }
+    
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+// RESPONSIVE SEC END:

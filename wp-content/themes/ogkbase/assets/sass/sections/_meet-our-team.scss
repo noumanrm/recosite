@@ -1,0 +1,954 @@
+.meet-our-team-section {
+    background-color: #F0EEE6;
+    padding: 100px 141px;
+
+    .our-team-top {
+        width: 48%;
+        margin: 0 auto;
+
+        .our-team-top-content {
+            @include  flexbox;
+            @include align-items(center);
+
+            .our-team-img {
+                margin-right: 19px;
+
+                img {
+                    width: 40px;
+                    height: 33px;
+                }
+            }
+
+            .our-team-heading {
+                h2 {
+                    font-size: 32px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $bold;
+                    font-family: $fontMain;
+                }
+                
+            }
+
+            margin-bottom: 20px;
+        }
+
+        .our-team-top-paragraph {
+            p {
+                font-size: 18px;
+                line-height: 1.7;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+            }
+
+            margin-bottom: 100px;
+        }
+    }
+
+    .our-team-bottom-content {
+        .tab-menu ul {
+            list-style: none;
+            // position:relative;
+            height: 30px;
+            @include  flexbox;
+            @include align-items(flex-end);
+            border-bottom: 2px solid $primary;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    color: $primary;
+                    font-size: 16px;
+                    line-height: 1.2;
+                    font-weight: 500;
+                    padding: 10px 15px;
+                    border-radius: 6px 6px 0px 0px;
+                    margin-right: 10px;
+                    border-color: $primary;
+                    border-width: 2px 2px 0px 2px;
+                    border-style: solid;
+                    display: inline-block;
+                    text-transform: capitalize;
+
+                    &:hover {
+                        background: #FACE37;
+                    }
+
+                    &.active-a {
+                        background: #FACE37;
+
+                        .team-member-outerwrap {
+                            display: block;
+                        }
+                    }
+                }
+                &:last-child{
+                    a{
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
+        .tab {
+            display: none;
+
+            .team-member-outerwrap {
+                @include  flexbox;
+                @include align-items(flex-start);
+                @include justify-content(flex-start);
+                @include flex-wrap(wrap);
+
+                .team-member-innerwrap {
+                    text-align: center;
+                    background-color: #fff;
+                    border: 2px solid $primary;
+                    border-radius: 20px;
+                    width: 100%;
+                    //   max-width: 375px;
+                    max-width: 31%;
+                    // max-width: 23%;
+                    margin-top: 158px;
+                    margin-right: 17px;
+                    position: relative;
+
+                    h2 {
+                        font-size: 25px;
+                        line-height: 1.2;
+                        font-weight: $bold;
+                        color: $primary;
+                        margin-bottom: 9px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                        line-height: 1.2;
+                        font-weight: $regular;
+                        color: $primary;
+                        display: inline-block;
+                        text-transform: uppercase;
+                    }
+
+                    .team-member-img {
+                        width: 217px;
+                        height: 217px;
+                        margin: 0px auto 0;
+                        border: 2px solid $primary;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        position: absolute;
+                        top: -108px;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .team-member-content {
+                        padding: 139px 30px 17px;
+
+                        min-height: 253px;
+                    }
+
+                    .team-member-btn {
+                        padding: 30px;
+                        border-top: 2px solid $primary;
+
+                        .pink-btn {
+                            @include pink-btn(20px);
+
+                            &::after {
+                                @include pink-right-arrow;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
+        .tab-active {
+            display: block;
+        }
+        #mySelect{
+            display: none;
+        }
+        // #mySelect{
+        //     display: block;
+        //     width: 100%;
+            
+        //     border: 2px solid $primary;
+        //     border-radius: 6px 6px 0px 0px;
+        //     padding: 10px;
+        //     // background-color: #FACE37;
+        //     option{
+                
+        //         &:checked{
+        //             background-color: #FACE37;
+        //         }
+        //         // &:hover{
+        //         //     background-color: #FACE37;
+        //         // }
+        //         &:focus{
+        //             background-color: #FACE37;
+        //         }
+        //     }
+        // }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm){
+    .meet-our-team-section {
+        padding: 100px 70px;
+    
+        .our-team-top {
+            width: 48%;
+            margin: 0 auto;
+    
+            .our-team-top-content {
+                @include  flexbox;
+                @include align-items(center);
+    
+                .our-team-img {
+                    margin-right: 19px;
+    
+                    img {
+                        width: 40px;
+                        height: 33px;
+                    }
+                }
+    
+                .our-team-heading {
+                    h2 {
+                        font-size: 32px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                    }
+                }
+    
+                margin-bottom: 20px;
+            }
+    
+            .our-team-top-paragraph {
+                p {
+                    font-size: 18px;
+                    line-height: 1.7;
+                    color: $primary;
+                    font-weight: $regular;
+                    font-family: $fontMain;
+                }
+    
+                margin-bottom: 100px;
+            }
+        }
+    
+        .our-team-bottom-content {
+            .tab-menu ul {
+                list-style: none;
+                // position:relative;
+                height: 30px;
+                @include  flexbox;
+                @include align-items(flex-end);
+                border-bottom: 2px solid $primary;
+    
+                li {
+                    list-style-type: none;
+    
+                    a {
+                        color: $primary;
+                        font-size: 16px;
+                        line-height: 1.2;
+                        font-weight: 500;
+                        padding: 10px 15px;
+                        border-radius: 6px 6px 0px 0px;
+                        margin-right: 10px;
+                        border-color: $primary;
+                        border-width: 2px 2px 0px 2px;
+                        border-style: solid;
+                        display: inline-block;
+    
+                        &:hover {
+                            background: #FACE37;
+                        }
+    
+                        &.active-a {
+                            background: #FACE37;
+    
+                            .team-member-outerwrap {
+                                display: block;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        a{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+            .tab {
+                display: none;
+    
+                .team-member-outerwrap {
+                    @include  flexbox;
+                    @include align-items(flex-start);
+                    @include justify-content(flex-start);
+                    @include flex-wrap(wrap);
+    
+                    .team-member-innerwrap {
+                        text-align: center;
+                        background-color: #fff;
+                        border: 2px solid $primary;
+                        border-radius: 20px;
+                        width: 100%;
+                        //   max-width: 375px;
+                        max-width: 31%;
+                        // max-width: 23%;
+                        margin-top: 158px;
+                        margin-right: 17px;
+                        position: relative;
+    
+                        h2 {
+                            font-size: 22px;
+                            // line-height: 1.2;
+                            // font-weight: $bold;
+                            // color: $primary;
+                            // margin-bottom: 9px;
+                        }
+    
+                        span {
+                            font-size: 17px;
+                            // line-height: 1.2;
+                            // font-weight: $regular;
+                            // color: $primary;
+                            // display: inline-block;
+                        }
+    
+                        .team-member-img {
+                            width: 217px;
+                            height: 217px;
+                            margin: 0px auto 0;
+                            border: 2px solid $primary;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            position: absolute;
+                            top: -108px;
+                            left: 50%;
+                            transform: translateX(-50%);
+    
+                            img {
+                                width: 100%;
+                            }
+                        }
+    
+                        .team-member-content {
+                            padding: 139px 30px 17px;
+                            min-height: 238px;
+                        }
+    
+                        .team-member-btn {
+                            padding: 20px 30px;
+                            border-top: 2px solid $primary;
+    
+                            .pink-btn {
+                                @include pink-btn(18px);
+    
+                                &::after {
+                                    @include pink-right-arrow;
+                                }
+                            }
+                        }
+    
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+            .tab-active {
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-xs){
+    .meet-our-team-section {
+        padding: 100px 70px;
+        .our-team-top {
+            width: 60%;
+            .our-team-top-content {
+                .our-team-img {
+                    margin-right: 19px;
+    
+                    img {
+                        width: 40px;
+                        height: 33px;
+                    }
+                }
+    
+                .our-team-heading {
+                    h2 {
+                        font-size: 27px;
+                    }
+                }
+    
+                margin-bottom: 20px;
+            }
+    
+            .our-team-top-paragraph {
+                p {
+                    font-size: 16px;
+                }
+    
+                margin-bottom: 70px;
+            }
+        }
+    
+        .our-team-bottom-content {
+            .tab-menu ul {
+                li {
+                    a {
+                        font-size: 15px;
+                        &:hover {
+                            background: #FACE37;
+                        }
+    
+                        &.active-a {
+                            background: #FACE37;
+    
+                            .team-member-outerwrap {
+                                display: block;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        a{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+            .tab {
+                display: none;
+    
+                .team-member-outerwrap {
+                    .team-member-innerwrap {
+                        max-width: 48%;
+                        h2 {
+                            font-size: 21px;
+                        }
+    
+                        span {
+                            font-size: 17px;
+                        }
+    
+                        .team-member-img {
+                            width: 217px;
+                            height: 217px;
+                            margin: 0px auto 0;
+                            border: 2px solid $primary;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            position: absolute;
+                            top: -108px;
+                            left: 50%;
+                            transform: translateX(-50%);
+    
+                            img {
+                                width: 100%;
+                            }
+                        }
+    
+                        .team-member-content {
+                            padding: 139px 30px 17px;
+                            min-height: 238px;
+                        }
+    
+                        .team-member-btn {
+                            padding: 20px 30px;
+                            border-top: 2px solid $primary;
+    
+                            .pink-btn {
+                                @include pink-btn(18px);
+    
+                                &::after {
+                                    @include pink-right-arrow;
+                                }
+                            }
+                        }
+    
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+            .tab-active {
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg){
+    .meet-our-team-section {
+        padding: 100px 70px;
+        .our-team-top {
+            width: 75%;
+            .our-team-top-content {
+                .our-team-img {
+                    margin-right: 19px;
+    
+                    img {
+                        width: 40px;
+                        height: 33px;
+                    }
+                }
+    
+                .our-team-heading {
+                    h2 {
+                        font-size: 27px;
+                    }
+                }
+    
+                margin-bottom: 20px;
+            }
+    
+            .our-team-top-paragraph {
+                p {
+                    font-size: 16px;
+                }
+    
+                margin-bottom: 70px;
+            }
+        }
+    
+        .our-team-bottom-content {
+            .tab-menu ul {
+                li {
+                    a {
+                        font-size: 15px;
+                        &:hover {
+                            background: #FACE37;
+                        }
+    
+                        &.active-a {
+                            background: #FACE37;
+    
+                            .team-member-outerwrap {
+                                display: block;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        a{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+            .tab {
+                display: none;
+    
+                .team-member-outerwrap {
+                    .team-member-innerwrap {
+                        max-width: 47%;
+                        h2 {
+                            font-size: 17px;
+                        }
+    
+                        span {
+                            font-size: 15px;
+                        }
+    
+                        .team-member-img {
+                            width: 187px;
+                            height: 187px;                        
+                        }
+    
+                        .team-member-content {
+                            padding: 99px 30px 17px;
+                            min-height: 186px;                        
+                        }
+    
+                        .team-member-btn {
+                            padding: 20px 30px;
+                            border-top: 2px solid $primary;
+    
+                            .pink-btn {
+                                @include pink-btn(17px);
+    
+                                &::after {
+                                    @include pink-right-arrow;
+                                }
+                            }
+                        }
+    
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+            .tab-active {
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md){
+    .meet-our-team-section {
+        padding: 70px 35px;
+        .our-team-top {
+            width: 100%;
+            .our-team-top-content {
+                .our-team-img {
+                    margin-right: 19px;
+    
+                    img {
+                        width: 40px;
+                        height: 33px;
+                    }
+                }
+    
+                .our-team-heading {
+                    h2 {
+                        font-size: 27px;
+                    }
+                }
+    
+                margin-bottom: 20px;
+            }
+    
+            .our-team-top-paragraph {
+                p {
+                    font-size: 14px;
+                }
+    
+                margin-bottom: 70px;
+            }
+        }
+    
+        .our-team-bottom-content {
+            .tab-menu ul {
+                li {
+                    a {
+                        font-size: 11px;
+                        &:hover {
+                            background: #FACE37;
+                        }
+    
+                        &.active-a {
+                            background: #FACE37;
+    
+                            .team-member-outerwrap {
+                                display: block;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        a{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+            .tab {
+                display: none;
+    
+                .team-member-outerwrap {
+                    .team-member-innerwrap {
+                        max-width: 100%;
+                        margin-right: 0px;
+                        h2 {
+                            font-size: 17px;
+                        }
+    
+                        span {
+                            font-size: 15px;
+                        }
+    
+                        .team-member-img {
+                            width: 187px;
+                            height: 187px;                        
+                        }
+    
+                        .team-member-content {
+                            padding: 99px 30px 17px;
+                            min-height: 186px;                        
+                        }
+    
+                        .team-member-btn {
+                            padding: 20px 30px;
+                            border-top: 2px solid $primary;
+    
+                            .pink-btn {
+                                @include pink-btn(17px);
+    
+                                &::after {
+                                    @include pink-right-arrow;
+                                }
+                            }
+                        }
+    
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+            .tab-active {
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-sm){
+    .meet-our-team-section {
+        padding: 70px 35px;
+        .our-team-top {
+            width: 100%;
+            .our-team-top-content {
+                .our-team-img {
+                    margin-right: 19px;
+    
+                    img {
+                        width: 40px;
+                        height: 33px;
+                    }
+                }
+    
+                .our-team-heading {
+                    h2 {
+                        font-size: 27px;
+                    }
+                }
+    
+                margin-bottom: 20px;
+            }
+    
+            .our-team-top-paragraph {
+                p {
+                    font-size: 14px;
+                }
+    
+                margin-bottom: 70px;
+            }
+        }
+    
+        .our-team-bottom-content {
+            .tab-menu ul {
+                li {
+                    a {
+                        font-size: 11px;
+                        padding: 10px 7px;
+                        &:hover {
+                            background: #FACE37;
+                        }
+    
+                        &.active-a {
+                            background: #FACE37;
+    
+                            .team-member-outerwrap {
+                                display: block;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        a{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+            .tab {
+                display: none;
+    
+                .team-member-outerwrap {
+                    .team-member-innerwrap {
+                        max-width: 100%;
+                        margin-right: 0px;
+                        h2 {
+                            font-size: 17px;
+                        }
+    
+                        span {
+                            font-size: 15px;
+                        }
+    
+                        .team-member-img {
+                            width: 187px;
+                            height: 187px;                        
+                        }
+    
+                        .team-member-content {
+                            padding: 99px 30px 17px;
+                            min-height: 186px;                        
+                        }
+    
+                        .team-member-btn {
+                            padding: 20px 30px;
+                            border-top: 2px solid $primary;
+    
+                            .pink-btn {
+                                @include pink-btn(17px);
+    
+                                &::after {
+                                    @include pink-right-arrow;
+                                }
+                            }
+                        }
+    
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+            .tab-active {
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-phone){
+    .meet-our-team-section {
+        padding: 70px 15px;
+        .our-team-top {
+            width: 100%;
+            .our-team-top-content {
+                .our-team-img {
+                    margin-right: 19px;
+    
+                    img {
+                        width: 40px;
+                        height: 33px;
+                    }
+                }
+    
+                .our-team-heading {
+                    h2 {
+                        font-size: 27px;
+                    }
+                }
+    
+                margin-bottom: 20px;
+            }
+    
+            .our-team-top-paragraph {
+                p {
+                    font-size: 14px;
+                }
+    
+                margin-bottom: 70px;
+            }
+        }
+    
+        .our-team-bottom-content {
+            .tab-menu ul {
+                display: none;
+                li {
+                    a {
+                        font-size: 11px;
+                        padding: 10px 7px;
+                        &:hover {
+                            background: #FACE37;
+                        }
+    
+                        &.active-a {
+                            background: #FACE37;
+    
+                            .team-member-outerwrap {
+                                display: block;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        a{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+            .tab {
+                display: none;
+    
+                .team-member-outerwrap {
+                    .team-member-innerwrap {
+                        max-width: 100%;
+                        margin-right: 0px;
+                        h2 {
+                            font-size: 17px;
+                        }
+    
+                        span {
+                            font-size: 15px;
+                        }
+    
+                        .team-member-img {
+                            width: 187px;
+                            height: 187px;                        
+                        }
+    
+                        .team-member-content {
+                            padding: 99px 30px 17px;
+                            min-height: auto;                        
+                        }
+    
+                        .team-member-btn {
+                            padding: 20px 30px;
+                            border-top: 2px solid $primary;
+    
+                            .pink-btn {
+                                @include pink-btn(17px);
+    
+                                &::after {
+                                    @include pink-right-arrow;
+                                }
+                            }
+                        }
+    
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+    
+            .tab-active {
+                display: block;
+            }
+            #mySelect{
+                display: block;
+                width: 100%;
+                background-color: transparent;
+                border: 2px solid $primary;
+                border-radius: 6px 6px 0px 0px;
+                padding: 10px;
+                // background-color: #FACE37;
+                
+            }
+        }
+    }
+}
+// RESPONSIVE SEC END:

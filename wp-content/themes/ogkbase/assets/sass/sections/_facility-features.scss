@@ -1,0 +1,188 @@
+.facility-features-section {
+    padding: 100px 336px;
+    position: relative;
+
+    h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $bold;
+        font-family: $fontMain;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        margin-top: 40px;
+        @include flexbox;
+        @include flex-wrap(wrap);
+        padding-left: 30px;
+
+        li {
+            list-style: none;
+            font-size: 18px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $regular;
+            font-family: $fontMain;
+            margin-bottom: 20px;
+            position: relative;
+            padding-right: 45px;
+            width: 50%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -30px;
+                top: 3px;
+                width: 15px;
+                height: 15px;
+                background-color: #FACE37;
+                border: 2px solid $primary;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: calc(100% - 140px);
+        left: 50%;
+        bottom: 0;
+        height: 2px;
+        transform: translateX(-50%);
+        background-color: $primary;
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .facility-features-section {
+        padding: 80px 200px;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-top: 40px;
+            @include flexbox;
+            @include flex-wrap(wrap);
+            padding-left: 30px;
+
+            li {
+                list-style: none;
+                font-size: 18px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 20px;
+                position: relative;
+                padding-right: 45px;
+                width: 50%;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: 3px;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #FACE37;
+                    border: 2px solid $primary;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .facility-features-section {
+        padding: 80px 150px;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-top: 40px;
+            padding-left: 30px;
+
+            li {
+                font-size: 16px;
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .facility-features-section {
+        padding: 80px;
+
+        h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-top: 40px;
+            padding-left: 30px;
+
+            li {
+                font-size: 14px;
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .facility-features-section {
+        padding: 50px 30px;
+
+        h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-top: 40px;
+            padding-left: 30px;
+            @include flex-direction(column);
+
+            li {
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .facility-features-section {
+        padding: 30px 15px;
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-top: 30px;
+            padding-left: 30px;
+            @include flex-direction(column);
+
+            li {
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC END:

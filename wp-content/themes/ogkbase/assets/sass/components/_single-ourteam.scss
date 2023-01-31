@@ -1,0 +1,801 @@
+.team-bio-section {
+    padding: 249px 336px 100px !important;
+    position: relative;
+
+    .team-bio-outerwrap {
+        h1 {
+            font-size: 57px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $extraBold;
+            margin-bottom: 61px !important;
+            text-transform: uppercase;
+            font-family: $fontMain;
+        }
+
+        >span {
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 500;
+            color: #000;
+            text-transform: capitalize;
+            border-color: $primary;
+            border-style: solid;
+            border-width: 2px 2px 0px 2px;
+            border-radius: 5px 5px 0px 0px;
+            background-color: #FACE37;
+            padding: 10px 15px;
+            display: block !important;
+            text-align: center;
+            width: 12%;
+            margin-left: auto;
+        }
+
+        .team-bio-innerwrap {
+            @include flexbox;
+            @include align-items(center);
+            margin-bottom: 50px;
+
+            .team-bio-img {
+                width: 217px;
+                height: 217px;
+                border: 2px solid $primary;
+                border-radius: 50%;
+                z-index: 1;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .team-bio-content {
+                padding: 29px 29px 29px 149px;
+                border: 2px solid $primary;
+                border-radius: 20px;
+                width: 86%;
+                // max-width: 660px;
+                margin-left: -110px;
+
+                h2 {
+                    font-size: 32px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $bold;
+                    margin-bottom: 10px;
+                    font-family: $fontMain;
+                }
+
+                span {
+                    font-size: 25px;
+                    line-height: 1.2;
+                    color: #ED207A;
+                    font-weight: $regular;
+                    display: inline-block;
+                    font-family: $fontMain;
+                }
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.4;
+            color: $primary;
+            font-weight: $regular;
+            font-family: $fontMain;
+            margin-bottom: 14px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 50px;
+
+            a.pink-btn.back {
+                position: relative;
+                z-index: 9;
+                @include pink-btn(20px);
+
+                &::after {
+                    @include pink-right-arrow;
+                    left: -20px;
+                    transform: rotate(180deg);
+                    top: 4px;
+                }
+
+                &::before {
+                    @include yellow-bg(#face37);
+                }
+            }
+
+            margin-bottom: 25px;
+
+            &:hover {
+                a.pink-btn.back {
+                    &::before {
+                        @include yellow-hover-effect;
+                    }
+                }
+            }
+        }
+    }
+
+    .tsh_breadcrumbs {
+        position: absolute;
+        top: 179px;
+        left: 140px;
+        z-index: 9;
+        @include flexbox();
+        @include align-items(center);
+
+        li {
+            list-style: none;
+            margin-right: 9px;
+
+            a {
+                font-size: 16px;
+                line-height: 1.2;
+                color: #BCBCBC;
+                font-weight: $regular;
+                font-family: $fontMain;
+            }
+
+            .bread-current {
+                @extend a;
+                color: #ED207A !important;
+                font-weight: $medium;
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+// RESPONISVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-xl) {
+    .team-bio-section {
+        padding: 249px 200px 100px !important;
+
+        .team-bio-outerwrap {
+            h1 {
+                font-size: 57px;
+            }
+
+            >span {
+                width: 16%;
+                margin-left: auto;
+            }
+
+            .team-bio-innerwrap {
+
+                .team-bio-img {
+                    width: 217px;
+                    height: 217px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .team-bio-content {
+                    padding: 29px 29px 29px 149px;
+                    width: 86%;
+                    margin-left: -110px;
+
+                    h2 {
+                        font-size: 32px;
+                    }
+
+                    span {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .back-btn {
+                // display: inline-block;
+                margin-top: 50px;
+                width: 16% !important;
+                text-align: right;
+
+                a.pink-btn.back {
+                    position: relative;
+                    z-index: 9;
+                    @include pink-btn(20px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                        left: -20px;
+                        transform: rotate(180deg);
+                        top: 4px;
+                    }
+
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+
+                margin-bottom: 25px;
+
+                &:hover {
+                    a.pink-btn.back {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-med) {
+    .team-bio-section {
+        padding: 249px 200px 100px !important;
+
+        .team-bio-outerwrap {
+            h1 {
+                font-size: 57px;
+            }
+
+            >span {
+                width: 16%;
+                margin-left: auto;
+            }
+
+            .team-bio-innerwrap {
+
+                .team-bio-img {
+                    width: 217px;
+                    height: 217px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .team-bio-content {
+                    padding: 29px 29px 29px 149px;
+                    width: 86%;
+                    margin-left: -110px;
+
+                    h2 {
+                        font-size: 32px;
+                    }
+
+                    span {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .back-btn {
+                // display: inline-block;
+                margin-top: 50px;
+                width: 18% !important;
+
+                a.pink-btn.back {
+                    position: relative;
+                    z-index: 9;
+                    @include pink-btn(20px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                        left: -20px;
+                        transform: rotate(180deg);
+                        top: 4px;
+                    }
+
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+
+                margin-bottom: 25px;
+
+                &:hover {
+                    a.pink-btn.back {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .team-bio-section {
+        // padding: 204px 200px 100px;
+
+        .team-bio-outerwrap {
+            h1 {
+                font-size: 57px;
+            }
+
+            >span {
+                width: 20%;
+                margin-left: auto;
+            }
+
+            .team-bio-innerwrap {
+
+                .team-bio-img {
+                    width: 217px;
+                    height: 217px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .team-bio-content {
+                    padding: 29px 29px 29px 149px;
+                    width: 86%;
+                    margin-left: -110px;
+
+                    h2 {
+                        font-size: 32px;
+                    }
+
+                    span {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .back-btn {
+                display: block !important;
+                // margin-top: 50px;
+                width: 22% !important;
+
+                a.pink-btn.back {
+                    position: relative;
+                    z-index: 9;
+                    @include pink-btn(20px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                        left: -20px;
+                        transform: rotate(180deg);
+                        top: 4px;
+                    }
+
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+
+                margin-bottom: 25px;
+
+                &:hover {
+                    a.pink-btn.back {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .team-bio-section {
+        padding: 249px 100px 100px !important;
+
+        .team-bio-outerwrap {
+            h1 {
+                font-size: 47px;
+            }
+
+            .team-bio-innerwrap {
+
+                .team-bio-img {
+                    width: 200px;
+                    height: 200px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .team-bio-content {
+                    padding: 29px 29px 29px 149px;
+                    width: 86%;
+                    margin-left: -110px;
+
+                    h2 {
+                        font-size: 32px;
+                    }
+
+                    span {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .back-btn {
+                display: inline-block;
+                margin-top: 30px;
+
+                a.pink-btn.back {
+                    position: relative;
+                    z-index: 9;
+                    @include pink-btn(20px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                        left: -20px;
+                        transform: rotate(180deg);
+                        top: 4px;
+                    }
+
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+
+                margin-bottom: 25px;
+
+                &:hover {
+                    a.pink-btn.back {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .team-bio-section {
+        padding: 149px 100px 100px !important;
+
+        .team-bio-outerwrap {
+            h1 {
+                font-size: 37px;
+                margin-bottom: 34px;
+            }
+
+            >span {
+                width: 29%;
+            }
+
+            .team-bio-innerwrap {
+
+                .team-bio-img {
+                    width: 180px;
+                    height: 180px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .team-bio-content {
+                    padding: 29px 29px 29px 149px;
+                    width: 86%;
+                    margin-left: -110px;
+
+                    h2 {
+                        font-size: 27px;
+                    }
+
+                    span {
+                        font-size: 23px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .back-btn {
+                margin-top: 30px;
+                width: 32% !important;
+
+                a.pink-btn.back {
+                    position: relative;
+                    z-index: 9;
+                    @include pink-btn(20px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                        left: -20px;
+                        transform: rotate(180deg);
+                        top: 4px;
+                    }
+
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+
+                margin-bottom: 25px;
+
+                &:hover {
+                    a.pink-btn.back {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tsh_breadcrumbs {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .team-bio-section {
+        padding: 149px 60px 100px !important;
+
+        .team-bio-outerwrap {
+            h1 {
+                font-size: 37px;
+                margin-bottom: 34px;
+            }
+
+            >span {
+                width: 37%;
+            }
+
+            .team-bio-innerwrap {
+
+                .team-bio-img {
+                    width: 180px;
+                    height: 180px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .team-bio-content {
+                    padding: 29px 29px 29px 149px;
+                    width: 86%;
+                    margin-left: -110px;
+
+                    h2 {
+                        font-size: 24px;
+                    }
+
+                    span {
+                        font-size: 19px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .back-btn {
+                // display: inline-block;
+                margin-top: 30px;
+                width: 41% !important;
+
+                a.pink-btn.back {
+                    position: relative;
+                    z-index: 9;
+                    @include pink-btn(20px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                        left: -20px;
+                        transform: rotate(180deg);
+                        top: 4px;
+                    }
+
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+
+                margin-bottom: 25px;
+
+                &:hover {
+                    a.pink-btn.back {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .team-bio-section {
+        padding: 149px 30px 100px !important;
+        text-align: center;
+
+        .team-bio-outerwrap {
+            h1 {
+                font-size: 33px;
+                margin-bottom: 34px;
+            }
+
+            >span {
+                width: 45%;
+                margin: 0 auto;
+                font-size: 14px;
+            }
+
+            .team-bio-innerwrap {
+                flex-direction: column;
+
+                .team-bio-img {
+                    width: 180px;
+                    height: 180px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .team-bio-content {
+                    padding: 89px 29px 0px 29px !important;
+                    width: 100%;
+                    margin-left: unset;
+                    margin-top: -80px;
+
+                    h2 {
+                        font-size: 21px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .back-btn {
+                display: inline-block;
+                margin-top: 30px;
+
+                a.pink-btn.back {
+                    position: relative;
+                    z-index: 9;
+                    @include pink-btn(20px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                        left: -20px;
+                        transform: rotate(180deg);
+                        top: 4px;
+                    }
+
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+
+                margin-bottom: 25px;
+
+                &:hover {
+                    a.pink-btn.back {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .team-bio-section {
+        padding: 149px 15px 100px !important;
+        text-align: center;
+
+        .team-bio-outerwrap {
+            h1 {
+                font-size: 33px;
+                margin-bottom: 34px;
+            }
+
+            >span {
+                width: 49%;
+                margin: 0 auto;
+                font-size: 14px;
+            }
+
+            .team-bio-innerwrap {
+                flex-direction: column;
+
+                .team-bio-img {
+                    width: 160px;
+                    height: 160px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .team-bio-content {
+                    padding: 89px 29px 29px 29px;
+                    width: 100%;
+                    margin-left: unset;
+                    margin-top: -80px;
+
+                    h2 {
+                        font-size: 21px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .back-btn {
+                margin-top: 30px;
+                width: 63% !important;
+
+                a.pink-btn.back {
+                    position: relative;
+                    z-index: 9;
+                    @include pink-btn(17px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                        left: -20px;
+                        transform: rotate(180deg);
+                        top: 2px;
+                    }
+
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+
+                margin-bottom: 25px;
+
+                &:hover {
+                    a.pink-btn.back {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONISVE SEC END:

@@ -13,9 +13,6 @@ wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 .idea/workspace.xml
-node_modules
-node_modules/node_modules
-.idea
 
 *.DS_Store
 

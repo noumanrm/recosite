@@ -1,0 +1,249 @@
+.reco-media-content-section {
+    padding: 101px 140px;
+
+    .reco-media-content-outerwrap {
+        @include flexbox;
+        @include align-items(flex-start);
+        @include flex-wrap(wrap);
+
+        .reco-media-content-innerwrap {
+            width: 32%;
+            margin-right: 16px;
+
+            .video {
+                width: 100%;
+                height: 238px;
+                object-fit: cover;
+                border: 1px solid $primary;
+            }
+
+            .wrapper {
+                display: table;
+                width: auto;
+                position: relative;
+                width: 100%;
+            }
+
+            .playpause {
+                background-image: url(/wp-content/themes/ogkbase/images/Polygon-2.svg);
+                background-repeat: no-repeat;
+                @include right-arrow(30px);
+                width: 52px;
+                height: 52px;
+                position: absolute;
+                left: 0%;
+                right: 0%;
+                top: 0%;
+                bottom: 0%;
+                margin: auto;
+                background-size: 30%;
+                background-position: center;
+            }
+
+            h3 {
+                font-size: 18px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $bold;
+                font-family: $fontMain;
+                margin-bottom: 9px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+            }
+
+            margin-bottom: 40px;
+
+            &:nth-child(3n) {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .reco-media-content-section {
+        padding: 71px 100px;
+
+        .reco-media-content-outerwrap {
+            .reco-media-content-innerwrap {
+                width: 32%;
+                margin-right: 16px;
+
+                .video {}
+
+                .wrapper {
+                    display: table;
+                    width: auto;
+                    position: relative;
+                    width: 100%;
+                }
+
+                .playpause {
+                    background-image: url(http://localhost/Reco-Intensive-22/wp-content/themes/ogkbase/images/Polygon-2.svg);
+                    background-repeat: no-repeat;
+                    @include right-arrow(30px);
+                    width: 52px;
+                    height: 52px;
+                    position: absolute;
+                    left: 0%;
+                    right: 0%;
+                    top: 0%;
+                    bottom: 0%;
+                    margin: auto;
+                    background-size: 30%;
+                    background-position: center;
+                }
+
+                h3 {
+                    font-size: 18px;
+                    margin-bottom: 9px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                margin-bottom: 40px;
+
+                &:nth-child(3n) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .reco-media-content-section {
+        padding: 71px 100px;
+
+        .reco-media-content-outerwrap {
+            .reco-media-content-innerwrap {
+                width: 48%;
+                margin-right: 16px;
+
+                .video {}
+
+                .wrapper {
+                    display: table;
+                    width: auto;
+                    position: relative;
+                    width: 100%;
+                }
+
+                .playpause {
+                    background-image: url(http://localhost/Reco-Intensive-22/wp-content/themes/ogkbase/images/Polygon-2.svg);
+                    background-repeat: no-repeat;
+                    @include right-arrow(30px);
+                    width: 52px;
+                    height: 52px;
+                    position: absolute;
+                    left: 0%;
+                    right: 0%;
+                    top: 0%;
+                    bottom: 0%;
+                    margin: auto;
+                    background-size: 30%;
+                    background-position: center;
+                }
+
+                h3 {
+                    font-size: 18px;
+                    margin-bottom: 9px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                margin-bottom: 40px;
+
+                &:nth-child(even) {
+                    margin-right: 0px;
+                }
+
+                &:nth-child(3n) {
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .reco-media-content-section {
+        padding: 71px 30px;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .reco-media-content-section {
+        padding: 71px 30px 40px;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .reco-media-content-section {
+        padding: 41px 15px 20px;
+
+        .reco-media-content-outerwrap {
+            .reco-media-content-innerwrap {
+                width: 100%;
+                margin-right: 0;
+
+                .video {}
+
+                .wrapper {
+                    display: table;
+                    width: auto;
+                    position: relative;
+                    width: 100%;
+                }
+
+                .playpause {
+                    background-image: url(http://localhost/Reco-Intensive-22/wp-content/themes/ogkbase/images/Polygon-2.svg);
+                    background-repeat: no-repeat;
+                    @include right-arrow(30px);
+                    width: 52px;
+                    height: 52px;
+                    position: absolute;
+                    left: 0%;
+                    right: 0%;
+                    top: 0%;
+                    bottom: 0%;
+                    margin: auto;
+                    background-size: 30%;
+                    background-position: center;
+                }
+
+                h3 {
+                    font-size: 17px;
+                    margin-bottom: 9px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                margin-bottom: 40px;
+
+                &:nth-child(even) {
+                    margin-right: 0px;
+                }
+
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC END:

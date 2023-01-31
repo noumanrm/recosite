@@ -1,0 +1,767 @@
+.camping-trip-detail-section {
+    background-color: #F0EEE6;
+
+    .camping-trip-detail-img-outerwrap {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        padding: 0 238px;
+
+        .camping-trip-detail-img-innerwrap {
+            // margin-right: 16px;
+            margin-top: -150px;
+
+            &:first-child {
+                // width: 17%;
+                position: relative;
+            }
+
+            &:nth-child(2) {
+                margin: -150px -40px 0;
+                // width: 29%;
+            }
+
+            &:last-child {
+                // width: 11%;
+                margin-right: 0px;
+            }
+
+            img {
+                margin: 0 auto;
+                min-height: 300px;
+                object-fit: cover;
+            }
+
+        }
+    }
+
+    .camping-trip-detail-outerwrap {
+        padding: 100px 140px 0px;
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .camping-trip-detail-innerwrap {
+            @include flexbox;
+            @include align-items(flex-start);
+            @include justify-content(center);
+
+            .camping-trip-detail-content-outerwrap {
+                background-color: $white;
+                margin-right: 16px;
+                border: 2px solid $primary;
+                border-radius: 20px;
+                width: 33.3%;
+                margin-bottom: 20px;
+
+                .camping-trip-detail-heading {
+                    @include flexbox;
+                    @include align-items(center);
+                    padding: 29px 20px 30px;
+                    border-bottom: 2px solid $primary;
+
+                    .camping-trip-detail-content-img {
+                        margin-right: 19px;
+
+                        img {
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 25px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                    }
+                }
+
+                .camping-trip-detail-content {
+                    padding: 30px 20px;
+                    min-height: 155px;
+                    @include flexbox();
+                    @include flex-direction(column);
+                    @include justify-content(space-between);
+
+                    span {
+                        font-size: 18px;
+                        line-height: 1.4;
+                        color: $primary;
+                        font-weight: $regular;
+                        font-family: $fontMain;
+                        display: block;
+                        // margin-bottom: 20px;
+                    }
+                }
+
+                .camping-trip-detail-btn {
+                    margin-top: 20px;
+
+                    .pink-btn {
+                        @include pink-btn(20px);
+
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+}
+
+//  RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .camping-trip-detail-section {
+        background-color: #F0EEE6;
+
+        .camping-trip-detail-img-outerwrap {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            padding: 0 238px;
+
+            .camping-trip-detail-img-innerwrap {
+                margin-right: 16px;
+                margin-top: -150px;
+
+                &:first-child {
+                    // width: 17%;
+                }
+
+                &:nth-child(2) {
+                    // width: 29%;
+                }
+
+                &:last-child {
+                    // width: 11%;
+                    margin-right: 0px;
+                }
+
+                img {
+                    // margin: 0 auto;
+                    min-height: unset;
+                    // object-fit: cover;
+                }
+
+            }
+        }
+
+        .camping-trip-detail-outerwrap {
+            padding: 100px 140px 0px;
+
+            h2 {
+                font-size: 32px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $bold;
+                font-family: $fontMain;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            .camping-trip-detail-innerwrap {
+                @include flexbox;
+                @include align-items(flex-start);
+                @include justify-content(center);
+
+                .camping-trip-detail-content-outerwrap {
+                    background-color: $white;
+                    margin-right: 16px;
+                    border: 2px solid $primary;
+                    border-radius: 20px;
+                    width: 33.3%;
+                    margin-bottom: 20px;
+
+                    .camping-trip-detail-heading {
+                        @include flexbox;
+                        @include align-items(center);
+                        padding: 29px 20px 30px;
+                        border-bottom: 2px solid $primary;
+
+                        .camping-trip-detail-content-img {
+                            margin-right: 19px;
+
+                            img {
+                                width: 34px;
+                                height: 34px;
+                                object-fit: contain;
+                            }
+                        }
+
+                        h3 {
+                            font-size: 21px;
+                        }
+                    }
+
+                    .camping-trip-detail-content {
+                        padding: 30px 20px;
+                        min-height: 175px;
+
+                        span {
+                            font-size: 16px;
+                            // margin-bottom: 20px;
+                        }
+                    }
+
+                    .camping-trip-detail-btn {
+                        margin-top: 20px;
+
+                        .pink-btn {
+                            @include pink-btn(18px);
+
+                            &::after {
+                                @include pink-right-arrow;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .camping-trip-detail-section {
+        background-color: #F0EEE6;
+
+        .camping-trip-detail-img-outerwrap {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            padding: 0 158px;
+
+            .camping-trip-detail-img-innerwrap {
+                margin-right: 16px;
+                margin-top: -150px;
+
+                &:first-child {
+                    // width: 17%;
+                }
+
+                &:nth-child(2) {
+                    // width: 29%;
+                }
+
+                &:last-child {
+                    // width: 11%;
+                    margin-right: 0px;
+                }
+
+                img {
+                    // margin: 0 auto;
+                    // min-height: 300px;
+                    // object-fit: cover;
+                }
+
+            }
+        }
+
+        .camping-trip-detail-outerwrap {
+            padding: 120px 100px 0px;
+
+            h2 {
+                font-size: 32px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $bold;
+                font-family: $fontMain;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            .camping-trip-detail-innerwrap {
+
+                .camping-trip-detail-content-outerwrap {
+                    background-color: $white;
+                    margin-right: 16px;
+                    border: 2px solid $primary;
+                    border-radius: 20px;
+                    width: 33.3%;
+                    margin-bottom: 20px;
+
+                    .camping-trip-detail-heading {
+                        @include flexbox;
+                        @include align-items(center);
+                        padding: 20px 10px;
+                        border-bottom: 2px solid $primary;
+
+                        .camping-trip-detail-content-img {
+                            margin-right: 19px;
+
+                            img {
+                                width: 34px;
+                                height: 34px;
+                                object-fit: contain;
+                            }
+                        }
+
+                        h3 {
+                            font-size: 21px;
+                        }
+                    }
+
+                    .camping-trip-detail-content {
+                        padding: 20px 10px;
+                        min-height: 155px;
+
+                        span {
+                            font-size: 16px;
+                            // margin-bottom: 20px;
+                        }
+                    }
+
+                    .camping-trip-detail-btn {
+                        margin-top: 20px;
+
+                        .pink-btn {
+                            @include pink-btn(18px);
+
+                            &::after {
+                                @include pink-right-arrow;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .camping-trip-detail-section {
+        background-color: #F0EEE6;
+
+        .camping-trip-detail-img-outerwrap {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            padding: 0 78px;
+
+            .camping-trip-detail-img-innerwrap {
+                margin-right: 16px;
+                margin-top: -150px;
+
+                &:first-child {
+                    // width: 17%;
+                }
+
+                &:nth-child(2) {
+                    // width: 29%;
+                }
+
+                &:last-child {
+                    // width: 11%;
+                    margin-right: 0px;
+                }
+
+                img {
+                    // margin: 0 auto;
+                    // min-height: 300px;
+                    // object-fit: cover;
+                }
+
+            }
+        }
+
+        .camping-trip-detail-outerwrap {
+            padding: 100px 50px 0px;
+
+            h2 {
+                font-size: 29px;
+                margin-bottom: 30px;
+            }
+
+            .camping-trip-detail-innerwrap {
+
+                .camping-trip-detail-content-outerwrap {
+                    background-color: $white;
+                    margin-right: 16px;
+                    border: 2px solid $primary;
+                    border-radius: 20px;
+                    width: 33.3%;
+                    margin-bottom: 20px;
+
+                    .camping-trip-detail-heading {
+                        @include flexbox;
+                        @include align-items(center);
+                        padding: 10px;
+                        border-bottom: 2px solid $primary;
+
+                        .camping-trip-detail-content-img {
+                            margin-right: 19px;
+
+                            img {
+                                width: 34px;
+                                height: 34px;
+                                object-fit: contain;
+                            }
+                        }
+
+                        h3 {
+                            font-size: 17px;
+                        }
+                    }
+
+                    .camping-trip-detail-content {
+                        padding: 10px;
+                        // min-height: 105px;
+
+                        span {
+                            font-size: 13px;
+                            // margin-bottom: 20px;
+                        }
+                    }
+
+                    .camping-trip-detail-btn {
+                        margin-top: 20px;
+
+                        .pink-btn {
+                            @include pink-btn(15px);
+
+                            &::after {
+                                @include pink-right-arrow;
+                                top: 4px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .camping-trip-detail-section {
+        .camping-trip-detail-img-outerwrap {
+            @include flex-wrap(wrap);
+            padding: 80px 78px;
+            .camping-trip-detail-img-innerwrap {
+                margin-right: 0;
+                margin-top: 0;
+                margin-bottom: 16px;
+
+                &:first-child {
+                    // width: 17%;
+                }
+
+                &:nth-child(2) {
+                    // width: 29%;
+                    margin: unset;
+                }
+
+                &:last-child {
+                    // width: 11%;
+                    margin-right: 0px;
+                }
+
+                img {
+                    width: 100%;
+                    margin: 0 auto;
+                    min-height: auto;
+                    object-fit: cover;
+                }
+
+            }
+        }
+
+        .camping-trip-detail-outerwrap {
+                padding: 0px 30px 0px;
+
+            h2 {
+                font-size: 29px;
+                margin-bottom: 30px;
+            }
+
+            .camping-trip-detail-innerwrap {
+                @include flex-wrap(wrap);
+
+                .camping-trip-detail-content-outerwrap {
+                    background-color: $white;
+                    margin-right: 16px;
+                    border: 2px solid $primary;
+                    border-radius: 20px;
+                    width: 47%;
+                    margin-bottom: 20px;
+
+                    .camping-trip-detail-heading {
+                        @include flexbox;
+                        @include align-items(center);
+                        padding: 10px;
+                        border-bottom: 2px solid $primary;
+
+                        .camping-trip-detail-content-img {
+                            margin-right: 19px;
+
+                            img {
+                                width: 34px;
+                                height: 34px;
+                                object-fit: contain;
+                            }
+                        }
+
+                        h3 {
+                            font-size: 17px;
+                        }
+                    }
+
+                    .camping-trip-detail-content {
+                        padding: 10px;
+                        min-height: 135px;
+
+                        span {
+                            font-size: 13px;
+                            // margin-bottom: 20px;
+                        }
+                    }
+
+                    .camping-trip-detail-btn {
+                        margin-top: 20px;
+
+                        .pink-btn {
+                            @include pink-btn(15px);
+
+                            &::after {
+                                @include pink-right-arrow;
+                                top: 4px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .camping-trip-detail-section {
+        .camping-trip-detail-img-outerwrap {
+            // padding: 0 218px;
+            padding: 50px 30px;
+            .camping-trip-detail-img-innerwrap {
+                margin-right: 0px;
+
+                &:first-child {
+                    // width: 17%;
+                }
+
+                &:nth-child(2) {
+                    // width: 29%;
+                }
+
+                &:last-child {
+                    // width: 11%;
+                    margin-right: 0px;
+                }
+
+                img {
+                    // margin: 0 auto;
+                    // min-height: 300px;
+                    // object-fit: cover;
+                }
+
+            }
+        }
+
+        .camping-trip-detail-outerwrap {
+            // padding: 200px 30px 0px;
+
+            h2 {
+                font-size: 29px;
+                margin-bottom: 30px;
+            }
+
+            .camping-trip-detail-innerwrap {
+                @include flex-wrap(wrap);
+
+                .camping-trip-detail-content-outerwrap {
+                    margin-right: 0px;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    .camping-trip-detail-heading {
+                        padding: 10px;
+
+                        .camping-trip-detail-content-img {
+                            margin-right: 19px;
+
+                            img {
+                                width: 34px;
+                                height: 34px;
+                                object-fit: contain;
+                            }
+                        }
+
+                        h3 {
+                            font-size: 17px;
+                        }
+                    }
+
+                    .camping-trip-detail-content {
+                        padding: 10px;
+                        min-height: auto;
+
+                        span {
+                            font-size: 13px;
+                            // margin-bottom: 20px;
+                        }
+                    }
+
+                    .camping-trip-detail-btn {
+                        margin-top: 10px;
+
+                        .pink-btn {
+                            @include pink-btn(15px);
+
+                            &::after {
+                                @include pink-right-arrow;
+                                top: 4px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .camping-trip-detail-section {
+        .camping-trip-detail-img-outerwrap {
+            // padding: 0 218px;
+                padding: 30px 15px;
+            .camping-trip-detail-img-innerwrap {
+                // margin-right: 0px;
+                // margin-top: -150px;
+
+
+                &:first-child {
+                    // width: 17%;
+                }
+
+                &:nth-child(2) {
+                    // width: 29%;
+                }
+
+                &:last-child {
+                    // width: 11%;
+                    margin-right: 0px;
+                }
+
+                img {
+                    // margin: 0 auto;
+                    // min-height: 300px;
+                    // object-fit: cover;
+                }
+
+            }
+        }
+
+        .camping-trip-detail-outerwrap {
+            // padding: 200px 15px 0px;
+            padding: 0px 15px 0px;
+            h2 {
+                font-size: 29px;
+                margin-bottom: 30px;
+            }
+
+            .camping-trip-detail-innerwrap {
+                @include flex-wrap(wrap);
+
+                .camping-trip-detail-content-outerwrap {
+                    margin-right: 0px;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    .camping-trip-detail-heading {
+                        padding: 10px;
+
+                        .camping-trip-detail-content-img {
+                            margin-right: 19px;
+
+                            img {
+                                width: 34px;
+                                height: 34px;
+                                object-fit: contain;
+                            }
+                        }
+
+                        h3 {
+                            font-size: 17px;
+                        }
+                    }
+
+                    .camping-trip-detail-content {
+                        padding: 10px;
+                        min-height: auto;
+
+                        span {
+                            font-size: 13px;
+                            // margin-bottom: 20px;
+                        }
+                    }
+
+                    .camping-trip-detail-btn {
+                        margin-top: 10px;
+
+                        .pink-btn {
+                            @include pink-btn(15px);
+
+                            &::after {
+                                @include pink-right-arrow;
+                                top: 4px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+//  RESPONSIVE SEC END:

@@ -1,0 +1,312 @@
+.find-a-meeting-section{
+    text-align: center;
+    min-height: 100vh;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-direction(column);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h2{
+        font-size: 57px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $extraBold;
+        font-family: $fontMain;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 25px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $regular;
+        font-family: $fontMain;
+        margin-bottom: 39px;
+    }
+    form{
+        width: 100%;
+        ul{
+            li{
+                label{
+                    width: 100%;
+                    max-width: 768px;
+                    margin: 0 auto;
+                    display: block;
+                    position: relative;
+                        input[type='text'],
+                        input[type='email'],
+                        input[type='number'],
+                        textarea {
+                            border-color: $primary;
+                            border-width: 1px 4px 4px 1px;
+                            border-radius: 20px;
+                            border-style: solid;
+                            padding: 20px 70px 20px 20px;
+                            height: 82px;
+                            width: 100%;
+            
+                            &:focus {
+                                outline: 0;
+                            }
+            
+                            @include placeholder(18px, #000);
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 40px;
+                        height: 40px;
+                        background-image: url(/wp-content/themes/ogkbase/images/search-icons.svg);
+                        background-repeat: no-repeat;
+                        top: 50%;
+                        right: 30px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+} 
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-med) {
+    .find-a-meeting-section{
+        h2{
+            font-size: 47px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 22px;
+            margin-bottom: 19px;
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .find-a-meeting-section{
+        h2{
+            font-size: 41px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 22px;
+            margin-bottom: 19px;
+        }
+        form{
+            width: 100%;
+            ul{
+                li{
+                    label{
+                        input[type='text'],
+                        input[type='email'],
+                        input[type='number'],
+                        textarea {
+                            border-width: 1px 4px 4px 1px;
+                            border-radius: 20px;
+                            padding: 20px 70px 20px 20px;
+                            height: 72px;
+                            &:focus {
+                                outline: 0;
+                            }
+            
+                            @include placeholder(16px, #000);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .find-a-meeting-section{
+        h2{
+            font-size: 41px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 22px;
+            margin-bottom: 19px;
+        }
+        form{
+            width: 100%;
+            ul{
+                li{
+                    label{
+                        max-width: 714px;
+                        input[type='text'],
+                        input[type='email'],
+                        input[type='number'],
+                        textarea {
+                            border-width: 1px 4px 4px 1px;
+                            border-radius: 20px;
+                            padding: 20px 70px 20px 20px;
+                            height: 72px;
+                            &:focus {
+                                outline: 0;
+                            }
+            
+                            @include placeholder(16px, #000);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .find-a-meeting-section{
+        h2{
+            font-size: 33px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 19px;
+            margin-bottom: 19px;
+        }
+        form{
+            width: 100%;
+            ul{
+                li{
+                    label{
+                        max-width: 614px;
+                        input[type='text'],
+                        input[type='email'],
+                        input[type='number'],
+                        textarea {
+                            border-width: 1px 4px 4px 1px;
+                            border-radius: 20px;
+                            padding: 20px 70px 20px 20px;
+                            height: 72px;
+                            &:focus {
+                                outline: 0;
+                            }
+            
+                            @include placeholder(16px, #000);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .find-a-meeting-section{
+        h2{
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+        form{
+            width: 100%;
+            ul{
+                li{
+                    label{
+                        max-width: 514px;
+                        input[type='text'],
+                        input[type='email'],
+                        input[type='number'],
+                        textarea {
+                            border-width: 1px 4px 4px 1px;
+                            border-radius: 20px;
+                            padding: 20px 70px 20px 20px;
+                            height: 72px;
+                            &:focus {
+                                outline: 0;
+                            }
+            
+                            @include placeholder(14px, #000);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .find-a-meeting-section{
+        padding: 0 15px;
+        h2{
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        form{
+            width: 100%;
+            ul{
+                li{
+                    label{
+                        max-width: 100%;
+                        input[type='text'],
+                        input[type='email'],
+                        input[type='number'],
+                        textarea {
+                            border-width: 1px 4px 4px 1px;
+                            border-radius: 20px;
+                            padding: 20px 70px 20px 20px;
+                            height: 72px;
+                            &:focus {
+                                outline: 0;
+                            }
+            
+                            @include placeholder(12px, #000);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-phone) {
+    .find-a-meeting-section{
+        padding: 0 15px;
+        h2{
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        form{
+            width: 100%;
+            ul{
+                li{
+                    label{
+                        max-width: 100%;
+                        input[type='text'],
+                        input[type='email'],
+                        input[type='number'],
+                        textarea {
+                            border-width: 1px 4px 4px 1px;
+                            border-radius: 13px;
+                            padding: 20px 50px 20px 20px;
+                            height: 55px;
+                            &:focus {
+                                outline: 0;
+                            }
+            
+                            @include placeholder(9px, #000);
+                        }
+                        &::after{
+                            content: "";
+                            width: 35px;
+                            height: 26px;
+                            background-image: url(/Reco-Intensive-22/wp-content/themes/ogkbase/images/search-icons.svg);
+                            top: 50%;
+                            right: 10px;
+                            background-size: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// RESPONSIVE SEC END:

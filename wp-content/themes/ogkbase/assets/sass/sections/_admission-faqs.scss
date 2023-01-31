@@ -1,0 +1,335 @@
+.admission-faqs-section {
+    background-color: #F0EEE6;
+    padding: 118px 238px;
+
+    .admissions-faqs-outerwrap {
+        width: 100%;
+        max-width: 964px;
+        margin: 0 auto;
+
+        .accordion {
+            margin: 0;
+        }
+
+        .accordion-item {
+            background-color: $white;
+            color: #111;
+            margin: 0 0 20px;
+            border-color: $primary;
+            border-width: 2px 4px 4px;
+            border-radius: 20px;
+            border-style: solid;
+            padding: 10px 30px;
+            position: relative;
+        }
+
+        .accordion-item-header {
+            line-height: 1.2;
+            min-height: 4rem;
+            font-weight: $bold;
+            @include  flexbox;
+            @include align-items(center);
+            // position: relative;
+            cursor: pointer;
+            font-family: $fontMain;
+            width: 100%;
+            max-width: 90%;
+
+            &::after {
+                content: "\002B";
+                font-size: 2rem;
+                position: absolute;
+                right: 30px;
+                font-weight: $regular;
+            }
+
+            &.active::after {
+                content: "\2212";
+                font-weight: $regular;
+            }
+        }
+
+        .accordion-item-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            font-family: $fontMain;
+        }
+
+        .accordion-item-body-content {
+            width: 100%;
+            max-width: 90%;
+            line-height: 1.5rem;
+            margin-top: 10px;
+            color: $primary;
+            font-size: 16px;
+            line-height: 1.2;
+            p{
+                color: $primary;
+                line-height: 28px;
+            }
+        }
+
+        .addmission-faqs-btn {
+            text-align: center;
+
+            .btn-blue {
+                @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .admission-faqs-section {
+        padding: 118px 138px;
+
+        .admissions-faqs-outerwrap {
+            .accordion-item-header {
+                min-height: 3rem;
+
+                &::after {
+                    content: "\002B";
+                    font-size: 2rem;
+                    position: absolute;
+                    font-weight: $regular;
+                }
+
+                &.active::after {
+                    content: "\2212";
+                    font-weight: $regular;
+                }
+            }
+
+            .accordion-item-body-content {
+                width: 100%;
+                max-width: 90%;
+                line-height: 1.5rem;
+            }
+
+            .addmission-faqs-btn {
+                text-align: center;
+
+                .btn-blue {
+                    @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .admission-faqs-section {
+        padding: 100px 90px;
+
+        .admissions-faqs-outerwrap {
+            .accordion-item-header {
+                min-height: 3rem;
+
+                &::after {
+                    content: "\002B";
+                    font-size: 2rem;
+                    position: absolute;
+                    font-weight: $regular;
+                }
+
+                &.active::after {
+                    content: "\2212";
+                    font-weight: $regular;
+                }
+            }
+
+            .accordion-item-body-content {
+                width: 100%;
+                max-width: 90%;
+                line-height: 1.5rem;
+            }
+
+            .addmission-faqs-btn {
+                text-align: center;
+
+                .btn-blue {
+                    @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .admission-faqs-section {
+        padding: 80px 60px;
+
+        .admissions-faqs-outerwrap {
+            .accordion {
+                .accordion-item {
+                    padding: 10px 20px;
+                }
+            }
+
+            .accordion-item-header {
+                min-height: 2rem;
+                font-size: 14px;
+
+                &::after {
+                    content: "\002B";
+                    font-size: 2rem;
+                    position: absolute;
+                    font-weight: $regular;
+                    right: 20px;
+                }
+
+                &.active::after {
+                    content: "\2212";
+                    font-weight: $regular;
+                }
+            }
+
+            .accordion-item-body-content {
+                width: 100%;
+                max-width: 90%;
+                line-height: 1.2;
+                font-size: 12px;
+            }
+
+            .addmission-faqs-btn {
+                text-align: center;
+
+                .btn-blue {
+                    @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .admission-faqs-section {
+        padding: 60px 35px;
+
+        .admissions-faqs-outerwrap {
+            .accordion {
+                .accordion-item {
+                    padding: 10px 20px;
+                }
+            }
+
+            .accordion-item-header {
+                min-height: 2rem;
+                font-size: 14px;
+
+                &::after {
+                    content: "\002B";
+                    font-size: 2rem;
+                    position: absolute;
+                    font-weight: $regular;
+                    right: 20px;
+                }
+
+                &.active::after {
+                    content: "\2212";
+                    font-weight: $regular;
+                }
+            }
+
+            .accordion-item-body-content {
+                width: 100%;
+                max-width: 90%;
+                line-height: 1.2;
+                font-size: 12px;
+                p{
+                    font-size: 13px;
+                    line-height: 24px;
+                }
+            }
+
+            .addmission-faqs-btn {
+                text-align: center;
+
+                .btn-blue {
+
+                    // @include theme-btn(18px,#FACE37,18px 43px,6px 7px 0px 0px rgba(0,0,0,1));
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .admission-faqs-section {
+        padding: 60px 15px;
+
+        .admissions-faqs-outerwrap {
+            .accordion {
+                .accordion-item {
+                    padding: 10px;
+                }
+            }
+
+            .accordion-item-header {
+                min-height: 2rem;
+                font-size: 14px;
+
+                &::after {
+                    content: "\002B";
+                    font-size: 2rem;
+                    position: absolute;
+                    font-weight: $regular;
+                    right: 10px;
+                }
+
+                &.active::after {
+                    content: "\2212";
+                    font-weight: $regular;
+                }
+            }
+
+            .accordion-item-body-content {
+                width: 100%;
+                max-width: 90%;
+                line-height: 1.2;
+                font-size: 12px;
+            }
+
+            .addmission-faqs-btn {
+                text-align: center;
+
+                .btn-blue {
+                    @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC END:

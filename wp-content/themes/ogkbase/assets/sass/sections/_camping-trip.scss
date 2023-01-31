@@ -1,0 +1,382 @@
+.camping-trip-section {
+    text-align: center;
+    padding: 150px 336px 249px;
+
+    .camping-trip-outerwrap {
+        h3 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $regular;
+            font-family: $fontMain;
+            margin-bottom: 39px;
+        }
+
+        ul {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            margin-bottom: 40px;
+
+            li {
+                list-style-type: none;
+                margin-right: 10px;
+
+                a {
+                    font-size: 16px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $medium;
+                    font-family: $fontMain;
+                    text-transform: capitalize;
+                    padding: 10px;
+                    display: inline-block;
+                    border: 2px solid $primary;
+                    border-radius: 10px;
+
+                    &:hover {
+                        background-color: #FACE37;
+                    }
+                }
+            }
+        }
+
+        .fire-img {
+            img {
+                width: 28px;
+                height: 33px;
+                margin: 0 auto;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .camping-trip-section {
+        text-align: center;
+        padding: 150px 236px 249px;
+
+        .camping-trip-outerwrap {
+            h3 {
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                margin-bottom: 39px;
+            }
+
+            ul {
+                margin-bottom: 40px;
+
+                li {
+                    list-style-type: none;
+                    margin-right: 10px;
+
+                    a {
+                        font-size: 16px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $medium;
+                        font-family: $fontMain;
+                        text-transform: capitalize;
+                        padding: 10px;
+                        display: inline-block;
+                        border: 2px solid $primary;
+                        border-radius: 10px;
+
+                        &:hover {
+                            background-color: #FACE37;
+                        }
+                    }
+                }
+            }
+
+            .fire-img {
+                img {
+                    width: 28px;
+                    height: 33px;
+                    margin: 0 auto;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .camping-trip-section {
+        text-align: center;
+        padding: 110px 136px 209px;
+
+        .camping-trip-outerwrap {
+            h3 {
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 29px;
+            }
+
+            ul {
+                margin-bottom: 40px;
+
+                li {
+                    list-style-type: none;
+                    margin-right: 10px;
+
+                    a {
+                        font-size: 16px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $medium;
+                        font-family: $fontMain;
+                        text-transform: capitalize;
+                        padding: 10px;
+                        display: inline-block;
+                        border: 2px solid $primary;
+                        border-radius: 10px;
+
+                        &:hover {
+                            background-color: #FACE37;
+                        }
+                    }
+                }
+            }
+
+            .fire-img {
+                img {
+                    width: 28px;
+                    height: 33px;
+                    margin: 0 auto;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .camping-trip-section {
+        text-align: center;
+        padding: 80px 90px 209px;
+
+        .camping-trip-outerwrap {
+            h3 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 29px;
+            }
+
+            ul {
+                margin-bottom: 40px;
+
+                li {
+                    list-style-type: none;
+                    margin-right: 10px;
+
+                    a {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $medium;
+                        font-family: $fontMain;
+                        text-transform: capitalize;
+                        padding: 10px;
+                        display: inline-block;
+                        border: 2px solid $primary;
+                        border-radius: 10px;
+
+                        &:hover {
+                            background-color: #FACE37;
+                        }
+                    }
+                }
+            }
+
+            .fire-img {
+                img {
+                    width: 28px;
+                    height: 33px;
+                    margin: 0 auto;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .camping-trip-section {
+        padding: 80px 50px 30px;
+
+        .camping-trip-outerwrap {
+            h3 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 29px;
+            }
+
+            ul {
+                margin-bottom: 40px;
+
+                li {
+                    list-style-type: none;
+                    margin-right: 10px;
+
+                    a {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $medium;
+                        font-family: $fontMain;
+                        text-transform: capitalize;
+                        padding: 10px;
+                        display: inline-block;
+                        border: 2px solid $primary;
+                        border-radius: 10px;
+
+                        &:hover {
+                            background-color: #FACE37;
+                        }
+                    }
+                }
+            }
+
+            .fire-img {
+                img {
+                    width: 28px;
+                    height: 33px;
+                    margin: 0 auto;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .camping-trip-section {
+        padding: 80px 30px 30px;
+
+        .camping-trip-outerwrap {
+            h3 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 29px;
+            }
+
+            ul {
+                margin-bottom: 40px;
+                @include flex-wrap(wrap);
+
+                li {
+                    list-style-type: none;
+                    margin-right: 10px;
+                    margin-bottom: 20px;
+                    width: 100%;
+
+                    a {
+                        font-size: 14px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $medium;
+                        font-family: $fontMain;
+                        text-transform: capitalize;
+                        padding: 10px;
+                        display: block;
+                        border: 2px solid $primary;
+                        border-radius: 10px;
+
+                        &:hover {
+                            background-color: #FACE37;
+                        }
+                    }
+                }
+            }
+
+            .fire-img {
+                img {
+                    width: 28px;
+                    height: 33px;
+                    margin: 0 auto;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .camping-trip-section {
+        padding: 40px 15px 30px;
+
+        .camping-trip-outerwrap {
+            h3 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 29px;
+            }
+
+            ul {
+                margin-bottom: 40px;
+
+                li {
+                    list-style-type: none;
+                    margin-right: 10px;
+
+                    a {
+                        font-size: 14px;
+                        border: 2px solid $primary;
+                        border-radius: 10px;
+
+                        &:hover {
+                            background-color: #FACE37;
+                        }
+                    }
+                }
+            }
+
+            .fire-img {
+                img {
+                    width: 28px;
+                    height: 33px;
+                    margin: 0 auto;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC END:

@@ -1,0 +1,161 @@
+.reco-store-section{
+    background-color: #F0EEE6;
+    text-align: center;
+    padding: 100px 0px;
+    h2{
+        font-size: 32px;
+        line-height: 1.2;
+        font-weight: $bold;
+        color: $primary;
+        font-family: $fontMain;
+        margin-bottom: 40px;
+    }
+    .reco-store-outerwrap{
+        @include  flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        margin-bottom: 40px;
+        .reco-store-innerwrap{
+            border: 2px solid $primary;
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 0 8px;
+            .reco-store-img{
+                border-bottom: 2px solid $primary;
+                img{
+                    height: 417px; 
+                }
+            }
+            .reco-store-content{
+                background-color: $white;
+                padding: 20px;
+                text-align: left;
+                h3{
+                    font-size: 20px;
+                    line-height: 1.2;
+                    font-weight: $bold;
+                    color: $primary;
+                    font-family: $fontMain;
+                    margin-bottom: 10px;
+                }
+                span{
+                    font-size: 16px;
+                    line-height: 1.2;
+                    font-weight: $light;
+                    color: $primary;
+                    display: inline-block;
+                    font-family: $input-serif;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .reco-store-section{
+        .reco-store-outerwrap{
+            flex-wrap: wrap;
+            .reco-store-innerwrap{
+                width: 40%;
+                margin-bottom: 18px;
+                .reco-store-img{
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .reco-store-section{
+        padding: 60px 0px;
+        h2{
+            font-size: 29px;
+        }
+        .reco-store-outerwrap{
+            flex-wrap: wrap;
+            .reco-store-innerwrap{
+                width: 40%;
+                margin-bottom: 18px;
+                .reco-store-img{
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .reco-store-btn{
+            .btn-blue{
+                @include theme-btn(16px, #00CCFF, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .reco-store-section{
+        padding: 60px 0px;
+        h2{
+            font-size: 29px;
+        }
+        .reco-store-outerwrap{
+            flex-wrap: wrap;
+            .reco-store-innerwrap{
+                width: 40%;
+                margin-bottom: 18px;
+                .reco-store-img{
+                    img{
+                        height: 317px;
+                    }
+                }
+            }
+        }
+        .reco-store-btn{
+            .btn-blue{
+                @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .reco-store-section{
+        padding: 60px 0px;
+        h2{
+            font-size: 29px;
+        }
+        .reco-store-outerwrap{
+            flex-wrap: wrap;
+            .reco-store-innerwrap{
+                width: 90%;
+                margin-bottom: 18px;
+                .reco-store-img{
+                    img{
+                        height: auto;
+                    }
+                }
+            }
+        }
+        .reco-store-btn{
+            .btn-blue{
+                @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-phone) {
+    .reco-store-section{
+        padding: 60px 0px;
+        h2{
+            font-size: 25px;
+        }
+        .reco-store-btn{
+            .btn-blue{
+                @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+            }
+        }
+    }
+}
+// RESPONSIVE SEC END:

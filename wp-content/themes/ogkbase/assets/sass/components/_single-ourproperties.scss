@@ -1,0 +1,3042 @@
+// BANNER SLIDER START:
+.internal-banner-slider {
+    .internal-outerwrap {
+        // background-color: lightblue;
+        min-height: 95vh;
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+
+        .internal-img {
+
+            // position: relative;
+            img {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                object-fit: cover;
+                min-height: 100vh;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.3);
+                z-index: 9;
+            }
+        }
+
+        h1 {
+            font-size: 57px;
+            line-height: 1.2;
+            color: $white;
+            font-weight: $bold;
+            font-family: $fontMain;
+            text-transform: uppercase;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9;
+        }
+    }
+
+    .owl-carousel {
+        .owl-nav {
+            .owl-prev {
+                @include left-arrow(42px);
+                top: 50%;
+                width: 45px;
+                height: 45px;
+            }
+
+            .owl-next {
+                @include right-arrow(42px);
+                top: 50%;
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        .owl-dots {
+            .owl-dot {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+
+    .banner-inner-content {
+        margin-top: -180px;
+        position: relative;
+        z-index: 9;
+
+        ul {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            background-color: $white;
+            width: 100%;
+            max-width: 768px;
+            margin: 0 auto;
+
+            li {
+                padding: 26px 23px 30px;
+                border-right: 2px solid $primary;
+                list-style: none;
+                width: 33.3%;
+
+                img {
+                    width: 42px;
+                    height: 38px;
+                    object-fit: contain;
+                    margin: 0 auto 20px;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $bold;
+                    font-family: $fontMain;
+                    text-align: center;
+                }
+
+                &:last-child {
+                    border-right: unset;
+                }
+            }
+        }
+    }
+}
+
+// BANNER SLIDER END:
+
+// INTERNAL CONTENT CSS START:
+.internal-content-outerwrap {
+    padding: 220px 336px 170px;
+    position: relative;
+
+    h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $bold;
+        font-family: $fontMain;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: $primary;
+        font-weight: $regular;
+        font-family: $fontMain;
+        margin-bottom: 30px;
+
+        a {
+            text-decoration: underline;
+            color: #ED207A;
+        }
+    }
+    .tsh_breadcrumbs {
+        position: absolute;
+        top: 100px;
+        left: 140px;
+        z-index: 9;
+        @include flexbox();
+        @include align-items(center);
+
+        li {
+            list-style: none;
+            margin-right: 9px;
+
+            a {
+                font-size: 16px;
+                line-height: 1.2;
+                color: #BCBCBC;
+                font-weight: $regular;
+                font-family: $fontMain;
+            }
+
+            .bread-current {
+                @extend a;
+                color: #ED207A !important;
+                font-weight: $medium;
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+// INTERNAL CONTENT CSS END:
+
+// INTERNAL OUTERWRAP CSS START:
+.internal-outerwrap {
+    padding: 100px 140px;
+    background-color: #F0EEE6;
+
+    h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $bold;
+        font-family: $fontMain;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .camping-trip-detail-innerwrap {
+        @include flexbox;
+        @include align-items(flex-start);
+        @include justify-content(center);
+
+        .camping-trip-detail-content-outerwrap {
+            background-color: $white;
+            margin-right: 16px;
+            border: 2px solid $primary;
+            border-radius: 20px;
+            width: 33.3%;
+            margin-bottom: 20px;
+
+            .camping-trip-detail-heading {
+                @include flexbox;
+                @include align-items(center);
+                padding: 29px 20px 30px;
+                border-bottom: 2px solid $primary;
+
+                .camping-trip-detail-content-img {
+                    margin-right: 19px;
+
+                    img {
+                        width: 34px;
+                        height: 34px;
+                        object-fit: contain;
+                    }
+                }
+
+                h3 {
+                    font-size: 25px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $bold;
+                    font-family: $fontMain;
+                }
+            }
+
+            .camping-trip-detail-content {
+                padding: 30px 20px;
+                min-height: 190px;
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.4;
+                    color: $primary;
+                    font-weight: $regular;
+                    font-family: $fontMain;
+                    display: block;
+                    // margin-bottom: 20px;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .internal-btn {
+        text-align: center;
+
+        .btn-blue {
+            @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+            &:focus,
+            &:hover {
+                @include theme-btn-hover;
+            }
+        }
+    }
+}
+
+// INTERNAL OUTERWRAP CSS END:
+
+// SIEBOLD CSS START:
+.siebold-outerwrap {
+    padding: 100px 336px;
+    position: relative;
+
+    h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $bold;
+        font-family: $fontMain;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        margin-top: 40px;
+        @include flexbox;
+        @include flex-wrap(wrap);
+        padding-left: 30px;
+
+        li {
+            list-style: none;
+            font-size: 18px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $regular;
+            font-family: $fontMain;
+            margin-bottom: 20px;
+            position: relative;
+            padding-right: 45px;
+            width: 50%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -30px;
+                top: 3px;
+                width: 15px;
+                height: 15px;
+                background-color: #FACE37;
+                border: 2px solid $primary;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: calc(100% - 140px);
+        left: 50%;
+        bottom: 0;
+        height: 2px;
+        transform: translateX(-50%);
+        background-color: $primary;
+    }
+}
+
+// SIEBOLD CSS END:
+
+// FEMALE SOBER CSS START:
+.female-sober-outerwrap {
+    padding: 100px 140px;
+
+    .female-sober-top {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+        }
+
+        .female-sober-btn {
+            .btn-blue {
+                @include theme-btn(18px, #00CCFF, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+    .our-property-filters-outerwrap {
+        border: 2px solid $primary;
+        border-radius: 20px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin: 0 16px 20px 0;
+
+        .our-property-filters-img {
+            @include hover-transition (all 0.5s ease-in-out);
+
+            img {
+                width: 100%;
+                height: 331px;
+                object-fit: cover;
+            }
+        }
+
+        .our-property-filters-content-wrap {
+            background-color: $white;
+            padding: 20px 30px;
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(space-between);
+            position: relative;
+            z-index: 9;
+
+            h2 {
+                font-size: 32px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $bold;
+                font-family: $fontMain;
+            }
+
+            .our-property-filters-content-btn {
+
+                a.pink-btn {
+                    z-index: 9;
+                    @include pink-btn(20px);
+
+                    &::after {
+                        @include pink-right-arrow;
+                    }
+
+                    &::before {
+                        @include yellow-bg(#face37);
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .our-property-filters-content-btn {
+                a.pink-btn {
+                    &::before {
+                        @include yellow-hover-effect;
+                    }
+                }
+            }
+
+            .our-property-filters-img {
+                img {
+                    @include hover-transition (all 0.5s ease-in);
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    .owl-carousel {
+        .owl-nav {
+            .owl-prev {
+                @include left-arrow(-108px);
+                top: 50%;
+                width: 45px;
+                height: 45px;
+                transform: translateY(-50%);
+            }
+
+            .owl-next {
+                @include right-arrow(-108px);
+                top: 50%;
+                width: 45px;
+                height: 45px;
+                transform: translateY(-50%);
+            }
+        }
+
+        .owl-dots {
+            .owl-dot {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}
+
+// FEMALE SOBER CSS END:
+
+// OUR PROPERTY CSS START:
+.our-properties-outerwrap {
+    padding: 100px 140px;
+    background-color: $white;
+
+    .our-properties-top {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+        }
+
+        .our-properties-btn {
+            .btn-blue {
+                @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+    .our-properties-bottom {
+        ul {
+            @include flexbox;
+            @include align-items(center);
+
+            // @include justify-content(center);
+            li {
+                margin-right: 17px;
+                list-style: none;
+                width: 50%;
+
+                a {
+                    display: inline-block;
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+// OUR PROPERTY CSS END:
+
+// RESPONSIVE START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .internal-banner-slider {
+        .internal-outerwrap {
+            .internal-img {
+
+                // position: relative;
+                img {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    object-fit: cover;
+
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.3);
+                    z-index: 9;
+                }
+            }
+
+            h1 {
+                font-size: 51px;
+                line-height: 1.2;
+                color: $white;
+                font-weight: $bold;
+                font-family: $fontMain;
+                text-transform: uppercase;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 9;
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(42px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                }
+
+                .owl-next {
+                    @include right-arrow(42px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+
+        .banner-inner-content {
+            margin-top: -180px;
+            position: relative;
+            z-index: 9;
+
+            ul {
+                border: 2px solid $primary;
+                border-radius: 20px;
+                @include flexbox;
+                @include align-items(center);
+                @include justify-content(center);
+                background-color: $white;
+                width: 100%;
+                max-width: 768px;
+                margin: 0 auto;
+
+                li {
+                    padding: 26px 23px 30px;
+                    border-right: 2px solid $primary;
+                    list-style: none;
+                    width: 33.3%;
+
+                    img {
+                        width: 42px;
+                        height: 38px;
+                        object-fit: contain;
+                        margin: 0 auto 20px;
+                    }
+
+                    h5 {
+                        font-size: 18px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                        text-align: center;
+                    }
+
+                    &:last-child {
+                        border-right: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    // INTERNAL CONTENT CSS START:
+    .internal-content-outerwrap {
+        padding: 220px 250px 170px;
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: $primary;
+            font-weight: $regular;
+            font-family: $fontMain;
+            margin-bottom: 30px;
+
+            a {
+                text-decoration: underline;
+                color: #ED207A;
+            }
+        }
+    }
+
+    // INTERNAL CONTENT CSS END:
+
+    // INTERNAL OUTERWRAP CSS START:
+    .internal-outerwrap {
+        padding: 100px 140px;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 50px;
+        }
+
+        .camping-trip-detail-innerwrap {
+
+            .camping-trip-detail-content-outerwrap {
+                width: 33.3%;
+                margin-bottom: 20px;
+
+                .camping-trip-detail-heading {
+                    padding: 19px 20px;
+
+                    .camping-trip-detail-content-img {
+                        margin-right: 19px;
+
+                        img {
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 21px;
+                        line-height: 1.2;
+                    }
+                }
+
+                .camping-trip-detail-content {
+                    padding: 30px 20px;
+                    min-height: 190px;
+
+                    p {
+                        font-size: 16px;
+                        // margin-bottom: 20px;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        .internal-btn {
+            text-align: center;
+
+            .btn-blue {
+                @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+    // INTERNAL OUTERWRAP CSS END:
+
+    // SIEBOLD CSS START:
+    .siebold-outerwrap {
+        padding: 80px 200px;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-top: 40px;
+            padding-left: 30px;
+
+            li {
+                font-size: 18px;
+                margin-bottom: 20px;
+                padding-right: 45px;
+                width: 50%;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: 3px;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #FACE37;
+                    border: 2px solid $primary;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: calc(100% - 140px);
+            left: 50%;
+            bottom: 0;
+            height: 2px;
+            transform: translateX(-50%);
+            background-color: $primary;
+        }
+    }
+
+    // SIEBOLD CSS END:
+
+    // FEMALE SOBER CSS START:
+    .female-sober-outerwrap {
+        padding: 80px 120px;
+
+        .female-sober-top {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 29px;
+            }
+
+            .female-sober-btn {
+                .btn-blue {
+                    @include theme-btn(18px, #00CCFF, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-property-filters-outerwrap {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: 0 16px 20px 0;
+
+            .our-property-filters-img {
+                @include hover-transition (all 0.5s ease-in-out);
+
+                img {
+                    width: 100%;
+                    height: 331px;
+                    object-fit: cover;
+                }
+            }
+
+            .our-property-filters-content-wrap {
+                background-color: $white;
+                padding: 20px 30px;
+                @include flexbox;
+                @include align-items(center);
+                @include justify-content(space-between);
+                position: relative;
+                z-index: 9;
+
+                h2 {
+                    font-size: 26px;
+                }
+
+                .our-property-filters-content-btn {
+
+                    a.pink-btn {
+                        z-index: 9;
+                        @include pink-btn(18px);
+
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+
+                        &::before {
+                            @include yellow-bg(#face37);
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .our-property-filters-content-btn {
+                    a.pink-btn {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+
+                .our-property-filters-img {
+                    img {
+                        @include hover-transition (all 0.5s ease-in);
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(-88px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    transform: translateY(-50%);
+                }
+
+                .owl-next {
+                    @include right-arrow(-88px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+
+    // FEMALE SOBER CSS END:
+
+    // OUR PROPERTY CSS START:
+    .our-properties-outerwrap {
+        padding: 80px 120px;
+        background-color: $white;
+
+        .our-properties-top {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 29px;
+            }
+
+            .our-properties-btn {
+                .btn-blue {
+                    @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-properties-bottom {
+            ul {
+                @include flexbox;
+                @include align-items(center);
+
+                // @include justify-content(center);
+                li {
+                    margin-right: 17px;
+                    list-style: none;
+                    width: 50%;
+
+                    a {
+                        display: inline-block;
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    // OUR PROPERTY CSS END:
+
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .internal-banner-slider {
+        .internal-outerwrap {
+            .internal-img {
+
+                // position: relative;
+                img {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    object-fit: cover;
+
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.3);
+                    z-index: 9;
+                }
+            }
+
+            h1 {
+                font-size: 45px;
+                position: absolute;
+                z-index: 9;
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(42px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                }
+
+                .owl-next {
+                    @include right-arrow(42px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+
+        .banner-inner-content {
+            margin-top: -180px;
+            position: relative;
+            z-index: 9;
+
+            ul {
+                border: 2px solid $primary;
+                border-radius: 20px;
+                width: 100%;
+                max-width: 768px;
+                margin: 0 auto;
+
+                li {
+                    padding: 26px 23px 30px;
+                    width: 33.3%;
+
+                    img {
+                        width: 42px;
+                        height: 38px;
+                        object-fit: contain;
+                        margin: 0 auto 20px;
+                    }
+
+                    h5 {
+                        font-size: 18px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                        text-align: center;
+                    }
+
+                    &:last-child {
+                        border-right: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    // INTERNAL CONTENT CSS START:
+    .internal-content-outerwrap {
+        padding: 200px 170px 130px;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+
+            a {
+                text-decoration: underline;
+                color: #ED207A;
+            }
+        }
+    }
+
+    // INTERNAL CONTENT CSS END:
+
+    // INTERNAL OUTERWRAP CSS START:
+    .internal-outerwrap {
+        padding: 80px;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 50px;
+        }
+
+        .camping-trip-detail-innerwrap {
+
+            .camping-trip-detail-content-outerwrap {
+                width: 33.3%;
+                margin-bottom: 20px;
+
+                .camping-trip-detail-heading {
+                    padding: 19px 20px;
+
+                    .camping-trip-detail-content-img {
+                        margin-right: 19px;
+
+                        img {
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 21px;
+                        line-height: 1.2;
+                    }
+                }
+
+                .camping-trip-detail-content {
+                    padding: 30px 20px;
+                    min-height: 217px;
+
+                    p {
+                        font-size: 16px;
+                        // margin-bottom: 20px;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        .internal-btn {
+            text-align: center;
+
+            .btn-blue {
+                @include theme-btn(16px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+    // INTERNAL OUTERWRAP CSS END:
+
+    // SIEBOLD CSS START:
+    .siebold-outerwrap {
+        padding: 80px 150px;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-top: 40px;
+            padding-left: 30px;
+
+            li {
+                font-size: 16px;
+                margin-bottom: 20px;
+                padding-right: 45px;
+                width: 50%;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: 3px;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #FACE37;
+                    border: 2px solid $primary;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: calc(100% - 140px);
+            left: 50%;
+            bottom: 0;
+            height: 2px;
+            transform: translateX(-50%);
+            background-color: $primary;
+        }
+    }
+
+    // SIEBOLD CSS END:
+
+    // FEMALE SOBER CSS START:
+    .female-sober-outerwrap {
+        padding: 80px;
+
+        .female-sober-top {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 25px;
+            }
+
+            .female-sober-btn {
+                .btn-blue {
+                    @include theme-btn(16px, #00CCFF, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-property-filters-outerwrap {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: 0 16px 20px 0;
+
+            .our-property-filters-img {
+                @include hover-transition (all 0.5s ease-in-out);
+
+                img {
+                    width: 100%;
+                    height: 331px;
+                    object-fit: cover;
+                }
+            }
+
+            .our-property-filters-content-wrap {
+                background-color: $white;
+                padding: 20px 30px;
+                @include flexbox;
+                @include align-items(center);
+                @include justify-content(space-between);
+                position: relative;
+                z-index: 9;
+
+                h2 {
+                    font-size: 21px;
+                }
+
+                .our-property-filters-content-btn {
+
+                    a.pink-btn {
+                        z-index: 9;
+                        @include pink-btn(18px);
+
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+
+                        &::before {
+                            @include yellow-bg(#face37);
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .our-property-filters-content-btn {
+                    a.pink-btn {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+
+                .our-property-filters-img {
+                    img {
+                        @include hover-transition (all 0.5s ease-in);
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(-66px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    transform: translateY(-50%);
+                }
+
+                .owl-next {
+                    @include right-arrow(-66px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+
+    // FEMALE SOBER CSS END:
+
+    // OUR PROPERTY CSS START:
+    .our-properties-outerwrap {
+        padding: 80px;
+
+        .our-properties-top {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 25px;
+            }
+
+            .our-properties-btn {
+                .btn-blue {
+                    @include theme-btn(16px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-properties-bottom {
+            ul {
+                @include flexbox;
+                @include align-items(center);
+                @include flex-wrap(wrap);
+
+                // @include justify-content(center);
+                li {
+                    margin-right: 17px;
+                    margin-bottom: 17px;
+                    list-style: none;
+                    width: 48%;
+
+                    a {
+                        display: inline-block;
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    &:nth-child(even) {
+                        margin-right: 0px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    // OUR PROPERTY CSS END:
+
+
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .internal-banner-slider {
+        .internal-outerwrap {
+            .internal-img {
+
+                // position: relative;
+                img {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    object-fit: cover;
+
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.3);
+                    z-index: 9;
+                }
+            }
+
+            h1 {
+                font-size: 37px;
+                position: absolute;
+                z-index: 9;
+                top: 52%;
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(42px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                }
+
+                .owl-next {
+                    @include right-arrow(42px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+
+        .banner-inner-content {
+            margin-top: -180px;
+            position: relative;
+            z-index: 9;
+
+            ul {
+                border: 2px solid $primary;
+                border-radius: 20px;
+                width: 100%;
+                max-width: 608px;
+                margin: 0 auto;
+
+                li {
+                    padding: 26px 23px 30px;
+                    width: 33.3%;
+
+                    img {
+                        width: 33px;
+                        height: 29px;
+                        object-fit: contain;
+                        margin: 0 auto 20px;
+                    }
+
+                    h5 {
+                        font-size: 13px;
+                    }
+
+                    &:last-child {
+                        border-right: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    // INTERNAL CONTENT CSS START:
+    .internal-content-outerwrap {
+        padding: 120px 90px 50px;
+
+        h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 30px;
+
+            a {
+                text-decoration: underline;
+                color: #ED207A;
+            }
+        }
+        .tsh_breadcrumbs {
+            display: none;
+        }
+    }
+
+    // INTERNAL CONTENT CSS END:
+
+    // INTERNAL OUTERWRAP CSS START:
+    .internal-outerwrap {
+        padding: 80px;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 50px;
+        }
+
+        .camping-trip-detail-innerwrap {
+            @include flex-wrap(wrap);
+
+            .camping-trip-detail-content-outerwrap {
+                width: 100%;
+                margin-bottom: 20px;
+                margin-right: 0px;
+
+                .camping-trip-detail-heading {
+                    padding: 14px 20px;
+
+                    .camping-trip-detail-content-img {
+                        margin-right: 19px;
+
+                        img {
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 17px;
+                        line-height: 1.2;
+                    }
+                }
+
+                .camping-trip-detail-content {
+                    padding: 14px 20px;
+                    min-height: auto;
+
+                    p {
+                        font-size: 16px;
+                        // margin-bottom: 20px;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        .internal-btn {
+            text-align: center;
+
+            .btn-blue {
+                @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+    // INTERNAL OUTERWRAP CSS END:
+
+    // SIEBOLD CSS START:
+    .siebold-outerwrap {
+        padding: 80px;
+
+        h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-top: 40px;
+            padding-left: 30px;
+
+            li {
+                font-size: 14px;
+                margin-bottom: 20px;
+                padding-right: 45px;
+                width: 50%;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: 3px;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #FACE37;
+                    border: 2px solid $primary;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: calc(100% - 140px);
+            left: 50%;
+            bottom: 0;
+            height: 2px;
+            transform: translateX(-50%);
+            background-color: $primary;
+        }
+    }
+
+    // SIEBOLD CSS END:
+
+    // FEMALE SOBER CSS START:
+    .female-sober-outerwrap {
+        padding: 50px 80px;
+
+        .female-sober-top {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 23px;
+            }
+
+            .female-sober-btn {
+                .btn-blue {
+                    @include theme-btn(16px, #00CCFF, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-property-filters-outerwrap {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: 0 16px 20px 0;
+
+            .our-property-filters-img {
+                @include hover-transition (all 0.5s ease-in-out);
+
+                img {
+                    width: 100%;
+                    height: 331px;
+                    object-fit: cover;
+                }
+            }
+
+            .our-property-filters-content-wrap {
+                background-color: $white;
+                padding: 20px 30px;
+                @include flexbox;
+                @include align-items(center);
+                @include justify-content(space-between);
+                position: relative;
+                z-index: 9;
+
+                h2 {
+                    font-size: 21px;
+                }
+
+                .our-property-filters-content-btn {
+
+                    a.pink-btn {
+                        z-index: 9;
+                        @include pink-btn(18px);
+
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+
+                        &::before {
+                            @include yellow-bg(#face37);
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .our-property-filters-content-btn {
+                    a.pink-btn {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+
+                .our-property-filters-img {
+                    img {
+                        @include hover-transition (all 0.5s ease-in);
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(-66px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    transform: translateY(-50%);
+                }
+
+                .owl-next {
+                    @include right-arrow(-66px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+
+    // FEMALE SOBER CSS END:
+
+    // OUR PROPERTY CSS START:
+    .our-properties-outerwrap {
+        padding: 50px 80px;
+
+        .our-properties-top {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 25px;
+            }
+
+            .our-properties-btn {
+                .btn-blue {
+                    @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-properties-bottom {
+            ul {
+                @include flexbox;
+                @include align-items(center);
+                @include flex-wrap(wrap);
+
+                // @include justify-content(center);
+                li {
+                    margin-right: 17px;
+                    margin-bottom: 17px;
+                    list-style: none;
+                    width: 48%;
+
+                    a {
+                        display: inline-block;
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    &:nth-child(even) {
+                        margin-right: 0px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    // OUR PROPERTY CSS END:
+
+
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .internal-banner-slider {
+        .internal-outerwrap {
+            .internal-img {
+
+                // position: relative;
+                img {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    object-fit: cover;
+
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.3);
+                    z-index: 9;
+                }
+            }
+
+            h1 {
+                font-size: 29px;
+                position: absolute;
+                z-index: 9;
+                top: 53%;
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(42px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                }
+
+                .owl-next {
+                    @include right-arrow(42px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+
+        .banner-inner-content {
+            margin-top: 0px;
+            position: relative;
+            z-index: 9;
+            padding: 30px;
+
+            ul {
+                border: 2px solid $primary;
+                border-radius: 20px;
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+                @include flex-wrap(wrap);
+
+                li {
+                    padding: 14px 23px;
+                    width: 100%;
+                    border-right: unset;
+                    border-bottom: 2px solid $primary;
+
+                    img {
+                        width: 33px;
+                        height: 29px;
+                        object-fit: contain;
+                        margin: 0 auto 20px;
+                    }
+
+                    h5 {
+                        font-size: 13px;
+                    }
+
+                    &:last-child {
+                        border-right: unset;
+                        border-bottom: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    // INTERNAL CONTENT CSS START:
+    .internal-content-outerwrap {
+        padding: 70px 30px;
+
+        h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 30px;
+
+            a {
+                text-decoration: underline;
+                color: #ED207A;
+            }
+        }
+    }
+
+    // INTERNAL CONTENT CSS END:
+
+    // INTERNAL OUTERWRAP CSS START:
+    .internal-outerwrap {
+        padding: 50px 30px;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 50px;
+        }
+
+        .camping-trip-detail-innerwrap {
+            @include flex-wrap(wrap);
+
+            .camping-trip-detail-content-outerwrap {
+                width: 100%;
+                margin-bottom: 20px;
+                margin-right: 0px;
+
+                .camping-trip-detail-heading {
+                    padding: 14px 20px;
+
+                    .camping-trip-detail-content-img {
+                        margin-right: 19px;
+
+                        img {
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 17px;
+                        line-height: 1.2;
+                    }
+                }
+
+                .camping-trip-detail-content {
+                    padding: 14px 20px;
+                    min-height: auto;
+
+                    p {
+                        font-size: 14px;
+                        // margin-bottom: 20px;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        .internal-btn {
+            text-align: center;
+
+            .btn-blue {
+                @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+    // INTERNAL OUTERWRAP CSS END:
+
+    // SIEBOLD CSS START:
+    .siebold-outerwrap {
+        padding: 50px 30px;
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-top: 40px;
+            padding-left: 30px;
+
+            li {
+                font-size: 14px;
+                margin-bottom: 20px;
+                padding-right: 0px;
+                width: 100%;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: 3px;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #FACE37;
+                    border: 2px solid $primary;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: calc(100% - 140px);
+            left: 50%;
+            bottom: 0;
+            height: 2px;
+            transform: translateX(-50%);
+            background-color: $primary;
+        }
+    }
+
+    // SIEBOLD CSS END:
+
+    // FEMALE SOBER CSS START:
+    .female-sober-outerwrap {
+        padding: 50px 30px;
+
+        .female-sober-top {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 21px;
+            }
+
+            .female-sober-btn {
+                .btn-blue {
+                    @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-property-filters-outerwrap {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: 0 16px 20px 0;
+
+            .our-property-filters-img {
+                @include hover-transition (all 0.5s ease-in-out);
+
+                img {
+                    width: 100%;
+                    height: 331px;
+                    object-fit: cover;
+                }
+            }
+
+            .our-property-filters-content-wrap {
+                background-color: $white;
+                padding: 20px 30px;
+                @include flexbox;
+                @include align-items(center);
+                @include justify-content(space-between);
+                position: relative;
+                z-index: 9;
+
+                h2 {
+                    font-size: 21px;
+                }
+
+                .our-property-filters-content-btn {
+
+                    a.pink-btn {
+                        z-index: 9;
+                        @include pink-btn(18px);
+
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+
+                        &::before {
+                            @include yellow-bg(#face37);
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .our-property-filters-content-btn {
+                    a.pink-btn {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+
+                .our-property-filters-img {
+                    img {
+                        @include hover-transition (all 0.5s ease-in);
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(-66px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    transform: translateY(-50%);
+                }
+
+                .owl-next {
+                    @include right-arrow(-66px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+
+    // FEMALE SOBER CSS END:
+
+    // OUR PROPERTY CSS START:
+    .our-properties-outerwrap {
+        padding: 50px 30px;
+
+        .our-properties-top {
+            margin-bottom: 40px;
+
+            h2 {
+                font-size: 21px;
+            }
+
+            .our-properties-btn {
+                .btn-blue {
+                    @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-properties-bottom {
+            ul {
+                @include flexbox;
+                @include align-items(center);
+                @include flex-wrap(wrap);
+
+                // @include justify-content(center);
+                li {
+                    margin-right: 17px;
+                    margin-bottom: 17px;
+                    list-style: none;
+                    width: 48%;
+
+                    a {
+                        display: inline-block;
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    &:nth-child(even) {
+                        margin-right: 0px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    // OUR PROPERTY CSS END:
+
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .internal-banner-slider {
+        .internal-outerwrap {
+            .internal-img {
+
+                // position: relative;
+                img {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    object-fit: cover;
+
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.3);
+                    z-index: 9;
+                }
+            }
+
+            h1 {
+                font-size: 29px;
+                position: absolute;
+                z-index: 9;
+                top: 53%;
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(42px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                }
+
+                .owl-next {
+                    @include right-arrow(42px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+
+        .banner-inner-content {
+            margin-top: 0px;
+            position: relative;
+            z-index: 9;
+            padding: 30px;
+
+            ul {
+                border: 2px solid $primary;
+                border-radius: 20px;
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+                @include flex-wrap(wrap);
+
+                li {
+                    padding: 14px 23px;
+                    width: 100%;
+                    border-right: unset;
+                    border-bottom: 2px solid $primary;
+
+                    img {
+                        width: 33px;
+                        height: 29px;
+                        object-fit: contain;
+                        margin: 0 auto 20px;
+                    }
+
+                    h5 {
+                        font-size: 13px;
+                    }
+
+                    &:last-child {
+                        border-right: unset;
+                        border-bottom: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    // INTERNAL CONTENT CSS START:
+    .internal-content-outerwrap {
+        padding: 70px 30px;
+
+        h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 30px;
+
+            a {
+                text-decoration: underline;
+                color: #ED207A;
+            }
+        }
+    }
+
+    // INTERNAL CONTENT CSS END:
+
+    // INTERNAL OUTERWRAP CSS START:
+    .internal-outerwrap {
+        padding: 50px 30px;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 50px;
+        }
+
+        .camping-trip-detail-innerwrap {
+            @include flex-wrap(wrap);
+
+            .camping-trip-detail-content-outerwrap {
+                width: 100%;
+                margin-bottom: 20px;
+                margin-right: 0px;
+
+                .camping-trip-detail-heading {
+                    padding: 14px 20px;
+
+                    .camping-trip-detail-content-img {
+                        margin-right: 19px;
+
+                        img {
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 17px;
+                        line-height: 1.2;
+                    }
+                }
+
+                .camping-trip-detail-content {
+                    padding: 14px 20px;
+                    min-height: auto;
+
+                    p {
+                        font-size: 14px;
+                        // margin-bottom: 20px;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        .internal-btn {
+            text-align: center;
+
+            .btn-blue {
+                @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+    // INTERNAL OUTERWRAP CSS END:
+
+    // SIEBOLD CSS START:
+    .siebold-outerwrap {
+        padding: 50px 30px;
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-top: 40px;
+            padding-left: 30px;
+
+            li {
+                font-size: 14px;
+                margin-bottom: 20px;
+                padding-right: 0px;
+                width: 100%;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: 3px;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #FACE37;
+                    border: 2px solid $primary;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: calc(100% - 140px);
+            left: 50%;
+            bottom: 0;
+            height: 2px;
+            transform: translateX(-50%);
+            background-color: $primary;
+        }
+    }
+
+    // SIEBOLD CSS END:
+
+    // FEMALE SOBER CSS START:
+    .female-sober-outerwrap {
+        padding: 50px 30px;
+
+        .female-sober-top {
+            margin-bottom: 40px;
+            @include flex-direction(column);
+
+            h2 {
+                font-size: 21px;
+                margin-bottom: 17px;
+            }
+
+            .female-sober-btn {
+                .btn-blue {
+                    @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-property-filters-outerwrap {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: 0 16px 20px 0;
+
+            .our-property-filters-img {
+                @include hover-transition (all 0.5s ease-in-out);
+
+                img {
+                    width: 100%;
+                    height: 331px;
+                    object-fit: cover;
+                }
+            }
+
+            .our-property-filters-content-wrap {
+                background-color: $white;
+                padding: 20px 30px;
+                @include flexbox;
+                @include align-items(center);
+                @include justify-content(space-between);
+                position: relative;
+                z-index: 9;
+
+                h2 {
+                    font-size: 21px;
+                }
+
+                .our-property-filters-content-btn {
+
+                    a.pink-btn {
+                        z-index: 9;
+                        @include pink-btn(18px);
+
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+
+                        &::before {
+                            @include yellow-bg(#face37);
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .our-property-filters-content-btn {
+                    a.pink-btn {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+
+                .our-property-filters-img {
+                    img {
+                        @include hover-transition (all 0.5s ease-in);
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(-66px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    transform: translateY(-50%);
+                }
+
+                .owl-next {
+                    @include right-arrow(-66px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+
+    // FEMALE SOBER CSS END:
+
+    // OUR PROPERTY CSS START:
+    .our-properties-outerwrap {
+        padding: 50px 30px;
+
+        .our-properties-top {
+            margin-bottom: 40px;
+            @include flex-direction(column);
+
+            h2 {
+                font-size: 21px;
+                margin-bottom: 17px;
+            }
+
+            .our-properties-btn {
+                .btn-blue {
+                    @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-properties-bottom {
+            ul {
+                @include flexbox;
+                @include align-items(center);
+                @include flex-wrap(wrap);
+
+                li {
+                    margin-right: 0px;
+                    margin-bottom: 17px;
+                    list-style: none;
+                    width: 100%;
+
+                    a {
+                        display: inline-block;
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    &:nth-child(even) {
+                        margin-right: 0px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    // OUR PROPERTY CSS END:
+
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .internal-banner-slider {
+        .internal-outerwrap {
+            .internal-img {
+
+                // position: relative;
+                img {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    object-fit: cover;
+
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.3);
+                    z-index: 9;
+                }
+            }
+
+            h1 {
+                text-align: center
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(42px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                }
+
+                .owl-next {
+                    @include right-arrow(42px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+
+        .banner-inner-content {
+            padding: 30px 15px;
+
+            ul {
+
+                li {
+                    padding: 14px 23px;
+                    width: 100%;
+                    border-right: unset;
+                    border-bottom: 2px solid $primary;
+
+                    img {
+                        width: 33px;
+                        height: 29px;
+                        object-fit: contain;
+                        margin: 0 auto 20px;
+                    }
+
+                    h5 {
+                        font-size: 13px;
+                    }
+
+                    &:last-child {
+                        border-right: unset;
+                        border-bottom: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    // INTERNAL CONTENT CSS START:
+    .internal-content-outerwrap {
+        padding: 40px 15px;
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 20px;
+
+            a {
+                text-decoration: underline;
+                color: #ED207A;
+            }
+        }
+    }
+
+    // INTERNAL CONTENT CSS END:
+
+    // INTERNAL OUTERWRAP CSS START:
+    .internal-outerwrap {
+        padding: 50px 15px;
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 50px;
+        }
+
+        .camping-trip-detail-innerwrap {
+            @include flex-wrap(wrap);
+
+            .camping-trip-detail-content-outerwrap {
+                width: 100%;
+                margin-bottom: 20px;
+                margin-right: 0px;
+
+                .camping-trip-detail-heading {
+                    padding: 14px 20px;
+
+                    .camping-trip-detail-content-img {
+                        margin-right: 19px;
+
+                        img {
+                            width: 34px;
+                            height: 34px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 17px;
+                        line-height: 1.2;
+                    }
+                }
+
+                .camping-trip-detail-content {
+                    padding: 14px 20px;
+                    min-height: auto;
+
+                    p {
+                        font-size: 14px;
+                        // margin-bottom: 20px;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        .internal-btn {
+            text-align: center;
+
+            .btn-blue {
+                @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+    // INTERNAL OUTERWRAP CSS END:
+
+    // SIEBOLD CSS START:
+    .siebold-outerwrap {
+        padding: 50px 15px;
+
+        h2 {
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-top: 40px;
+            padding-left: 30px;
+
+            li {
+                font-size: 14px;
+                margin-bottom: 20px;
+                padding-right: 0px;
+                width: 100%;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -30px;
+                    top: 3px;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #FACE37;
+                    border: 2px solid $primary;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: calc(100% - 140px);
+            left: 50%;
+            bottom: 0;
+            height: 2px;
+            transform: translateX(-50%);
+            background-color: $primary;
+        }
+    }
+
+    // SIEBOLD CSS END:
+
+    // FEMALE SOBER CSS START:
+    .female-sober-outerwrap {
+        padding: 50px 15px;
+
+        .female-sober-top {
+            margin-bottom: 40px;
+            @include flex-direction(column);
+
+            h2 {
+                font-size: 21px;
+                margin-bottom: 17px;
+                text-align: center;
+            }
+
+            .female-sober-btn {
+                .btn-blue {
+                    @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-property-filters-outerwrap {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: 0 16px 20px 0;
+
+            .our-property-filters-img {
+                @include hover-transition (all 0.5s ease-in-out);
+
+                img {
+                    width: 100%;
+                    height: 331px;
+                    object-fit: cover;
+                }
+            }
+
+            .our-property-filters-content-wrap {
+                background-color: $white;
+                padding: 20px 30px;
+                @include flexbox;
+                @include align-items(center);
+                @include justify-content(space-between);
+                @include flex-direction(column);
+                position: relative;
+                z-index: 9;
+
+                h2 {
+                    font-size: 21px;
+                    margin-bottom: 7px;
+                }
+
+                .our-property-filters-content-btn {
+
+                    a.pink-btn {
+                        z-index: 9;
+                        @include pink-btn(18px);
+
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+
+                        &::before {
+                            @include yellow-bg(#face37);
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                .our-property-filters-content-btn {
+                    a.pink-btn {
+                        &::before {
+                            @include yellow-hover-effect;
+                        }
+                    }
+                }
+
+                .our-property-filters-img {
+                    img {
+                        @include hover-transition (all 0.5s ease-in);
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(-66px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    transform: translateY(-50%);
+                }
+
+                .owl-next {
+                    @include right-arrow(-66px);
+                    top: 50%;
+                    width: 45px;
+                    height: 45px;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .owl-dots {
+                .owl-dot {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+
+    // FEMALE SOBER CSS END:
+
+    // OUR PROPERTY CSS START:
+    .our-properties-outerwrap {
+        padding: 50px 15px;
+
+        .our-properties-top {
+            margin-bottom: 40px;
+            @include flex-direction(column);
+
+            h2 {
+                font-size: 21px;
+                margin-bottom: 17px;
+            }
+
+            .our-properties-btn {
+                .btn-blue {
+                    @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+        .our-properties-bottom {
+            ul {
+                @include flexbox;
+                @include align-items(center);
+                @include flex-wrap(wrap);
+
+                li {
+                    margin-right: 0px;
+                    margin-bottom: 17px;
+                    list-style: none;
+                    width: 100%;
+
+                    a {
+                        display: inline-block;
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    &:nth-child(even) {
+                        margin-right: 0px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    // OUR PROPERTY CSS END:
+
+}
+
+// RESPONSIVE END:

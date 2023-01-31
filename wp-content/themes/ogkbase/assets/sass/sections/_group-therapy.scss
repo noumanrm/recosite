@@ -1,0 +1,227 @@
+.group-therapy-section {
+    padding: 100px 0px;
+    background: $white;
+
+    .group-therapy-innerwrap {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+        margin-bottom: 50px;
+        padding: 0 121px;
+
+        .group-therapy-content {
+            width: 50%;
+
+            h2 {
+                font-size: 32px;
+                line-height: 1.2;
+                font-weight: $bold;
+                color: $primary;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 23px;
+                font-weight: $regular;
+                color: #000000;
+            }
+        }
+    }
+
+    .group-therapy-slider {
+        .owl-carousel {
+            .group-therapy-img {
+                // width: 220px;
+                // margin: 0 auto;
+                // padding: 0 7px;
+            }
+
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(43px);
+                    top: 40%;
+                }
+
+                .owl-next {
+                    @include right-arrow(43px);
+                    top: 40%;
+                }
+            }
+
+            .owl-dots {
+                text-align: center;
+                margin-top: 20px;
+
+                .owl-dot {
+                    width: 20px;
+                    height: 20px;
+                    background: #E3FAFF;
+                    border: 2px solid $primary;
+                    border-radius: 50%;
+                    margin: 0 5px;
+                }
+
+                .owl-dot.active {
+                    background: #00CCFF;
+                }
+            }
+        }
+        .group-content-outerwrap{
+            background: white;
+            border-radius: 26px;
+            margin: 0 8px;
+            border: 2px solid $primary;
+            .group-therapy-img{
+                border-bottom: 2px solid $primary;
+            }
+            .group-therapy-content{
+                padding: 30px;
+                text-align: center;
+                min-height: 108px;
+                h4{
+                    font-size: 20px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $bold;
+                    font-family: $fontMain;
+                }
+            }
+        }
+    }
+}
+
+// Respopnsive Sec Start:
+
+@media only screen and (max-width: $breakpoint-desktop-med){
+    .group-therapy-section{
+        .group-therapy-slider{
+            .owl-carousel {
+                .owl-item{
+                    margin-right: 0 !important;
+                    .owl-nav {
+                        .owl-prev {
+                            top: 34%;
+                        }        
+                        .owl-next {
+                            top: 34%;
+                        }
+                    }
+                }
+            }
+        }
+        }
+}
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .group-therapy-section {
+        padding: 50px 0px;
+
+        .group-therapy-innerwrap {
+            padding: 0 51px;
+            .group-therapy-content {
+                h2 {
+                    font-size: 29px;
+                    margin-bottom: 14px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+        }
+        .group-therapy-slider{
+            .group-content-outerwrap{
+                border-radius: 24px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .group-therapy-section {
+        // padding: 50px 140px;
+
+        .group-therapy-innerwrap {
+            @include flex-direction(column);
+
+            .group-therapy-content {
+                width: 100%;
+                margin-bottom: 24px;
+                text-align: center;
+            }
+
+            .btn-blue {
+                @include theme-btn(16px, #00CCFF, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .group-therapy-section{
+        .group-therapy-slider{
+            .group-content-outerwrap{
+                max-width: 70%;
+                margin: 0 auto;
+                border-radius: 34px;
+                .owl-carousel {
+                    .owl-item{
+                        margin-right: unset;
+                        .owl-nav {
+                            .owl-prev {
+                                top: 34%;
+                            }        
+                            .owl-next {
+                                top: 34%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .group-therapy-section{
+        .group-therapy-innerwrap{
+            padding: 0 20px;
+        }
+        .group-therapy-slider{
+            .group-content-outerwrap{
+                max-width: 70%;
+                margin: 0 auto;
+                border-radius: 26px;
+                .owl-carousel {
+                    .owl-item{
+                        margin-right: unset;
+                        .owl-nav {
+                            .owl-prev {
+                                top: 34%;
+                            }        
+                            .owl-next {
+                                top: 34%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .group-therapy-section{
+        padding: 40px 20px;
+        .group-therapy-innerwrap{
+            padding: 0px;
+        }
+        .group-therapy-slider{
+            .group-content-outerwrap{
+                max-width: 100%;
+                margin: 0 auto;
+                border-radius: 19px;
+            }
+        }
+    }
+}

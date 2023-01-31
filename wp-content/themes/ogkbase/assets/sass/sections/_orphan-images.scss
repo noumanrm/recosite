@@ -1,0 +1,47 @@
+.orphan-images-section{
+    .admissions-process-section{
+        .admission-process-outerwrap{
+            padding: 0 238px 20px;
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-tablet-lg){
+    .orphan-images-section{
+        .admissions-process-section{
+            .admission-process-outerwrap{
+                padding: 20px 100px;
+                .admission-process-innerwrap{
+                    margin-bottom: 0px;
+                    flex-direction: column;
+                    .admission-process-img{
+                        margin-top: unset;
+                        width: 100%;
+                        margin-right: unset;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-tablet-sm){
+    .orphan-images-section{
+        .admissions-process-section{
+            .admission-process-outerwrap{
+                padding: 20px 30px;
+            }
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-phone){
+    .orphan-images-section{
+        .admissions-process-section{
+            .admission-process-outerwrap{
+                padding: 20px 15px;
+            }
+        }
+    }   
+}
+// RESPONSIVE SEC END:

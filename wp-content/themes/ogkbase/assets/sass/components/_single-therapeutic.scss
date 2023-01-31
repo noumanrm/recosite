@@ -1,0 +1,743 @@
+.therapeutic-single-outerwrap{
+    padding: 249px 336px 242px;
+    h1 {
+        font-size: 57px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $extraBold;
+        font-family: $fontMain;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+}
+.content-bottom-outerwrap{
+    background-color: #F0EEE6;
+    padding: 0px 336px 100px;
+
+    .therapeutic-single-img{
+        @include flexbox;
+        margin-bottom: 100px;
+
+        img{
+            width: 100%;
+            margin-top: -220px;
+            // height: 405px;
+            object-fit: cover;
+        }
+    }
+    .therapeutic-single-content{
+        h3{
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $regular;
+            font-family: $fontMain;
+            margin-bottom: 30px;
+        }
+    }
+}
+.therapeutic-excursions-single {
+    text-align: center;
+    padding: 100px 140px;
+    background-color: $white;
+    .therapeutic-excursions-single-top{
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+        margin-bottom: 50px;
+        .therapeutic-excursions-content-top{
+            text-align: left;
+            width: 50%;
+            h2 {
+                font-size: 32px;
+                line-height: 1.2;
+                font-weight: $bold;
+                color: $primary;
+                margin-bottom: 20px;
+                font-family: $fontMain;
+            }
+        
+            p {
+                font-size: 18px;
+                line-height: 1.2;
+                font-weight: $regular;
+                color: $primary;
+                font-family: $fontMain;
+            }
+        }
+        .therapeutic-excursions-btn{
+            .btn-blue{
+                @include theme-btn(18px,#00CCFF,18px 43px,6px 7px 0px 0px rgba(0,0,0,1));
+                &:focus,
+                &:hover{
+                   @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+    .therapeutic-excursions-outerwrap {
+        .owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(-100px);
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                .owl-next {
+                    @include right-arrow(-100px);
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .owl-dots {
+                text-align: center;
+                margin: 20px 0 50px;
+
+                .owl-dot {
+                    width: 20px;
+                    height: 20px;
+                    background: #E3FAFF;
+                    border: 2px solid $primary;
+                    border-radius: 50%;
+                    margin: 0 5px;
+                }
+
+                .owl-dot.active {
+                    background: #00CCFF;
+                }
+            }
+        }
+
+        .therapeutic-excursions-innerwrap {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            margin: 0 8px;
+            overflow: hidden;
+
+            .therapeutic-excursions-img {
+                border-bottom: 2px solid $primary;
+
+                img {
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+
+            .therapeutic-excursions-content {
+                text-align: left;
+                padding: 20px;
+                background-color: $white;
+
+                h3 {
+                    font-size: 17px;
+                    line-height: 1.2;
+                    font-weight: $bold;
+                    color: $primary;
+                    font-family: $fontMain;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .therapeutic-single-outerwrap{
+        padding: 249px 140px 242px;
+        h1 {
+            font-size: 47px;
+            margin-bottom: 20px;
+        }
+    }
+    .content-bottom-outerwrap{
+        padding: 0px 140px 100px;
+        .therapeutic-single-img{
+            margin-bottom: 70px;
+        }
+        .therapeutic-single-content{
+            h3{
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .therapeutic-single-outerwrap{
+        padding: 249px 140px 242px;
+        h1 {
+            font-size: 41px;
+            margin-bottom: 10px;
+        }
+    }
+    .content-bottom-outerwrap{
+        padding: 0px 140px 100px;
+        .therapeutic-single-img{
+            margin-bottom: 70px;
+        }
+        .therapeutic-single-content{
+            h3{
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 17px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .therapeutic-excursions-single {
+        padding: 100px 140px;
+        .therapeutic-excursions-single-top{
+            margin-bottom: 50px;
+            .therapeutic-excursions-content-top{
+                width: 50%;
+                h2 {
+                    font-size: 27px;
+                    margin-bottom: 10px;
+                }
+            
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+    
+        .therapeutic-excursions-outerwrap {
+            .owl-carousel {
+                .owl-nav {
+                    .owl-prev {
+                        @include left-arrow(-100px);
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+    
+                    .owl-next {
+                        @include right-arrow(-100px);
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+    
+                .owl-dots {
+                    text-align: center;
+                    margin: 20px 0 50px;
+    
+                    .owl-dot {
+                        width: 20px;
+                        height: 20px;
+                        background: #E3FAFF;
+                        border: 2px solid $primary;
+                        border-radius: 50%;
+                        margin: 0 5px;
+                    }
+    
+                    .owl-dot.active {
+                        background: #00CCFF;
+                    }
+                }
+            }
+    
+            .therapeutic-excursions-innerwrap {
+                margin: 0 8px;
+    
+                .therapeutic-excursions-img {
+                    border-bottom: 2px solid $primary;
+    
+                    img {
+                        height: 300px;
+                        object-fit: cover;
+                    }
+                }
+    
+                .therapeutic-excursions-content {
+                    padding: 20px;
+    
+                    h3 {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .therapeutic-single-outerwrap{
+        padding: 160px 140px 183px;
+        h1 {
+            font-size: 41px;
+            margin-bottom: 10px;
+        }
+    }
+    .content-bottom-outerwrap{
+        padding: 0px 140px 100px;
+        .therapeutic-single-img{
+            margin-bottom: 40px;
+            img{
+                margin-top: -150px;
+            }
+        }
+        .therapeutic-single-content{
+            h3{
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 17px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .therapeutic-excursions-single {
+        padding: 60px 80px;
+        .therapeutic-excursions-single-top{
+            margin-bottom: 50px;
+            @include flex-direction(column);
+            .therapeutic-excursions-content-top{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 15px;
+                h2 {
+                    font-size: 27px;
+                    margin-bottom: 10px;
+                }
+            
+                p {
+                    font-size: 17px;
+                }
+            }
+            .therapeutic-excursions-btn{
+                .btn-blue{
+                    @include theme-btn(16px, #00CCFF, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    &:focus,
+                    &:hover{
+                       @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    
+        .therapeutic-excursions-outerwrap {
+            .owl-carousel {
+                .owl-nav {
+                    .owl-prev {
+                        @include left-arrow(-100px);
+                        top: 50%;
+                        left: -60px;
+                        transform: translateY(-50%);
+                    }
+    
+                    .owl-next {
+                        @include right-arrow(-100px);
+                        top: 50%;
+                        right: -60px;
+                        transform: translateY(-50%);
+                    }
+                }
+    
+                .owl-dots {
+                    text-align: center;
+                    margin: 20px 0 50px;
+    
+                    .owl-dot {
+                        width: 20px;
+                        height: 20px;
+                        background: #E3FAFF;
+                        border: 2px solid $primary;
+                        border-radius: 50%;
+                        margin: 0 5px;
+                    }
+    
+                    .owl-dot.active {
+                        background: #00CCFF;
+                    }
+                }
+            }
+    
+            .therapeutic-excursions-innerwrap {
+                margin: 0 8px;
+    
+                .therapeutic-excursions-img {
+                    border-bottom: 2px solid $primary;
+    
+                    img {
+                        height: 300px;
+                        object-fit: cover;
+                    }
+                }
+    
+                .therapeutic-excursions-content {
+                    padding: 20px;
+    
+                    h3 {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .therapeutic-single-outerwrap{
+        padding: 160px 80px 153px;
+        h1 {
+            font-size: 37px;
+            margin-bottom: 10px;
+        }
+    }
+    .content-bottom-outerwrap{
+        padding: 0px 80px 100px;
+        .therapeutic-single-img{
+            margin-bottom: 40px;
+            img{
+                margin-top: -150px;
+            }
+        }
+        .therapeutic-single-content{
+            h3{
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .therapeutic-excursions-single {
+        padding: 60px 80px;
+        .therapeutic-excursions-single-top{
+            margin-bottom: 50px;
+            @include flex-direction(column);
+            .therapeutic-excursions-content-top{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 15px;
+                h2 {
+                    font-size: 27px;
+                    margin-bottom: 10px;
+                }
+            
+                p {
+                    font-size: 17px;
+                }
+            }
+            .therapeutic-excursions-btn{
+                .btn-blue{
+                    @include theme-btn(18px,#00CCFF,18px 43px,6px 7px 0px 0px rgba(0,0,0,1));
+                    &:focus,
+                    &:hover{
+                       @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    
+        .therapeutic-excursions-outerwrap {
+            .owl-carousel {
+                .owl-nav {
+                    .owl-prev {
+                        @include left-arrow(-100px);
+                        top: 50%;
+                        left: -60px;
+                        transform: translateY(-50%);
+                    }
+    
+                    .owl-next {
+                        @include right-arrow(-100px);
+                        top: 50%;
+                        right: -60px;
+                        transform: translateY(-50%);
+                    }
+                }
+    
+                .owl-dots {
+                    text-align: center;
+                    margin: 20px 0 50px;
+    
+                    .owl-dot {
+                        width: 20px;
+                        height: 20px;
+                        background: #E3FAFF;
+                        border: 2px solid $primary;
+                        border-radius: 50%;
+                        margin: 0 5px;
+                    }
+    
+                    .owl-dot.active {
+                        background: #00CCFF;
+                    }
+                }
+            }
+    
+            .therapeutic-excursions-innerwrap {
+                margin: 0 8px;
+    
+                .therapeutic-excursions-img {
+                    border-bottom: 2px solid $primary;
+    
+                    img {
+                        height: 300px;
+                        object-fit: cover;
+                    }
+                }
+    
+                .therapeutic-excursions-content {
+                    padding: 20px;
+    
+                    h3 {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .therapeutic-single-outerwrap{
+        padding: 160px 30px 100px;
+        h1 {
+            font-size: 31px;
+            margin-bottom: 10px;
+        }
+    }
+    .content-bottom-outerwrap{
+        padding: 0px 30px 60px;
+        .therapeutic-single-img{
+            margin-bottom: 30px;
+            img{
+                margin-top: -90px;
+            }
+        }
+        .therapeutic-single-content{
+            h3{
+                font-size: 21px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .therapeutic-excursions-single {
+        padding: 60px 30px;
+        .therapeutic-excursions-single-top{
+            margin-bottom: 50px;
+            @include flex-direction(column);
+            .therapeutic-excursions-content-top{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 15px;
+                h2 {
+                    font-size: 27px;
+                    margin-bottom: 10px;
+                }
+            
+                p {
+                    font-size: 17px;
+                }
+            }
+            .therapeutic-excursions-btn{
+                .btn-blue{
+                    @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                    &:focus,
+                    &:hover{
+                       @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    
+        .therapeutic-excursions-outerwrap {
+            .owl-carousel {
+                .owl-nav {
+                    .owl-prev {
+                        @include left-arrow(-100px);
+                        top: 50%;
+                        left: -60px;
+                        transform: translateY(-50%);
+                    }
+    
+                    .owl-next {
+                        @include right-arrow(-100px);
+                        top: 50%;
+                        right: -60px;
+                        transform: translateY(-50%);
+                    }
+                }
+    
+                .owl-dots {
+                    text-align: center;
+                    margin: 20px 0 50px;
+    
+                    .owl-dot {
+                        width: 20px;
+                        height: 20px;
+                        background: #E3FAFF;
+                        border: 2px solid $primary;
+                        border-radius: 50%;
+                        margin: 0 5px;
+                    }
+    
+                    .owl-dot.active {
+                        background: #00CCFF;
+                    }
+                }
+            }
+    
+            .therapeutic-excursions-innerwrap {
+                margin: 0 8px;
+    
+                .therapeutic-excursions-img {
+                    border-bottom: 2px solid $primary;
+    
+                    img {
+                        height: 300px;
+                        object-fit: cover;
+                    }
+                }
+    
+                .therapeutic-excursions-content {
+                    padding: 20px;
+    
+                    h3 {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-phone) {
+    .therapeutic-single-outerwrap{
+        padding: 160px 15px 100px;
+        h1 {
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+    }
+    .content-bottom-outerwrap{
+        padding: 0px 15px 60px;
+        .therapeutic-single-img{
+            margin-bottom: 30px;
+            img{
+                margin-top: -90px;
+            }
+        }
+        .therapeutic-single-content{
+            h3{
+                font-size: 21px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .therapeutic-excursions-single {
+        padding: 60px 15px;
+        .therapeutic-excursions-single-top{
+            margin-bottom: 50px;
+            @include flex-direction(column);
+            .therapeutic-excursions-content-top{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 15px;
+                h2 {
+                    font-size: 27px;
+                    margin-bottom: 10px;
+                }
+            
+                p {
+                    font-size: 17px;
+                }
+            }
+            .therapeutic-excursions-btn{
+                .btn-blue{
+                    // @include theme-btn(18px,#00CCFF,18px 43px,6px 7px 0px 0px rgba(0,0,0,1));
+                    &:focus,
+                    &:hover{
+                       @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    
+        .therapeutic-excursions-outerwrap {
+            .owl-carousel {
+                .owl-nav {
+                    .owl-prev {
+                        @include left-arrow(-100px);
+                        top: 50%;
+                        left: -60px;
+                        transform: translateY(-50%);
+                    }
+    
+                    .owl-next {
+                        @include right-arrow(-100px);
+                        top: 50%;
+                        right: -60px;
+                        transform: translateY(-50%);
+                    }
+                }
+    
+                .owl-dots {
+                    text-align: center;
+                    margin: 20px 0 50px;
+    
+                    .owl-dot {
+                        width: 20px;
+                        height: 20px;
+                        background: #E3FAFF;
+                        border: 2px solid $primary;
+                        border-radius: 50%;
+                        margin: 0 5px;
+                    }
+    
+                    .owl-dot.active {
+                        background: #00CCFF;
+                    }
+                }
+            }
+    
+            .therapeutic-excursions-innerwrap {
+                margin: 0 8px;
+    
+                .therapeutic-excursions-img {
+                    border-bottom: 2px solid $primary;
+    
+                    img {
+                        height: 300px;
+                        object-fit: cover;
+                    }
+                }
+    
+                .therapeutic-excursions-content {
+                    padding: 20px;
+    
+                    h3 {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+// RESPONSIVE SEC END:

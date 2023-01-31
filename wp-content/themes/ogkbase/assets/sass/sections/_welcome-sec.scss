@@ -1,0 +1,175 @@
+.welcome-section {
+    padding: 130px 0 103px;
+    max-width: 670px;
+    margin: 0 auto;
+    p {
+        font-size: 25px;
+        line-height: 1.6;
+        font-weight: 400;
+        font-family: $fontMain;
+        color: #000000;
+        margin-bottom: 49px;
+    }
+
+    .welcome-btn-outerwrap {
+        .btn-blue {
+            @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+            margin-right: 20px;
+            &:focus,
+            &:hover {
+                @include theme-btn-hover;
+            }
+            &:last-child{
+                @include theme-btn(18px, #00CCFF, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                margin-right: 0px;
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .welcome-section{
+        P{
+            font-size: 19px;
+            margin-bottom: 34px;
+        }
+        .welcome-btn-outerwrap{
+            .btn-blue {
+                @include theme-btn(16px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                margin-right: 20px;
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+                &:last-child{
+                    @include theme-btn(16px, #00CCFF, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    margin-right: 0px;
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .welcome-section{
+        max-width: 600px;
+        padding: 130px 0 63px;
+        P{
+            font-size: 17px;
+            margin-bottom: 34px;
+        }
+        .welcome-btn-outerwrap{
+            .btn-blue {
+                @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                margin-right: 20px;
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+                &:last-child{
+                    @include theme-btn(16px, #00CCFF, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    margin-right: 0px;
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .welcome-section{
+        padding: 80px 0 40px;
+        max-width: 550px;
+        text-align: center;
+        P{
+            font-size: 15px;
+            margin-bottom: 29px;
+        }
+        .welcome-btn-outerwrap{
+            .btn-blue {
+                @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                margin-right: 20px;
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+                &:last-child{
+                    @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                    margin-right: 0px;
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .welcome-section{
+        padding: 60px 0 20px;
+        max-width: 400px;
+        P{
+            font-size: 14px;
+            margin-bottom: 29px;
+        }
+        .welcome-btn-outerwrap{
+            .btn-blue {
+                @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                margin-right: 20px;
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+                &:last-child{
+                    @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                    margin-right: 0px;
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-phone) {
+    .welcome-section{
+        padding: 50px 0 20px;
+        max-width: 300px;
+        // P{
+        //     font-size: 14px;
+        //     margin-bottom: 29px;
+        // }
+        .welcome-btn-outerwrap{
+            .btn-blue {
+                @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                margin-right: 0px;
+                margin-bottom: 14px;
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+                &:last-child{
+                    @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                    margin-right: 0px;
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+// RESPONSIVE SEC END:

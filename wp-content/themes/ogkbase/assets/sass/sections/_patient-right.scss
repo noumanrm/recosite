@@ -1,0 +1,193 @@
+.patient-right-section {
+    background-color: #F0EEE6;
+    padding: 91px 336px;
+
+    h2 {
+        font-size: 32px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $bold;
+        font-family: $fontMain;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $regular;
+        font-family: $fontMain;
+        margin-bottom: 10px;
+    }
+
+    .patient-right-btn {
+        margin-top: 40px;
+
+        .btn-blue {
+            @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+            &:focus,
+            &:hover {
+                @include theme-btn-hover;
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .patient-right-section {
+        padding: 91px 236px;
+
+        h2 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .patient-right-btn {
+            .btn-blue {
+                @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .patient-right-section {
+        padding: 61px 236px;
+
+        h2 {
+            font-size: 29px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .patient-right-btn {
+            .btn-blue {
+                @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .patient-right-section {
+        padding: 41px 136px;
+
+        h2 {
+            font-size: 29px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .patient-right-btn {
+            .btn-blue {
+                @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .patient-right-section {
+        padding: 41px 86px;
+
+        h2 {
+            font-size: 29px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .patient-right-btn {
+            .btn-blue {
+                @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .patient-right-section {
+        padding: 31px;
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .patient-right-btn {
+            .btn-blue {
+                @include theme-btn(18px, #FACE37, 18px 43px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .patient-right-section {
+        padding: 31px 15px;
+
+        h2 {
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .patient-right-btn {
+            .btn-blue {
+                @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC END:

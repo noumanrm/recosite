@@ -1,0 +1,146 @@
+.camping-trip-photo-album-slider-section {
+  padding: 143px 0px 0px;
+  margin: 0 140px 0px;
+
+  .camping-trip-photo-album-innerwrap {
+
+    .camping-trip-photo-album-slider-img {
+      width: 100%;
+      max-width: 768px;
+      margin: 0 auto 20px;
+
+      img {
+        height: 486px;
+        object-fit: cover;
+      }
+    }
+
+    span {
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: $regular;
+      font-family: $fontMain;
+      color: $primary;
+      text-transform: capitalize;
+      display: block;
+      max-width: 768px;
+      margin: 0 auto;
+    }
+  }
+
+  .owl-nav {
+    button.owl-prev {
+      @include left-arrow (7%);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    button.owl-next {
+      @include right-arrow (7%);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+// RESPONISVE SEC  START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .camping-trip-photo-album-slider-section {
+        .owl-nav {
+            button.owl-prev {
+                @include left-arrow (0%);
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            button.owl-next {
+                @include right-arrow (0%);
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .camping-trip-photo-album-slider-section {
+        // margin: 0 70px 100px;
+        // padding: 100px 0;
+        .owl-nav {
+            button.owl-prev {
+                @include left-arrow (-11%);
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            button.owl-next {
+                @include right-arrow (-11%);
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .camping-trip-photo-album-slider-section {
+        margin: 0 70px 0px;
+        padding: 100px 0 0px;
+        .camping-trip-photo-album-innerwrap {
+            .camping-trip-photo-album-slider-img {
+                width: 100%;
+                max-width: 568px;
+                margin: 0 auto 20px;
+
+                img {
+                    height: 386px;
+                    object-fit: cover;
+                }
+            }
+            span{
+                max-width: 568px;
+            }
+        }
+
+        .owl-nav {
+            button.owl-prev {
+                @include left-arrow (-5%);
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            button.owl-next {
+                @include right-arrow (-5%);
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .camping-trip-photo-album-slider-section {
+        margin: 0 30px;
+        padding: 50px 0 30px;
+        .camping-trip-photo-album-innerwrap {
+          .camping-trip-photo-album-slider-img {
+              width: 100%;
+              max-width: 100%;
+              margin: 0 auto 20px;
+
+              img {
+                  height: 285px;
+                  object-fit: cover;
+              }
+          }
+          span{
+              max-width: 100%;
+          }
+      }
+    }
+}
+// @media only screen and (max-width: $breakpoint-phone) {
+//     .camping-trip-photo-album-slider-section {
+//         margin: 0 15px 30px;
+//         padding: 30px 0;
+//     }
+// }
+// RESPONISVE SEC  END:

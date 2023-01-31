@@ -1,0 +1,198 @@
+.orphan-services-section{
+    background-color: #F0EEE6;
+    padding: 0px 336px 100px;
+    .orphan-services-outerwrap{
+        padding: 0 0 10px;
+        .orphan-services-innerwrap{
+            h2{
+                font-size: 32px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $bold;
+                font-family: $fontMain;
+                margin-bottom: 20px;
+            }
+            p,span{
+                font-size: 18px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 31px;
+            }
+            span{
+                font-weight: $bold;
+            }
+            ul{
+                margin-top: 40px;
+                @include  flexbox;
+                @include flex-wrap(wrap);
+                padding-left: 30px;
+                li{
+                    list-style: none;
+                    font-size: 18px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $regular;
+                    font-family: $fontMain;
+                    margin-bottom: 20px;
+                    position: relative;
+                    padding-right: 45px;
+                    width: 50%;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        left: -30px;
+                        top: 3px;                    
+                        width: 15px;
+                        height: 15px;
+                        background-color: #FACE37;
+                        border: 2px solid $primary;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm){
+    .orphan-services-section{
+        padding: 0px 226px 100px;
+    }   
+}
+@media only screen and (max-width: $breakpoint-desktop-xs){
+    .orphan-services-section{
+        padding: 0px 166px 100px;
+        .orphan-services-outerwrap{
+            padding: 0 0 10px;
+            .orphan-services-innerwrap{
+                h2{
+                    font-size: 32px;
+                }
+                p,span{
+                    font-size: 16px;
+                }
+                span{
+                    font-weight: $bold;
+                }
+                ul{
+                    margin-top: 40px;
+                    @include  flexbox;
+                    @include flex-wrap(wrap);
+                    padding-left: 30px;
+                    li{
+                        list-style: none;
+                        font-size: 16px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $regular;
+                        font-family: $fontMain;
+                        margin-bottom: 20px;
+                        position: relative;
+                        padding-right: 45px;
+                        width: 50%;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            left: -30px;
+                            top: 3px;                    
+                            width: 15px;
+                            height: 15px;
+                            background-color: #FACE37;
+                            border: 2px solid $primary;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-tablet-lg){
+    .orphan-services-section{
+        padding: 0px 86px 80px;
+        .orphan-services-outerwrap{
+            padding: 0 0 10px;
+            .orphan-services-innerwrap{
+                h2{
+                    font-size: 32px;
+                }
+                p,span{
+                    font-size: 16px;
+                }
+                span{
+                    font-weight: $bold;
+                }
+                ul{
+                    margin-top: 40px;
+                    padding-left: 30px;
+                    li{
+                        font-size: 14px;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-tablet-md){
+    .orphan-services-section{
+        padding: 0px 30px 60px;
+        .orphan-services-outerwrap{
+            padding: 0 0 10px;
+            .orphan-services-innerwrap{
+                h2{
+                    font-size: 28px;
+                }
+                p,span{
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                span{
+                    font-weight: $bold;
+                }
+                ul{
+                    margin-top: 40px;
+                    padding-left: 30px;
+                    flex-direction: column;
+                    li{
+                        font-size: 14px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }   
+}
+@media only screen and (max-width: $breakpoint-phone){
+    .orphan-services-section{
+        padding: 0px 15px 30px;
+        .orphan-services-outerwrap{
+            padding: 0 0 10px;
+            .orphan-services-innerwrap{
+                h2{
+                    font-size: 24px;
+                }
+                p,span{
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                span{
+                    font-weight: $bold;
+                }
+                ul{
+                    margin-top: 40px;
+                    padding-left: 30px;
+                    flex-direction: column;
+                    li{
+                        font-size: 14px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }   
+}
+// RESPONSIVE SEC END:

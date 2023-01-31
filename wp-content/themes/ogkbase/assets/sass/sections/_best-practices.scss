@@ -1,0 +1,218 @@
+.best-practices-section {
+    padding: 100px 140px;
+
+    .best-practices-innerwrap {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+        margin-bottom: 50px;
+
+        .best-practices-content {
+            width: 50%;
+
+            h2 {
+                font-size: 32px;
+                line-height: 1.2;
+                font-weight: $bold;
+                color: $primary;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: $regular;
+            }
+        }
+    }
+
+    .best-practices-slider {
+        .owl-carousel {
+            .best-practices-img {
+                padding: 0 7px;
+            }
+
+            .owl-nav {
+                .owl-prev {
+                    @include left-arrow(-90px);
+                    top: 33%;
+                }
+
+                .owl-next {
+                    @include right-arrow(-90px);
+                    top: 33%;
+                }
+            }
+
+            .owl-dots {
+                text-align: center;
+                margin-top: 20px;
+
+                .owl-dot {
+                    width: 20px;
+                    height: 20px;
+                    background: #E3FAFF;
+                    border: 2px solid $primary;
+                    border-radius: 50%;
+                    margin: 0 5px;
+                }
+
+                .owl-dot.active {
+                    background: #00CCFF;
+                }
+            }
+        }
+    }
+}
+
+// Respopnsive Sec Start:
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .best-practices-section {
+        padding: 50px 140px;
+
+        .best-practices-innerwrap {
+            .best-practices-content {
+                h2 {
+                    font-size: 29px;
+                    margin-bottom: 14px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .best-practices-section {
+        padding: 50px 0px;
+        .best-practices-slider {
+            .owl-carousel {
+                .owl-nav {
+                    .owl-prev {
+                        @include left-arrow(43px);
+                        top: 35%;
+                    }
+
+                    .owl-next {
+                        @include right-arrow(43px);
+                        top: 35%;
+                    }
+                }
+            }
+        }
+        .best-practices-innerwrap {
+            width: 90%;
+            margin: 0 auto 50px;
+            @include flex-direction(column);
+
+            .best-practices-content {
+                width: 100%;
+                margin-bottom: 24px;
+                text-align: center;
+            }
+            .btn-blue {
+                @include theme-btn(16px, #00CCFF, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .best-practices-section {
+        .best-practices-slider {
+            .owl-carousel {
+                .owl-nav {
+                    .owl-prev {
+                        @include left-arrow(0px);
+                    }
+
+                    .owl-next {
+                        @include right-arrow(0px);
+                    }
+                }
+
+                .owl-dots {
+                    .owl-dot {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+            .best-practices-img{
+                max-width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .best-practices-section {
+        .best-practices-innerwrap {
+            .btn-blue {
+                @include theme-btn(14px, #00CCFF, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+            }
+        }
+
+        .best-practices-slider {
+            .owl-carousel {
+                .owl-nav {
+                    .owl-prev {
+                        @include left-arrow(0px);
+                        width: 35px;
+                        height: 35px;
+                    }
+
+                    .owl-next {
+                        @include right-arrow(0px);
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+
+                .owl-dots {
+                    .owl-dot {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .best-practices-section {
+        padding: 30px 15px;
+
+        .best-practices-innerwrap {
+            .best-practices-content {
+                h2 {
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        // .best-practices-slider {
+        //     .owl-carousel {
+        //         .owl-nav {
+        //             .owl-prev {
+        //                 display: none;
+        //             }
+
+        //             .owl-next {
+        //                 display: none;
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}

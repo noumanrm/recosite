@@ -1,0 +1,68 @@
+/*** DEBUG ****/
+// Set true for debugging - this will show the media query breakpoints //
+$debug: true;
+
+/*COLORS*/
+$black: #000;
+$white: #fff;
+$offWhite: #F0F4F7;
+$fontColor: #333;
+$gray: #ccc;
+$darkGray: #302f31;
+$medGray: #626363;
+$textGray: #696767;
+$lightGray: #e5e5e5;
+$headerColor: $white;
+$footerColor: $gray;
+
+$errorColor: #FF4200;
+
+// Theme Colors
+$accent: #ff8a00;
+$accentColor: $accent;
+$primary: #000000; 
+
+/* SIZES */
+// $container: 1300px;
+$container: 1160px;
+
+/* TYPOGRAPHY */
+$fontMain: 'Outfit', sans-serif;
+// $fontMain: 'Montserrat', sans-serif;
+// $fontMainSans: "Montserrat", sans-serif;
+$fontBody: "Montserrat", sans-serif;
+$input-serif: input-serif, serif;
+$fontHeader: $fontMain;
+
+$extraLight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+$extraBold: 800;
+$black: 900;
+
+$letterspace: -0.5px;
+$lineheight : 25px;
+
+$btn-border-radius: 5px;
+
+/* MEDIA QUERY BREAKPOINTS */
+
+$breakpoint-desktop-large : 1920px;
+$breakpoint-desktop-med : 1440px;
+$breakpoint-desktop-small : 1060px;
+$breakpoint-tablet-large : 991px;
+$breakpoint-tablet : 785px;
+
+/* ADDITIONAL MEDIA QUERY BREAKPOINTS */
+$breakpoint-desktop-xxl : 1920px;
+$breakpoint-desktop-xl : 1800px;
+$breakpoint-desktop-med : 1440px;
+$breakpoint-desktop-sm : 1366px;
+$breakpoint-desktop-xs : 1199px;
+$breakpoint-tablet-lg : 991px;
+$breakpoint-tablet-md : 767px;
+$breakpoint-tablet-sm : 640px;
+$breakpoint-phone : 480px;

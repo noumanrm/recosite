@@ -1,0 +1,461 @@
+.aboutus-testimonials-section {
+    .meet-our-team-section {
+        background-color: unset;
+        padding: unset;
+
+        .our-team-top {
+            margin-bottom: 100px;
+
+            .our-team-top-paragraph {
+                margin-bottom: 0px;
+            }
+        }
+
+        .aboutus-testimonials-outerwrap {
+            column-count: 2;
+
+            .aboutus-testimonials-innerwrap {
+                background-color: $white;
+                padding: 39px;
+                border: 2px solid $primary;
+                border-radius: 20px;
+                margin: 0 15px 20px 0;
+                width: 100%;
+                -webkit-column-break-inside: avoid;
+                page-break-inside: avoid;
+                break-inside: avoid;
+
+                .aboutus-testimonials-star-rating {
+                    ul {
+                        @include flexbox;
+                        @include align-items(center);
+                        margin-bottom: 20px;
+
+                        li {
+                            list-style-type: none;
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+
+                h3 {
+                    font-size: 25px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $bold;
+                    font-family: $fontMain;
+                    margin-bottom: 19px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 1.4;
+                    color: $primary;
+                    font-weight: $regular;
+                    font-family: $input-serif;
+                    margin-bottom: 30px;
+                }
+
+                .client-name {
+                    span {
+                        font-size: 18px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: 600;
+                        font-family: $fontMain;
+                        text-transform: uppercase;
+                        background-color: #ccf5ff;
+                    }
+                }
+            }
+        }
+
+        .our-team-bottom-content {
+            .tab-menu {
+                border-bottom: 2px solid $primary;
+
+                ul {
+                    list-style: none;
+                    // position:relative;
+                    height: 30px;
+                    @include flexbox;
+                    @include align-items(flex-end);
+                    margin-left: 141px;
+                    border-bottom: unset;
+
+                    li {
+                        list-style-type: none;
+
+                        a {
+                            color: $primary;
+                            font-size: 16px;
+                            line-height: 1.2;
+                            font-weight: 500;
+                            padding: 10px 15px;
+                            border-radius: 6px 6px 0px 0px;
+                            margin-right: 10px;
+                            border-color: $primary;
+                            border-width: 2px 2px 0px 2px;
+                            border-style: solid;
+                            display: inline-block;
+                            text-transform: capitalize;
+                            position: relative;
+                            z-index: 99;
+
+                            &:hover {
+                                background: #FACE37;
+                                box-shadow: 2px -1px 0px 1px rgba(0, 0, 0, 1);
+                                -webkit-box-shadow: 2px -1px 0px 1px rgba(0, 0, 0, 1);
+                                -moz-box-shadow: 2px -1px 0px 1px rgba(0, 0, 0, 1);
+                            }
+
+                            &.active-a {
+                                background: #FACE37;
+                                box-shadow: 2px -1px 0px 1px rgba(0, 0, 0, 1);
+                                -webkit-box-shadow: 2px -1px 0px 1px rgba(0, 0, 0, 1);
+                                -moz-box-shadow: 2px -1px 0px 1px rgba(0, 0, 0, 1);
+
+                                .team-member-outerwrap {
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        &:last-child {
+                            a {
+                                margin-right: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tab {
+                display: none;
+                background-color: #F0EEE6;
+                padding: 100px 141px;
+
+                .team-member-outerwrap {
+                    @include flexbox;
+                    @include align-items(flex-start);
+                    @include justify-content(flex-start);
+                    @include flex-wrap(wrap);
+
+                    .team-member-innerwrap {
+                        text-align: center;
+                        background-color: $white;
+                        border: 2px solid $primary;
+                        border-radius: 20px;
+                        width: 100%;
+                        //   max-width: 375px;
+                        max-width: 31%;
+                        // max-width: 23%;
+                        margin-top: 158px;
+                        margin-right: 17px;
+                        position: relative;
+
+                        h2 {
+                            font-size: 25px;
+                            line-height: 1.2;
+                            font-weight: $bold;
+                            color: $primary;
+                            margin-bottom: 9px;
+                        }
+
+                        span {
+                            font-size: 18px;
+                            line-height: 1.2;
+                            font-weight: $regular;
+                            color: $primary;
+                            display: inline-block;
+                        }
+
+                        .team-member-img {
+                            width: 217px;
+                            height: 217px;
+                            margin: 0px auto 0;
+                            border: 2px solid $primary;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            position: absolute;
+                            top: -108px;
+                            left: 50%;
+                            transform: translateX(-50%);
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .team-member-content {
+                            padding: 139px 30px 17px;
+
+                            min-height: 253px;
+                        }
+
+                        .team-member-btn {
+                            padding: 30px;
+                            border-top: 2px solid $primary;
+
+                            .pink-btn {
+                                @include pink-btn(20px);
+
+                                &::after {
+                                    @include pink-right-arrow;
+                                }
+                            }
+                        }
+
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+
+            .tab-active {
+                display: block;
+            }
+
+            #mySelect {
+                display: none;
+            }
+        }
+    }
+}
+
+
+// RESPONISVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .aboutus-testimonials-section {
+        .meet-our-team-section {
+
+            .our-team-bottom-content {
+                .tab {
+                    padding: 100px 70px;
+
+                    .our-team-top {
+                        margin-bottom: 80px;
+                    }
+
+                    .aboutus-testimonials-outerwrap {
+                        .aboutus-testimonials-innerwrap {
+                            h3 {
+                                font-size: 23px;
+                                margin-bottom: 14px;
+                            }
+
+                            P {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .aboutus-testimonials-section {
+        .meet-our-team-section {
+            .our-team-bottom-content {
+                .tab {
+                    padding: 30px 50px;
+
+                    .our-team-top {}
+
+                    .aboutus-testimonials-outerwrap {
+                        .aboutus-testimonials-innerwrap {
+                            h3 {
+                                font-size: 23px;
+                                margin-bottom: 14px;
+                            }
+
+                            P {
+                                font-size: 14px;
+                            }
+
+                            span {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .aboutus-testimonials-section {
+        .meet-our-team-section {
+            .our-team-bottom-content {
+                .tab {
+                    .our-team-top {
+                        margin-bottom: 50px;
+                    }
+
+                    ul {
+                        li {
+                            a {
+                                font-size: 11px;
+                                padding: 10px 15px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .aboutus-testimonials-outerwrap {
+                .aboutus-testimonials-innerwrap {
+                    padding: 19px;
+
+                    h3 {
+                        font-size: 21px;
+                        margin-bottom: 14px;
+                    }
+
+                    P {
+                        font-size: 13px;
+                    }
+
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .aboutus-testimonials-section {
+        .meet-our-team-section {
+            .our-team-bottom-content {
+                .tab {
+                    padding: 30px;
+                }
+
+                .tab-menu {
+                    ul {
+                        margin-left: 0px;
+
+                        li {
+                            a {
+                                font-size: 11px;
+                                padding: 10px 15px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .our-team-top {
+                margin: 30px auto;
+
+                .our-team-top-content {
+                    margin-bottom: 10px;
+
+                    .our-team-heading {
+                        h2 {}
+                    }
+                }
+            }
+
+            .aboutus-testimonials-outerwrap {
+                column-count: 1;
+
+                .aboutus-testimonials-innerwrap {
+                    padding: 19px;
+
+                    h3 {
+                        font-size: 21px;
+                        margin-bottom: 14px;
+                    }
+
+                    P {
+                        font-size: 13px;
+                    }
+
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .aboutus-testimonials-section {
+        .meet-our-team-section {
+            .our-team-bottom-content {
+                .tab-menu {
+                    ul {
+                        display: none;
+
+                        li {
+                            a {
+                                font-size: 11px;
+                                padding: 10px 15px;
+                            }
+                        }
+                    }
+
+                    #mySelect {
+                        display: block;
+                        position: relative;
+                        z-index: 99;
+                        width: 90%;
+                        margin: 0 auto 10px;
+                    }
+                }
+
+                .tab {
+                    padding: 30px 15px;
+                }
+            }
+
+            .our-team-top {
+                margin: 30px auto;
+
+                .our-team-top-content {
+                    margin-bottom: 10px;
+
+                    .our-team-heading {
+                        h2 {
+                            font-size: 21px;
+                        }
+                    }
+                }
+            }
+
+            .aboutus-testimonials-outerwrap {
+                column-count: 1;
+
+                .aboutus-testimonials-innerwrap {
+                    padding: 19px;
+
+                    h3 {
+                        font-size: 21px;
+                        margin-bottom: 14px;
+                    }
+
+                    P {
+                        font-size: 13px;
+                    }
+
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONISVE SEC END:

@@ -1,0 +1,442 @@
+.alumni-buddy-section {
+    background-color: #F0EEE6;
+    padding: 100px 434px;
+
+    .alumni-buddy-form-outerwrap {
+        position: relative;
+
+        form {
+            @include flexbox;
+            @include flex-direction(column);
+
+            input[type='text'],
+            input[type='email'],
+            input[type='number'],
+            textarea {
+                border: 2px solid $primary;
+                border-radius: 15px;
+                padding: 19px;
+                background-color: $white;
+                margin-bottom: 24px;
+
+                &:focus {
+                    outline: 0;
+                }
+
+                @include placeholder(18px, #000);
+            }
+
+            textarea {
+                min-height: 180px;
+                margin-bottom: 0px;
+            }
+
+        }
+
+        .checkbox-outerwrap,
+        .gfield_radio {
+            @include flexbox;
+            @include align-items(center);
+            font-family: $input-serif;
+            margin-bottom: 30px;
+
+            .form-group,
+            .gchoice {
+                display: block;
+                margin-right: 15px;
+
+                input {
+                    padding: 0;
+                    height: initial;
+                    width: initial;
+                    margin-bottom: 0;
+                    display: none;
+                    cursor: pointer;
+                }
+
+                label {
+                    position: relative;
+                    cursor: pointer;
+                    font-size: 18px;
+                    line-height: 1.2;
+                    color: #000;
+                    font-weight: 300;
+                    font-family: $input-serif;
+                    max-width: unset;
+
+                    &:before {
+                        content: '';
+                        -webkit-appearance: none;
+                        background-color: #fff;
+                        border: 2px solid #000;
+                        border-radius: 50%;
+                        width: 50px;
+                        height: 50px;
+                        box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+                        -webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+                        -moz-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+                        padding: 10px;
+                        display: inline-block;
+                        position: relative;
+                        vertical-align: middle;
+                        cursor: pointer;
+
+                        margin-right: 15px;
+                    }
+                }
+
+                input:checked+label:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 17px;
+                    left: 23px;
+                    width: 7px;
+                    height: 12px;
+                    border: solid #000;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+        .gform_footer {
+            .gform_button {
+                @include theme-btn(18px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                @include hover-transition;
+                cursor: pointer;
+                line-height: 1.2 !important;
+                padding: 18px 33px;
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+
+    .alumni-buddy-btn-img {
+        width: 71px;
+        height: 51px;
+        position: absolute;
+        right: 0px;
+        bottom: 25px;
+
+        img {
+            object-fit: contain;
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .alumni-buddy-section {
+        padding: 100px 234px;
+
+        .alumni-buddy-form-outerwrap {
+            .gform_footer {
+                .gform_button {
+                    @include theme-btn(18px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    // padding: 18px 33px;
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .alumni-buddy-section {
+        .alumni-buddy-form-outerwrap {
+
+            form {
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                textarea {
+                    @include placeholder(15px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                }
+
+            }
+
+            .checkbox-outerwrap {
+                @include flexbox;
+                @include align-items(center);
+                font-family: $input-serif;
+                margin-bottom: 30px;
+
+                .form-group {
+                    display: block;
+                    margin-right: 15px;
+
+                    label {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .gform_footer {
+                .gform_button {
+                    @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    // padding: 18px 33px;
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .alumni-buddy-section {
+        padding: 80px 134px;
+
+        .alumni-buddy-form-outerwrap {
+
+            form {
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                textarea {
+                    @include placeholder(14px,#000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                }
+
+            }
+
+            .checkbox-outerwrap {
+                @include flexbox;
+                @include align-items(center);
+                font-family: $input-serif;
+                margin-bottom: 30px;
+
+                .form-group {
+                    display: block;
+                    margin-right: 15px;
+
+                    label {
+                        font-size: 14px;
+                    }
+
+                    input:checked+label:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 3px;
+                        left: 23px;
+                        width: 7px;
+                        height: 12px;
+                        border: solid #000;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+            .gform_footer {
+                .gform_button {
+                    @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    // padding: 18px 33px;
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .alumni-buddy-section {
+        padding: 80px;
+
+        .alumni-buddy-form-outerwrap {
+            .gform_footer {
+                .gform_button {
+                    @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    // line-height: 1.2;
+                    // padding: 18px 33px;
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .alumni-buddy-section {
+        padding: 50px;
+
+        .alumni-buddy-form-outerwrap {
+
+            form {
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                textarea {
+                    @include placeholder(14px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                }
+
+            }
+
+            .checkbox-outerwrap {
+                @include flexbox;
+                @include align-items(center);
+                font-family: $input-serif;
+                margin-bottom: 30px;
+
+                .form-group {
+                    display: block;
+                    margin-right: 15px;
+
+                    label {
+                        font-size: 14px;
+                    }
+
+                    input:checked+label:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 3px;
+                        left: 23px;
+                        width: 7px;
+                        height: 12px;
+                        border: solid #000;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+            .gform_footer {
+                .gform_button {
+                    @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    // line-height: 1.2;
+                    // padding: 18px 33px;
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .alumni-buddy-section {
+        padding: 50px 15px;
+
+        .alumni-buddy-form-outerwrap {
+
+            form {
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                textarea {
+                    @include placeholder(12px, #000);
+                    padding: 14px 19px;
+                }
+
+                textarea {
+                    min-height: 180px;
+                }
+
+            }
+
+            .checkbox-outerwrap {
+                @include flexbox;
+                @include align-items(center);
+                font-family: $input-serif;
+                margin-bottom: 30px;
+
+                .form-group {
+                    display: block;
+                    margin-right: 15px;
+
+                    label {
+                        font-size: 14px;
+                    }
+
+                    input:checked+label:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 3px;
+                        left: 23px;
+                        width: 7px;
+                        height: 12px;
+                        border: solid #000;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+            .gform_footer {
+                .gform_button {
+                    @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    // padding: 18px 33px;
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC END:

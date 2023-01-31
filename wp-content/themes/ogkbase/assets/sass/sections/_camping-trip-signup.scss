@@ -1,0 +1,346 @@
+.camping-trip-signup-section {
+    padding: 204px 434px 100px;
+
+    .camping-trip-signup-content-outerwrap {
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: $primary;
+            font-weight: $bold;
+            font-family: $fontMain;
+            margin-bottom: 29px;
+        }
+
+        .camping-trip-signup-form {
+            position: relative;
+
+            form {
+                @include flexbox;
+                @include flex-direction(column);
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                select,
+                textarea {
+                    border: 2px solid $primary;
+                    border-radius: 15px;
+                    padding: 19px;
+                    background-color: $white;
+                    margin-bottom: 24px;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(18px, #000);
+                    
+                }
+
+                textarea {
+                    min-height: 180px;
+                    margin-bottom: 0px;
+                }
+                .gfield.gsection{
+                    border-bottom: 2px solid $primary;
+                    height: 0px;
+                    padding: 0px;
+                    margin-bottom: 30px;
+                }
+                .gf_page_steps{
+                    border-bottom: unset;
+                    margin-bottom: 40px;
+                    .gf_step{
+                        margin: 0px 12px 0px 0;
+                        position: relative;
+                        .gf_step_number{
+                            background: transparent;
+                            color: $primary;
+                            font-size: 25px;
+                            line-height: 1.2;
+                            font-weight: $bold;
+                            border: 2px solid $primary;
+                           &::after{
+                                content: "";
+                            }
+                            &::before{
+                                content: "";
+                                background-color: #00CCFF;
+                                z-index: -1;
+                            }
+                        }
+                        &::after{
+                            content: "";
+                            border-bottom: 2px solid $primary;
+                            position: absolute;
+                            width: 55%;
+                            top: 50%;
+                            right: -13px;
+                        }
+                        &:last-child{
+                            &::after{
+                                content: unset;
+                            }
+                        }
+                    }
+                    .gf_step.gf_step_active{
+                        .gf_step_number{
+                            background: #00CCFF;
+                            color: $primary;
+                            font-size: 25px;
+                            line-height: 1.2;
+                            font-weight: $bold;
+                            border: 2px solid $primary;
+                        
+                        }
+                    }
+                    .gf_step_number{
+                        background: transparent;
+                        color: $primary;
+                        font-size: 25px;
+                        line-height: 1.2;
+                        font-weight: $bold;
+                        border: 2px solid $primary
+                    }
+                }
+                .gfield{
+                    
+                    h3{
+                        font-size: 25px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                        margin-bottom: 19px;
+                    }
+                    p{
+                        font-size: 18px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $regular;
+                        font-family: $fontMain;
+                        margin-bottom: 40px;
+                    }
+                }
+                .camping-trip-signup-content-innerwrap{
+                    p,span{
+                        font-size: 18px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $regular;
+                        font-family: $fontMain;
+                        margin-bottom: 30px;
+                    }
+                    .initial-btn{
+                        @include flexbox;
+                        @include align-items(center);
+                        @include justify-content(space-between);
+                        margin: 30px 0px;
+                        p{
+                            margin-bottom: 0px;
+                            width: 68%;
+                        }
+                        button{
+                            font-size: 18px;
+                            line-height: 1.2;
+                            color: $primary;
+                            font-weight: $light;
+                            font-family: $input-serif;
+                            border: 2px solid $primary;
+                            border-radius: 20px;
+                            padding: 19px 43px 19px 20px;
+                            background-color: unset;
+                            width: 30%;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                #gform_page_5_1{
+                    .gform_page_footer{
+                        &::before{
+                            content: unset;
+                        }
+                    }
+                }
+                #gform_page_5_3{
+                    .gform_page_footer{
+                        &::after{
+                            content: unset;
+                        }
+                    }
+                }
+                
+            .gform_button {
+                @include theme-btn(18px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                @include hover-transition;
+                cursor: pointer;
+                line-height: 1.2 !important;
+                padding: 18px 33px;
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+            }
+
+            .checkbox-outerwrap,
+            .gfield_radio {
+                @include flexbox;
+                @include align-items(center);
+                font-family: $input-serif;
+                margin-bottom: 30px;
+
+                .form-group,
+                .gchoice {
+                    display: block;
+                    margin-right: 15px;
+
+                    input {
+                        padding: 0;
+                        height: initial;
+                        width: initial;
+                        margin-bottom: 0;
+                        display: none;
+                        cursor: pointer;
+                    }
+
+                    label {
+                        position: relative;
+                        cursor: pointer;
+                        font-size: 18px;
+                        line-height: 1.2;
+                        color: #000;
+                        font-weight: 300;
+                        font-family: $input-serif;
+                        max-width: unset;
+
+                        &:before {
+                            content: '';
+                            -webkit-appearance: none;
+                            background-color: #fff;
+                            border: 2px solid #000;
+                            border-radius: 50%;
+                            width: 50px;
+                            height: 50px;
+                            box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+                            -webkit-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+                            -moz-box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+                            padding: 10px;
+                            display: inline-block;
+                            position: relative;
+                            vertical-align: middle;
+                            cursor: pointer;
+
+                            margin-right: 15px;
+                        }
+                    }
+
+                    input:checked+label:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 17px;
+                        left: 23px;
+                        width: 7px;
+                        height: 12px;
+                        border: solid #000;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+            .gform_page_footer {
+                position: relative;
+                text-align: right;
+                padding: 0px;
+                margin: 0px;
+
+                .gform_next_button ,
+                .gform_previous_button{
+                    font-size: 20px;
+                    line-height: 1.2;
+                    font-weight: bold;
+                    color: #ED207A;
+                    font-family: "Outfit", sans-serif;
+                    background-color: unset;
+                    border: unset;
+                    cursor: pointer;
+                    margin-bottom: 0px;
+                    position: absolute;
+                }
+                .gform_previous_button{
+                    left: 0px;
+                }
+                .gform_next_button{
+                    right: 0px;
+                }
+                &::after,&::before{
+                    content: "";
+                    background-image: url(/wp-content/themes/ogkbase/images/right-arrow-pink.svg);
+                    height: 16px;
+                    width: 13px;
+                    background-repeat: no-repeat;
+                    background-color: unset;
+                    position: absolute;
+                    right: -15px;
+                    top: 7px;
+                }
+                &::before{
+                    left: -11px;
+                    top: 4px;
+                    transform: rotate(180deg);
+                }
+            }
+
+            .verify-insurance-content2 {
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.4;
+                    color: $primary;
+                    font-weight: $regular;
+                    font-family: $fontMain;
+                    text-align: left;
+                    margin-bottom: 0px;
+
+                    b {
+                        font-weight: $bold;
+                    }
+
+                    a {
+                        font-weight: $regular;
+                        color: #ED207A;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .gform_page_fields{
+                .gform_fields{
+                    .gfield--width-quarter{
+                        grid-column: span 1;
+
+                        @include flexbox;
+                        @include align-items(center);
+
+                        span{
+                            font-size: 25px;
+                            line-height: 1.2;
+                            font-weight: $bold;
+                        }
+                    }
+                    .gfield--width-three-quarter{
+                        grid-column: span 11;
+                        input{
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

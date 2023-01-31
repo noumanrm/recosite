@@ -1,0 +1,333 @@
+.view-album-section {
+    background-color: #F0EEE6;
+
+    .view-album-outerwrap {
+        @include flexbox;
+        @include align-items(flex-start);
+        @include justify-content(center);
+        margin: 0 148px;
+        padding: 100px 0;
+        border-top: 2px solid $primary;
+
+        .view-album-innerwrap {
+            border: 2px solid $primary;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-right: 20px;
+            width: 33.3%;
+
+            .view-album-img {
+                img {
+                    height: 331px;
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+
+            .view-album-content {
+                @include flexbox;
+                @include align-items(center);
+                @include justify-content(space-between);
+                padding: 20px;
+                background-color: $white;
+
+                span {
+                    font-size: 32px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $bold;
+                    font-family: $fontMain;
+                    display: inline-block;
+                }
+
+                .view-album-btn {
+                    margin-right: 21px;
+
+                    .pink-btn {
+                        @include pink-btn(20px);
+
+                        &::after {
+                            @include pink-right-arrow;
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+
+// RESP[ONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .view-album-section {
+        .view-album-outerwrap {
+            margin: 0 118px;
+            padding: 80px 0;
+
+            .view-album-innerwrap {
+                margin-right: 20px;
+                width: 33.3%;
+
+                .view-album-img {
+                    img {
+                        height: 331px;
+                    }
+                }
+
+                .view-album-content {
+                    padding: 20px;
+
+                    span {
+                        font-size: 27px;
+                    }
+
+                    .view-album-btn {
+                        margin-right: 21px;
+
+                        .pink-btn {
+                            @include pink-btn(20px);
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .view-album-section {
+        .view-album-outerwrap {
+            margin: 0 78px;
+            padding: 40px 0;
+
+            .view-album-innerwrap {
+                margin-right: 20px;
+                width: 33.3%;
+
+                .view-album-img {
+                    img {
+                        height: 314px;
+                    }
+                }
+
+                .view-album-content {
+                    padding: 20px;
+
+                    span {
+                        font-size: 23px;
+                    }
+
+                    .view-album-btn {
+                        margin-right: 21px;
+
+                        .pink-btn {
+                            @include pink-btn(17px);
+
+                            &::after {
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .view-album-section {
+        .view-album-outerwrap {
+            margin: 0 78px;
+            padding: 40px 0;
+            flex-wrap: wrap;
+
+            .view-album-innerwrap {
+                margin-right: 10px;
+                margin-bottom: 10px;
+                width: 48%;
+
+                .view-album-img {
+                    img {
+                        height: 314px;
+                    }
+                }
+
+                .view-album-content {
+                    padding: 20px;
+
+                    span {
+                        font-size: 23px;
+                    }
+
+                    .view-album-btn {
+                        margin-right: 21px;
+
+                        .pink-btn {
+                            @include pink-btn(17px);
+
+                            &::after {
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .view-album-section {
+        .view-album-outerwrap {
+            margin: 0 40px;
+            padding: 40px 0;
+            flex-wrap: wrap;
+
+            .view-album-innerwrap {
+                margin-right: 0px;
+                margin-bottom: 10px;
+                width: 100%;
+
+                .view-album-img {
+                    img {
+                        height: 314px;
+                    }
+                }
+
+                .view-album-content {
+                    padding: 20px;
+
+                    span {
+                        font-size: 23px;
+                    }
+
+                    .view-album-btn {
+                        margin-right: 21px;
+
+                        .pink-btn {
+                            @include pink-btn(17px);
+
+                            &::after {
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .view-album-section {
+        .view-album-outerwrap {
+            margin: 0 30px;
+            padding: 40px 0;
+            flex-wrap: wrap;
+
+            .view-album-innerwrap {
+                margin-right: 0px;
+                margin-bottom: 10px;
+                width: 100%;
+
+                .view-album-img {
+                    img {
+                        height: 314px;
+                    }
+                }
+
+                .view-album-content {
+                    padding: 20px;
+
+                    span {
+                        font-size: 23px;
+                    }
+
+                    .view-album-btn {
+                        margin-right: 21px;
+
+                        .pink-btn {
+                            @include pink-btn(17px);
+
+                            &::after {
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .view-album-section {
+        .view-album-outerwrap {
+            margin: 0 15px;
+            padding: 40px 0;
+            flex-wrap: wrap;
+
+            .view-album-innerwrap {
+                margin-right: 0px;
+                margin-bottom: 10px;
+                width: 100%;
+
+                .view-album-img {
+                    img {
+                        height: 314px;
+                    }
+                }
+
+                .view-album-content {
+                    padding: 20px;
+
+                    span {
+                        font-size: 23px;
+                    }
+
+                    .view-album-btn {
+                        margin-right: 21px;
+
+                        .pink-btn {
+                            @include pink-btn(17px);
+
+                            &::after {
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+// RESP[ONSIVE SEC END:

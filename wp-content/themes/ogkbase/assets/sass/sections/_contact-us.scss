@@ -1,0 +1,363 @@
+.contact-us-section {
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(space-between);
+    padding: 98px 238px;
+    background-color: #F0EEE6;
+
+    .contact-us-content {
+        width: 50%;
+        max-width: 377px;
+
+        h2 {
+            font-size: 40px;
+            line-height: 1.2;
+            font-weight: $bold;
+            color: $primary;
+            font-family: $fontMain;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 25px;
+            line-height: 1.2;
+            font-weight: $regular;
+            color: $primary;
+            font-family: $fontMain;
+            margin-bottom: 49px;
+        }
+
+        span {
+            font-size: 25px;
+            line-height: 1.2;
+            font-weight: $semiBold;
+            color: $primary;
+            font-family: $fontMain;
+            margin-bottom: 9px;
+            display: block;
+        }
+
+        a.pink-btn {
+            @include pink-btn(20px);
+
+            &::after {
+                @include pink-right-arrow;
+            }
+        }
+    }
+
+    .contact-us-form {
+        width: 50%;
+
+        form {
+            @include flexbox;
+            @include flex-direction(column);
+
+            input[type='text'],
+            input[type='email'],
+            input[type='number'],
+            textarea {
+                border: 2px solid $primary;
+                border-radius: 15px;
+                padding: 19px;
+                background-color: $white;
+                margin-bottom: 24px;
+                font-family: input-serif,serif;
+
+                &:focus {
+                    outline: 0;
+                }
+
+                @include placeholder(18px, #000);
+            }
+
+            textarea {
+                min-height: 180px;
+                resize: none;
+                margin-bottom: 0px;
+            }
+
+            .gform_fields {
+                grid-row-gap: 0;
+            }
+
+            .gform_footer {
+                .gform_button {
+                    @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    width: 100%;
+                    max-width: 200px;
+                    border-radius: 29px;
+                    padding: 18px 33px;
+
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// RESPONSIVE CSS START:
+@media only screen and (max-width: $breakpoint-desktop-sm) {
+    .contact-us-section {
+        padding: 78px 118px;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-desktop-xs) {
+    .contact-us-section {
+        .contact-us-content {
+            width: 50%;
+            max-width: 307px;
+
+            h2 {
+                font-size: 35px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 18px;
+                margin-bottom: 29px;
+            }
+
+            span {
+                font-size: 22px;
+            }
+
+            a.pink-btn {
+                @include pink-btn(18px);
+
+                &::after {
+                    @include pink-right-arrow;
+                }
+            }
+        }
+
+        .contact-us-form {
+            width: 50%;
+
+            form {
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                textarea {
+                    padding: 14px 19px;
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    @include placeholder(15px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                }
+
+                .gform_footer {
+                    .gform_button {
+                        @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 200px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $breakpoint-tablet-lg) {
+    .contact-us-section {
+        padding: 58px 28px;
+
+        .contact-us-content {
+            margin-bottom: 34px;
+        }
+
+        .contact-us-form {
+            form {
+                .gform_footer {
+                    .gform_button {
+                        @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: $breakpoint-tablet-md) {
+    .contact-us-section {
+        padding: 58px 28px;
+        @include flex-direction(column);
+
+        .contact-us-content,
+        .contact-us-form {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .contact-us-content {
+            margin-bottom: 34px;
+
+            h2 {
+                font-size: 32px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 17px;
+                margin-bottom: 17px;
+            }
+
+            span {
+                font-size: 19px;
+            }
+        }
+
+        .contact-us-form {
+            form {
+                .gform_footer {
+                    .gform_button {
+                        @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 150px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $breakpoint-tablet-sm) {
+    .contact-us-section {
+        .contact-us-content {
+            margin-bottom: 34px;
+
+            h2 {
+                font-size: 32px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 17px;
+                margin-bottom: 17px;
+            }
+
+            span {
+                font-size: 17px;
+            }
+        }
+
+        .contact-us-form {
+            form {
+                .gform_footer {
+                    .gform_button {
+                        @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 120px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $breakpoint-phone) {
+    .contact-us-section {
+        .contact-us-content {
+            margin-bottom: 34px;
+
+            h2 {
+                font-size: 32px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 17px;
+                margin-bottom: 17px;
+            }
+
+            span {
+                font-size: 17px;
+            }
+        }
+
+        .contact-us-form {
+            form {
+
+                input[type='text'],
+                input[type='email'],
+                input[type='number'],
+                textarea {
+                    @include placeholder(12px, #000);
+                }
+
+                textarea {
+                    min-height: 180px;
+                }
+
+                .gform_footer {
+                    .gform_button {
+                        @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                        @include hover-transition;
+                        cursor: pointer;
+                        width: 100%;
+                        max-width: 100px;
+                        border-radius: 29px;
+
+                        &:focus,
+                        &:hover {
+                            @include theme-btn-hover;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+// RESPONSIVE CSS END:

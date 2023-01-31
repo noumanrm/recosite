@@ -1,0 +1,718 @@
+.single-alumnievents-outerwrap{
+    padding: 249px 336px 204px;
+    h2{
+        font-size: 57px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $extraBold;
+        font-family: $fontMain;
+        text-transform: uppercase;
+        margin-bottom: 31px;
+    }
+    p:nth-of-type(1){
+        font-size: 25px;
+        line-height: 1.6;
+        color: $primary;
+        font-weight: $regular;
+        font-family: $fontMain;
+        margin-bottom: 57px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 1.4;
+        color: $primary;
+        font-weight: $regular;
+        font-family: $fontMain;
+        margin-bottom: 21px;
+    }
+    img{
+        width: 100%;
+        // max-width: 768px;
+        height: 405px;
+        object-fit: cover;
+        margin-bottom: 61px;
+    }
+    span{
+
+    }
+    .tsh_breadcrumbs {
+        position: absolute;
+        top: 179px;
+        bottom: unset;
+        left: 140px;
+        z-index: 9;
+        @include flexbox();
+        @include align-items(center);
+        li{
+            list-style: none;
+            margin-right: 9px;
+            a{
+                font-size: 16px;
+                line-height: 1.2;
+                color: #BCBCBC;
+                font-weight: $regular;
+                font-family: $fontMain;
+            }
+            .bread-current{
+                @extend a;
+                color: #ED207A !important;
+                font-weight: $medium;
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+    .single-date-location-outerwrap{
+        @include flexbox();
+        @include align-items(flex-start);
+        margin-bottom: 60px;
+        .single-date-location-innerwrap{
+            border: 2px solid $primary;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 0 16px 0px 0;
+            width: 50%;
+            .single-date-location-heading{
+                @include flexbox();
+                @include align-items(center);
+                margin-bottom: 20px;
+                img{
+                    width: 34px;
+                    height: 34px;
+                    object-fit: contain;
+                    margin: 0 20px 0 0;
+                    
+                }
+                h4{
+                    font-size: 18px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $bold;
+                    font-family: $fontMain;
+                }
+            }
+            span,p{
+                display: block;
+                font-size: 25px;
+                line-height: 1.2;
+                color: $primary;
+                font-weight: $regular;
+                font-family: $fontMain;
+                margin-bottom: 29px;
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+}
+.reserve-spot-outerwrap{
+    padding: 94px 434px 100px;
+    background-color: #F0EEE6;
+    h3{
+        font-size: 32px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: $bold;
+        font-family: $fontMain;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    form {
+        @include flexbox;
+        @include flex-direction(column);
+
+        input[type='text'],
+        input[type='email'],
+        input[type='number'],
+        textarea {
+            border: 2px solid $primary;
+            border-radius: 15px;
+            padding: 19px;
+            background-color: $white;
+            min-height: 60px;
+            margin-bottom: 24px;
+            font-family: input-serif,serif;
+
+            &:focus {
+                outline: 0;
+            }
+
+            @include placeholder(18px, #000);
+        }
+
+        textarea {
+            min-height: 180px;
+            resize: none;
+            margin-bottom: 0px;
+        }
+
+        .gform_fields {
+            grid-row-gap: 0;
+        }
+
+        .gform_footer {
+            .gform_button {
+                @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                @include hover-transition;
+                cursor: pointer;
+                width: 100%;
+                max-width: 200px;
+                border-radius: 29px;
+                padding: 18px 33px;
+
+                &:focus,
+                &:hover {
+                    @include theme-btn-hover;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE SEC START:
+@media only screen and (max-width: $breakpoint-desktop-xl){
+    .single-alumnievents-outerwrap{
+        .single-date-location-outerwrap{
+            @include flexbox();
+            @include align-items(flex-start);
+            margin-bottom: 60px;
+            .single-date-location-innerwrap{
+                border: 2px solid $primary;
+                border-radius: 20px;
+                padding: 20px;
+                margin: 0 16px 0px 0;
+                width: 50%;
+                min-height: 210px;
+                .single-date-location-heading{
+                    @include flexbox();
+                    @include align-items(center);
+                    margin-bottom: 20px;
+                    img{
+                        width: 34px;
+                        height: 34px;
+                        object-fit: contain;
+                        margin: 0 20px 0 0;
+                        
+                    }
+                    h4{
+                        font-size: 18px;
+                        line-height: 1.2;
+                        color: $primary;
+                        font-weight: $bold;
+                        font-family: $fontMain;
+                    }
+                }
+                span,p{
+                    display: block;
+                    font-size: 25px;
+                    line-height: 1.2;
+                    color: $primary;
+                    font-weight: $regular;
+                    font-family: $fontMain;
+                    margin-bottom: 29px;
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-sm){
+    .single-alumnievents-outerwrap{
+        padding: 249px 236px 204px;  
+    }   
+    .reserve-spot-outerwrap{
+        padding: 94px 234px 100px;
+        h3{
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+        form {
+            @include flexbox;
+            @include flex-direction(column);
+    
+            input[type='text'],
+            input[type='email'],
+            input[type='number'],
+            textarea {
+                border: 2px solid $primary;
+                border-radius: 15px;
+                padding: 19px;
+                background-color: $white;
+                min-height: 60px;
+                margin-bottom: 24px;
+                font-family: input-serif,serif;
+    
+                &:focus {
+                    outline: 0;
+                }
+    
+                @include placeholder(18px, #000);
+            }
+    
+            textarea {
+                min-height: 180px;
+                resize: none;
+                margin-bottom: 0px;
+            }
+    
+            .gform_fields {
+                grid-row-gap: 0;
+            }
+    
+            .gform_footer {
+                .gform_button {
+                    @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    width: 100%;
+                    max-width: 200px;
+                    border-radius: 29px;
+                    padding: 18px 33px;
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-desktop-xs){
+    .single-alumnievents-outerwrap{
+        padding: 249px 136px 204px;   
+        .single-date-location-outerwrap{
+            margin-bottom: 40px;
+            .single-date-location-innerwrap{
+                margin: 0 16px 0px 0;
+                width: 50%;
+                min-height: 200px;
+                .single-date-location-heading{
+                    margin-bottom: 20px;
+                    img{
+                        width: 34px;
+                        height: 34px;
+                        margin: 0 20px 0 0;
+                        
+                    }
+                    h4{
+                        font-size: 18px;
+                    }
+                }
+                span,p{
+                    display: block;
+                    font-size: 18px;
+                    margin-bottom: 23px;
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+    .reserve-spot-outerwrap{
+        padding: 94px 234px 100px;
+        // h3{
+        //     font-size: 32px;
+        //     margin-bottom: 24px;
+        // }
+        form {
+            @include flexbox;
+            @include flex-direction(column);
+    
+            input[type='text'],
+            input[type='email'],
+            input[type='number'],
+            textarea {
+                border: 2px solid $primary;
+                border-radius: 15px;
+                padding: 19px;
+                background-color: $white;
+                min-height: 60px;
+                margin-bottom: 24px;
+                font-family: input-serif,serif;
+    
+                &:focus {
+                    outline: 0;
+                }
+    
+                @include placeholder(15px, #000);
+            }
+    
+            textarea {
+                min-height: 180px;
+                resize: none;
+                margin-bottom: 0px;
+            }
+    
+            .gform_fields {
+                grid-row-gap: 0;
+            }
+    
+            .gform_footer {
+                .gform_button {
+                    @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    width: 100%;
+                    max-width: 200px;
+                    border-radius: 29px;
+                    padding: 18px 33px;
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-lg){
+    
+    .single-alumnievents-outerwrap{
+        padding: 150px 100px;
+        h2{
+            font-size: 47px;
+        }
+        // p:nth-of-type(1){
+        //     font-size: 25px;
+        //     line-height: 1.6;
+        //     color: $primary;
+        //     font-weight: $regular;
+        //     font-family: $fontMain;
+        //     margin-bottom: 57px;
+        // }
+        // p{
+        //     font-size: 18px;
+        //     line-height: 1.4;
+        //     color: $primary;
+        //     font-weight: $regular;
+        //     font-family: $fontMain;
+        //     margin-bottom: 21px;
+        // }
+        // img{
+        //     width: 100%;
+        //     // max-width: 768px;
+        //     height: 405px;
+        //     object-fit: cover;
+        //     margin-bottom: 61px;
+        // }
+        .tsh_breadcrumbs{
+            display: none;
+        }
+        
+    }   
+    .reserve-spot-outerwrap{
+        padding: 54px 100px;
+        h3{
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+        form {
+            @include flexbox;
+            @include flex-direction(column);
+    
+            input[type='text'],
+            input[type='email'],
+            input[type='number'],
+            textarea {
+                border: 2px solid $primary;
+                border-radius: 15px;
+                padding: 19px;
+                background-color: $white;
+                min-height: 60px;
+                margin-bottom: 24px;
+                font-family: input-serif,serif;
+    
+                &:focus {
+                    outline: 0;
+                }
+    
+                @include placeholder(15px, #000);
+            }
+    
+            textarea {
+                min-height: 180px;
+                resize: none;
+                margin-bottom: 0px;
+            }
+    
+            .gform_fields {
+                grid-row-gap: 0;
+            }
+    
+            .gform_footer {
+                .gform_button {
+                    @include theme-btn(16px, #FACE37, 14px 33px, 6px 7px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    width: 100%;
+                    max-width: 200px;
+                    border-radius: 29px;
+                    padding: 18px 33px;
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-md){
+    .single-alumnievents-outerwrap{
+        .single-date-location-outerwrap{
+            margin-bottom: 40px;
+            @include flex-direction(column);
+            .single-date-location-innerwrap{
+                margin: 0 0px 16px 0;
+                width: 100%;
+                min-height: auto;
+                .single-date-location-heading{
+                    margin-bottom: 20px;
+                    img{
+                        width: 34px;
+                        height: 34px;
+                        margin: 0 20px 0 0;
+                        
+                    }
+                    h4{
+                        font-size: 18px;
+                    }
+                }
+                span,p{
+                    display: block;
+                    font-size: 18px;
+                    margin-bottom: 23px;
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+    .reserve-spot-outerwrap{
+        padding: 54px 100px;
+        h3{
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+        form {
+            @include flexbox;
+            @include flex-direction(column);
+    
+            input[type='text'],
+            input[type='email'],
+            input[type='number'],
+            textarea {
+                border: 2px solid $primary;
+                border-radius: 15px;
+                padding: 19px;
+                background-color: $white;
+                min-height: 60px;
+                margin-bottom: 24px;
+                font-family: input-serif,serif;
+    
+                &:focus {
+                    outline: 0;
+                }
+    
+                @include placeholder(15px, #000);
+            }
+    
+            textarea {
+                min-height: 180px;
+                resize: none;
+                margin-bottom: 0px;
+            }
+    
+            .gform_fields {
+                grid-row-gap: 0;
+            }
+    
+            .gform_footer {
+                .gform_button {
+                    @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    width: 100%;
+                    max-width: 200px;
+                    border-radius: 29px;
+                    padding: 18px 33px;
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: $breakpoint-tablet-sm){
+    .single-alumnievents-outerwrap{
+        padding: 150px 30px;
+        h2{
+            font-size: 37px;
+            margin-bottom: 15px;
+        }
+        // p:nth-of-type(1){
+        //     font-size: 25px;
+        //     line-height: 1.6;
+        //     color: $primary;
+        //     font-weight: $regular;
+        //     font-family: $fontMain;
+        //     margin-bottom: 57px;
+        // }
+        // p{
+        //     font-size: 18px;
+        //     line-height: 1.4;
+        //     color: $primary;
+        //     font-weight: $regular;
+        //     font-family: $fontMain;
+        //     margin-bottom: 21px;
+        // }
+        // img{
+        //     width: 100%;
+        //     // max-width: 768px;
+        //     height: 405px;
+        //     object-fit: cover;
+        //     margin-bottom: 61px;
+        // }
+        .tsh_breadcrumbs{
+            display: none;
+        }
+        
+    }  
+    .reserve-spot-outerwrap{
+        padding: 54px 30px;
+        h3{
+            font-size: 23px;
+            margin-bottom: 24px;
+        }
+        form {
+            @include flexbox;
+            @include flex-direction(column);
+    
+            input[type='text'],
+            input[type='email'],
+            input[type='number'],
+            textarea {
+                border: 2px solid $primary;
+                border-radius: 15px;
+                padding: 19px;
+                background-color: $white;
+                min-height: 60px;
+                margin-bottom: 24px;
+                font-family: input-serif,serif;
+    
+                &:focus {
+                    outline: 0;
+                }
+    
+                @include placeholder(12px, #000);
+            }
+    
+            textarea {
+                min-height: 180px;
+                resize: none;
+                margin-bottom: 0px;
+            }
+    
+            .gform_fields {
+                grid-row-gap: 0;
+            }
+    
+            .gform_footer {
+                .gform_button {
+                    
+                    @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    width: 100%;
+                    max-width: 200px;
+                    border-radius: 29px;
+                    padding: 8px 33px;
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    } 
+}
+@media only screen and (max-width: $breakpoint-phone){
+    .single-alumnievents-outerwrap{
+        padding: 150px 15px;
+        h2{
+            font-size: 31px;
+            margin-bottom: 15px;
+        }  
+    } 
+    .reserve-spot-outerwrap{
+        padding: 54px 15px;
+        h3{
+            font-size: 23px;
+            margin-bottom: 24px;
+        }
+        form {
+            @include flexbox;
+            @include flex-direction(column);
+    
+            input[type='text'],
+            input[type='email'],
+            input[type='number'],
+            textarea {
+                border: 2px solid $primary;
+                border-radius: 15px;
+                padding: 19px;
+                background-color: $white;
+                min-height: 60px;
+                margin-bottom: 24px;
+                font-family: input-serif,serif;
+    
+                &:focus {
+                    outline: 0;
+                }
+    
+                @include placeholder(12px, #000);
+            }
+    
+            textarea {
+                min-height: 180px;
+                resize: none;
+                margin-bottom: 0px;
+            }
+    
+            .gform_fields {
+                grid-row-gap: 0;
+            }
+    
+            .gform_footer {
+                .gform_button {
+                    @include theme-btn(14px, #FACE37, 9px 23px, 5px 5px 0px 0px rgba(0, 0, 0, 1));
+                    @include hover-transition;
+                    cursor: pointer;
+                    width: 100%;
+                    max-width: 100px;
+                    border-radius: 29px;
+                    padding: 8px 33px;
+    
+                    &:focus,
+                    &:hover {
+                        @include theme-btn-hover;
+                    }
+                }
+            }
+        }
+    }   
+}
+// RESPONSIVE SEC END:
